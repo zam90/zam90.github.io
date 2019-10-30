@@ -5,13 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Windows与Linux服务器间快速上传、下载文件（SCP指令）|Zam9036的博客 - Zam9036&#39;s Blog</title>
+    <title>Ubuntu上安装GD图片支持库|Zam9036的博客 - Zam9036&#39;s Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Zam9036,Zam90,ZAM,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
-    <meta name="description" content="SCP指令​    scp的指令的作用是可以将本地的文件上传到一台远端服务器，或将远端服务器的文件下载到本地，其格式如下：
-​    scp 本地文件地址 远端Liunx用户名@远端IP地址:远端文,"> 
+    <meta name="description" content="问题描述​    配置Ubuntu对php-gd的支持，网上大多是都是通过逐一配置freetype、libpng、libjpeg…..这样的方法过于繁琐，且出错率过高。CentOS中的yum指令yu,"> 
     <meta name="author" content="Zam9036"> 
     <link rel="alternative" href="atom.xml" title="Zam9036&#39;s Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -39,7 +38,7 @@
     <div class="bar" style="width: 0;"></div>
     <a id="home-icon" class="image-icon icon-home iconfont animated fadeIn" href="javascript:;" data-url="https://zam90.github.io"></a>
     <div id="play-icon" title="Play/Pause" class="iconfont icon-play animated fadeIn"></div>
-    <h3 class="subtitle">Windows与Linux服务器间快速上传、下载文件（SCP指令）|Zam9036的博客</h3>
+    <h3 class="subtitle">Ubuntu上安装GD图片支持库|Zam9036的博客</h3>
     <div class="social">
 <!--        <div class="like-icon">-->
 <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -63,28 +62,28 @@
             animation-duration: 1.2s;
             background-image: 
                 radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
-                url(/img/cover.jpg);">
+                url(/img/cover4.jpg);">
         </div>
         <div class="else">
             <p class="animated fadeInDown">
                 
                     <a href="/categories/技术Demo"><b>「 </b>技术DEMO<b> 」</b></a>
                 
-                十月 28, 2019
+                十月 30, 2019
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2019/10/28/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/" title="Windows与Linux服务器间快速上传、下载文件（SCP指令）|Zam9036的博客" class="">Windows与Linux服务器间快速上传、下载文件（SCP指令）|Zam9036的博客</a></h3>
+            <h3 class="post-title animated fadeInDown"><a href="/2019/10/30/Ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85GD%E5%9B%BE%E7%89%87%E6%94%AF%E6%8C%81%E5%BA%93/" title="Ubuntu上安装GD图片支持库|Zam9036的博客" class="">Ubuntu上安装GD图片支持库|Zam9036的博客</a></h3>
             
                 <p class="post-count animated fadeInDown">
                     
                         <span>
                         <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                        2.3k
+                        1.2k
                     </span>
                     
                     
                         <span>
                         <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                        2 mins.
+                        1 mins.
                     </span>
                     
                     
@@ -97,7 +96,7 @@
                 </p>
             
             
-                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">服务器</a></li></ul>
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Linux%E6%8C%87%E4%BB%A4/" rel="tag">Linux指令</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Linux%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" rel="tag">Linux环境配置</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">服务器</a></li></ul>
             
         </div>
     </div>
@@ -118,22 +117,14 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn slower">
-            <h2 id="SCP指令"><a href="#SCP指令" class="headerlink" title="SCP指令"></a>SCP指令</h2><p>​    scp的指令的作用是可以将本地的文件上传到一台远端服务器，或将远端服务器的文件下载到本地，其格式如下：</p>
-<p>​    <code>scp 本地文件地址 远端Liunx用户名@远端IP地址:远端文件存储地址    //上传指令</code></p>
-<p>​    <code>scp 远端Liunx用户名@远端IP地址:远端文件地址 本地文件存储地址    //下载指令</code></p>
-<h2 id="利用SCP指令从Windows上传文件到Linux服务器"><a href="#利用SCP指令从Windows上传文件到Linux服务器" class="headerlink" title="利用SCP指令从Windows上传文件到Linux服务器"></a>利用SCP指令从Windows上传文件到Linux服务器</h2><p>​    现有一个本地的BBS-Forum.zip文件需要上传到Linux服务器。</p>
-<p><img src="/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%891.png" alt="本地文件"></p>
-<p>​    首先打开命令提示符cmd，按SCP指令格式输入<code>scp F:\GitHub\BBS-Forum.zip root@211.68.46.235:/var/www/html</code>，其中root是远端Liunx用户名，然后输入密码（密码不显示），开始上传。</p>
-<p><img src="/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%892.png" alt="命令提示符"></p>
-<p>​    然后去云服务器端查看文件，成功上传！</p>
-<p><img src="/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%893.png" alt="云服务器端"></p>
-<h2 id="利用SCP指令从Linux服务器下载文件到Windows"><a href="#利用SCP指令从Linux服务器下载文件到Windows" class="headerlink" title="利用SCP指令从Linux服务器下载文件到Windows"></a>利用SCP指令从Linux服务器下载文件到Windows</h2><p>​    原理同上传，执行<code>scp root@211.68.46.235:/var/www/html/BBS-Forum.zip F:\GitHub</code>，输入密码，开始下载。</p>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>在cmd中输入密码时，考虑安全性问题，密码默认不显示，但实际已经成功输入。</li>
-<li>请注意用 \ 作为Windows端文件目录，用 / 作为Linux端文件目录。</li>
-</ul>
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>​    配置Ubuntu对php-gd的支持，网上大多是都是通过逐一配置freetype、libpng、libjpeg…..这样的方法过于繁琐，且出错率过高。CentOS中的yum指令<code>yum install php-gd</code>，可以一条指令配置对php-gd的支持，但是Ubuntu默认软件包管理器不是yum，这就导致了配置的时候会出现</p>
+<pre><code class="提示">没有已启用的仓库。
+执行 &amp;quot;yum repolist all&amp;quot; 查看您拥有的仓库。
+您可以用 yum-config-manager --enable &amp;amp;lt;仓库名&amp;amp;gt; 来启用仓库</code></pre>
+<h2 id="问题思考"><a href="#问题思考" class="headerlink" title="问题思考"></a>问题思考</h2><p>​    CentOS的默认软件包管理器是yum，而Ubuntu默认软件包管理器是dpkp，可以尝试<code>apt-get</code>的方法进行安装。</p>
+<h2 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h2><p>​    输入命令代码<code>sudo apt-get install php-gd</code>，发现可以安装了。</p>
 <h2 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h2><p>​    文章作者：Zam9036</p>
-<p>​    文章链接：<a href="https://zam90.github.io/2019/10/28/Windows与Linux服务器间快速上传、下载文件（SCP指令）">https://zam90.github.io/2019/10/28/Windows与Linux服务器间快速上传、下载文件（SCP指令）</a></p>
+<p>​    文章链接：<a href="https://zam90.github.io/2019/10/30/Ubuntu上安装GD图片支持库">https://zam90.github.io/2019/10/30/Ubuntu上安装GD图片支持库</a></p>
 <p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam90.github.io/">Zam9036的博客</a>！</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
@@ -176,7 +167,7 @@
                     <div class="box sticky animated fadeInRight faster">
                         <div id="toc" class="subbox">
                             <h4>目录</h4>
-                            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#SCP指令"><span class="toc-number">1.</span> <span class="toc-text">SCP指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#利用SCP指令从Windows上传文件到Linux服务器"><span class="toc-number">2.</span> <span class="toc-text">利用SCP指令从Windows上传文件到Linux服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#利用SCP指令从Linux服务器下载文件到Windows"><span class="toc-number">3.</span> <span class="toc-text">利用SCP指令从Linux服务器下载文件到Windows</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意事项"><span class="toc-number">4.</span> <span class="toc-text">注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原创声明"><span class="toc-number">5.</span> <span class="toc-text">原创声明</span></a></li></ol>
+                            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#问题描述"><span class="toc-number">1.</span> <span class="toc-text">问题描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题思考"><span class="toc-number">2.</span> <span class="toc-text">问题思考</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题解决"><span class="toc-number">3.</span> <span class="toc-text">问题解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原创声明"><span class="toc-number">4.</span> <span class="toc-text">原创声明</span></a></li></ol>
                         </div>
                     </div>
                 

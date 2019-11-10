@@ -84,13 +84,13 @@
                     
                         <span>
                         <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                        11k
+                        12k
                     </span>
                     
                     
                         <span>
                         <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                        10 mins.
+                        11 mins.
                     </span>
                     
                     
@@ -136,14 +136,14 @@
 class node
 {
 public:
-    char data;    //节点信息
+    int data;    //节点信息
     node* leftChild;//节点指针：左孩子
     node* rightChild;//节点指针：右孩子
 };
 typedef node* BiTree;//等价，定义node*的新名字BiTree</code></pre>
 <p>​    创建结点的方法：</p>
 <pre><code class="c++">//创建节点，加*号的意义：返回类型指针型数据
-node* createNode(char value)
+node* createNode(int value)
 {
     node* q = new node;
     q-&gt;leftChild = NULL;    //leftChild指针为空
@@ -156,14 +156,14 @@ node* createNode(char value)
 BiTree createBiTree()
 {
     node* p[N] = { NULL };
-    //char array[28] = { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 };//默认建立28节点二叉树
+    //int array[28] = { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 };//默认建立28节点二叉树
     //自左向右输入节点值生成二叉树
     cout&lt;&lt;&quot;请按自左向右顺序输入二叉树各节点:&quot;&lt;&lt;endl;    //提示语
-    char array[N-1];    //定义array数组用于存储节点信息
-    for (int i = 0; i &lt; N-1; ++i){
+    int array[N];    //定义array数组用于存储节点信息
+    for (int i = 0; i &lt; N; ++i){
         cin &gt;&gt; array[i];    //储存输入节点的值
     }
-    for (int i = 0; i &lt; N-1; ++i)
+    for (int i = 0; i &lt; N; ++i)
         p[i] = createNode(array[i]);    //创建节点
     for (int i = 0; i &lt; N / 2; i++)
     {
@@ -174,7 +174,7 @@ BiTree createBiTree()
 }</code></pre>
 <p>​    访问节点数据</p>
 <pre><code class="c++">//访问节点中的数据
-char visit(BiTree tree)
+int visit(BiTree tree)
 {
     return tree-&gt;data;    //返回节点的值
 }</code></pre>
@@ -257,27 +257,27 @@ void exchange(BiTree tree)
         exchange(tree-&gt;rightChild);    //没有左孩子时，递归交换右孩子的值
     }
 }</code></pre>
-<h2 id="程序测试"><a href="#程序测试" class="headerlink" title="程序测试"></a>程序测试</h2><p><img src="/img/postimg/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E4%B8%AD%E5%BA%8F%E5%90%8E%E7%BB%AD%E9%80%92%E5%BD%92%E4%B8%8E%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E5%8F%8A%E5%B7%A6%E5%8F%B3%E5%AD%90%E6%A0%91%E4%BA%A4%E6%8D%A2/1.png" alt="6节点二叉树"></p>
+<h2 id="程序测试"><a href="#程序测试" class="headerlink" title="程序测试"></a>程序测试</h2><p><img src="/img/postimg/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E4%B8%AD%E5%BA%8F%E5%90%8E%E7%BB%AD%E9%80%92%E5%BD%92%E4%B8%8E%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E5%8F%8A%E5%B7%A6%E5%8F%B3%E5%AD%90%E6%A0%91%E4%BA%A4%E6%8D%A2/1.png" alt="6节点二叉树"><br><img src="/img/postimg/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E4%B8%AD%E5%BA%8F%E5%90%8E%E7%BB%AD%E9%80%92%E5%BD%92%E4%B8%8E%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E5%8F%8A%E5%B7%A6%E5%8F%B3%E5%AD%90%E6%A0%91%E4%BA%A4%E6%8D%A2/2.png" alt="15节点二叉树"></p>
 <h2 id="程序清单"><a href="#程序清单" class="headerlink" title="程序清单"></a>程序清单</h2><pre><code class="c++">
 #include &lt;iostream&gt;    //导入IO库文件
 #include &lt;string.h&gt;
 #include &lt;assert.h&gt;
 #include &lt;stack&gt;
-#define N 7    //节点数为N-1
+#define N 15    //N为节点数
 using namespace std;    //使用标准命名空间
 
 //定义节点类
 class node
 {
 public:
-    char data;    //节点信息
+    int data;    //节点信息
     node* leftChild;//节点指针：左孩子
     node* rightChild;//节点指针：右孩子
 };
 typedef node* BiTree;//等价，定义node*的新名字BiTree
 
 //创建节点，加*号的意义：返回类型指针型数据
-node* createNode(char value)
+node* createNode(int value)
 {
     node* q = new node;
     q-&gt;leftChild = NULL;    //leftChild指针为空
@@ -290,14 +290,14 @@ node* createNode(char value)
 BiTree createBiTree()
 {
     node* p[N] = { NULL };
-    //char array[28] = { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 };//默认建立28节点二叉树
+    //int array[28] = { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 };//默认建立28节点二叉树
     //自左向右输入节点值生成二叉树
     cout&lt;&lt;&quot;请按自左向右顺序输入二叉树各节点:&quot;&lt;&lt;endl;    //提示语
-    char array[N-1];    //定义array数组用于存储节点信息
-    for (int i = 0; i &lt; N-1; ++i){
+    int array[N];    //定义array数组用于存储节点信息
+    for (int i = 0; i &lt; N; ++i){
         cin &gt;&gt; array[i];    //储存输入节点的值
     }
-    for (int i = 0; i &lt; N-1; ++i)
+    for (int i = 0; i &lt; N; ++i)
         p[i] = createNode(array[i]);    //创建节点
     for (int i = 0; i &lt; N / 2; i++)
     {
@@ -308,7 +308,7 @@ BiTree createBiTree()
 }
 
 //访问节点中的数据
-char visit(BiTree tree)
+int visit(BiTree tree)
 {
     return tree-&gt;data;    //返回节点的值
 }

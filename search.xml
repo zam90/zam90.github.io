@@ -223,9 +223,9 @@
             
             <tag> Linux指令 </tag>
             
-            <tag> 教程 </tag>
-            
             <tag> 服务器 </tag>
+            
+            <tag> 教程 </tag>
             
             <tag> Linux环境配置 </tag>
             
@@ -446,17 +446,6 @@
     
     
     <entry>
-      <title>分类Categories|Zam9036的博客</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于About|Zam9036的博客</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -482,6 +471,17 @@
       <title>标签Tags|Zam9036的博客</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类Categories|Zam9036的博客</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

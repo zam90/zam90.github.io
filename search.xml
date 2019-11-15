@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>1234</title>
-    <url>/2019/11/15/1234/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>记Hexo博客安装hexo-generator-search遇到的问题|Zam9036的博客</title>
     <url>/2019/11/13/%E8%AE%B0Hexo%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85hexo-generator-search%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在用Git bash安装<code>hexo-generator-search</code>和<code>hexo-generator-searchdb</code>来实现本地搜索时遇到以下问题</p>
@@ -1855,8 +1850,8 @@ int main()
       </categories>
       <tags>
         <tag>Linux指令</tag>
-        <tag>教程</tag>
         <tag>服务器</tag>
+        <tag>教程</tag>
         <tag>Linux环境配置</tag>
       </tags>
   </entry>
@@ -2294,6 +2289,16 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
       </tags>
   </entry>
   <entry>
+    <title>archives</title>
+    <url>/archives/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>分类Categories|Zam9036的博客</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>关于About|Zam9036的博客</title>
     <url>/about/index.html</url>
     <content><![CDATA[<img src="/img/avatar.png" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 15px" />
@@ -2318,18 +2323,8 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
 ]]></content>
   </entry>
   <entry>
-    <title>分类Categories|Zam9036的博客</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>标签Tags|Zam9036的博客</title>
     <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>archives</title>
-    <url>/archives/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

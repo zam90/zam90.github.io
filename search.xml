@@ -439,9 +439,667 @@ int main()
       </tags>
   </entry>
   <entry>
-    <title>面向对象技术题型归类示例-2</title>
+    <title>面向对象技术题型归类示例-2|Zam9036的博客</title>
     <url>/2019/11/06/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h3 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h3><p>C++</p>
+<h3 id="继承与派生"><a href="#继承与派生" class="headerlink" title="继承与派生"></a>继承与派生</h3><h4 id="11、多重继承派生类的构造函数"><a href="#11、多重继承派生类的构造函数" class="headerlink" title="11、多重继承派生类的构造函数"></a>11、多重继承派生类的构造函数</h4><h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h5><p>声明一个教师(Teacher)类和一个学生(Student)类，用公有多重继承的方式声明一个在职研究生(Graduate)派生类，包含私有成员wages(津贴)。教师类中包含保护数据成员name(姓名)、age(年龄)、title(职称)。学生类中包含保护数据成员name1(姓名)、sex(性别)、score(成绩)。在定义派生类对象时给出初始化的数据，然后输出这些数据。</p>
+<p>要求Teacher与Student类的数据成员都在自己的构造函数内初始化，新建Graduate对象时，Graduate应通过自身的构造函数去依次调用Teacher与Student的构造函数及其他。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码。</p>
+<pre><code class="c++">int main() {
+    Graduate grad1(&quot;Johnson&quot;, 21, &quot;male&quot;, &quot;assistant&quot;, 90, 7800);
+    grad1.show();
+    return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/11.jpg" alt="输出样例11"></p>
+<h5 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+class Teacher
+{
+public:
+    Teacher(string nam, int a, string tit) : name(nam), age(a), title(tit) {}
+
+protected:
+    string name;
+    int age;
+    string title;
+};
+class Student
+{
+public:
+    Student(string nam, string s, int sco) : name1(nam), sex(s), score(sco) {}
+
+protected:
+    string name1;
+    string sex;
+    int score;
+};
+class Graduate : public Teacher, public Student
+{
+public:
+    Graduate(string nam, int a, string s, string tit, int sco, int w) : Teacher(nam, a, tit), Student(nam, s, sco) { wages = w; }
+    void show()
+    {
+        cout &lt;&lt; &quot;name:&quot; &lt;&lt; name &lt;&lt; &quot;age:&quot; &lt;&lt; age &lt;&lt; &quot;sex:&quot; &lt;&lt; sex &lt;&lt; &quot;score:&quot; &lt;&lt; score &lt;&lt; &quot;title:&quot; &lt;&lt; title &lt;&lt; &quot;wages:&quot; &lt;&lt; wages;
+    }
+
+private:
+    int wages;
+};
+int main()
+{
+    Graduate grad1(&quot;Johnson&quot;, 21, &quot;male&quot;, &quot;assistant&quot;, 90, 7800);
+    grad1.show();
+    return 0;
+}</code></pre>
+<h4 id="12、包含子对象的派生类的构造函数"><a href="#12、包含子对象的派生类的构造函数" class="headerlink" title="12、包含子对象的派生类的构造函数"></a>12、包含子对象的派生类的构造函数</h4><h5 id="问题描述-1"><a href="#问题描述-1" class="headerlink" title="问题描述"></a>问题描述</h5><p>现有一Student类，包含两个保护成员num与name，分别表示学号与姓名；另有一Student1类，公共继承自Student类，并且包含一个私有的Student类型的monitor与一个私有的age。</p>
+<p>现要求构造一个Student1类型的stu对象，其中的monitor对象必须在Student1的构造函数中通过调用Student的构造函数的方式进行初始化。最后，通过stu对象调用show方法依次输出stu的学号与姓名以及年龄。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码。</p>
+<pre><code class="c++">int main(){
+    Student1 stu(20120107, &quot;Johnson&quot;, 20);
+    stu.show();
+    return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/12.jpg" alt="输出样例12"></p>
+<h5 id="参考代码-1"><a href="#参考代码-1" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+class Student
+{
+public:
+    Student(int n, string nam) : num(n), name(nam) {}
+
+protected:
+    int num;
+    string name;
+};
+class Student1 : public Student
+{
+public:
+    Student1(int n, string nam, int a) : Student(n, nam), monitor(n, nam) { age = a; }
+    void show()
+    {
+        cout &lt;&lt; num &lt;&lt; &quot; &quot; &lt;&lt; name &lt;&lt; &quot; &quot; &lt;&lt; age &lt;&lt; endl;
+    }
+
+private:
+    Student monitor;
+    int age;
+};
+int main()
+{
+    Student1 stu(20120107, &quot;Johnson&quot;, 20);
+    stu.show();
+    return 0;
+}</code></pre>
+<h3 id="运算符的重载"><a href="#运算符的重载" class="headerlink" title="运算符的重载"></a>运算符的重载</h3><h4 id="13、使用转换构造函数来实现两个对象之间的转换"><a href="#13、使用转换构造函数来实现两个对象之间的转换" class="headerlink" title="13、使用转换构造函数来实现两个对象之间的转换"></a>13、使用转换构造函数来实现两个对象之间的转换</h4><h5 id="问题描述-2"><a href="#问题描述-2" class="headerlink" title="问题描述"></a>问题描述</h5><p>定义一个Teacher类，包含私有属性号码(num)、姓名(name)、性别(sex)、职称(title)；</p>
+<p>一个Student类，包含公有属性号码(num)、姓名(name)、性别(sex)、成绩(grade)，</p>
+<p>二者有一部分数据成员是相同的：号码(num)、姓名(name)、性别(sex)。</p>
+<p>编写程序，使用转换构造函数，将一个Student对象转换为Teacher对象，并且只将Student对象的号码(num)、姓名(name)、性别(sex)移植给Teacher对象。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码。</p>
+<pre><code class="c++">int main()
+{
+       Student s(20160103, &quot;Johnson&quot;, &quot;male&quot;, 100);
+       Teacher t = s;
+       t.display();
+       return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/13.jpg" alt="输出样例13"></p>
+<h5 id="参考代码-2"><a href="#参考代码-2" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+class Student
+{
+public:
+    Student(int a, string b, string c, int d) : num(a), name(b), sex(c), grade(d) {}
+    int num;
+    string name;
+    string sex;
+    int grade;
+};
+
+class Teacher
+{
+public:
+    Teacher(int a, string b, string c, string d) : num(a), name(b), sex(c), title(d) {}
+    Teacher(Student &amp;s)
+    {
+        num = s.num;
+        name = s.name;
+        sex = s.sex;
+    }
+    void display()
+    {
+        cout &lt;&lt; num &lt;&lt; &quot; &quot; &lt;&lt; name &lt;&lt; &quot; &quot; &lt;&lt; sex &lt;&lt; endl;
+    }
+
+private:
+    int num;
+    string name;
+    string sex;
+    string title;
+};
+
+int main()
+{
+    Student s(20160103, &quot;Johnson&quot;, &quot;male&quot;, 100);
+    Teacher t = s;
+    t.display();
+    return 0;
+}</code></pre>
+<h4 id="14、重载-运算符以及输入输出运算符-gt-gt-与-lt-lt-，用于矩阵运算"><a href="#14、重载-运算符以及输入输出运算符-gt-gt-与-lt-lt-，用于矩阵运算" class="headerlink" title="14、重载+运算符以及输入输出运算符&gt;&gt;与&lt;&lt;，用于矩阵运算"></a>14、重载+运算符以及输入输出运算符&gt;&gt;与&lt;&lt;，用于矩阵运算</h4><h5 id="问题描述-3"><a href="#问题描述-3" class="headerlink" title="问题描述"></a>问题描述</h5><p>建立一矩阵类matrix，其中包含一私有数据成员，名为mtx的整型二维数组，使之能存储3行3列的数组。重载输入输出运算符&gt;&gt;与&lt;&lt;，使得程序可以从键盘读入2个3行3列的矩阵。重载+运算符，使两个矩阵相加后能返回一个结果矩阵，最后将该结果矩阵输出。</p>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/14.jpg" alt="输出样例14"></p>
+<h5 id="参考代码-3"><a href="#参考代码-3" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;math.h&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+class matrix
+{
+private:
+    int mtx[3][3];
+
+public:
+    friend istream &amp;operator&gt;&gt;(istream &amp;in, matrix &amp;a)
+    {
+        in &gt;&gt; a.mtx[0][0] &gt;&gt; a.mtx[0][1] &gt;&gt; a.mtx[0][2] &gt;&gt; a.mtx[1][0] &gt;&gt; a.mtx[1][1] &gt;&gt; a.mtx[1][2] &gt;&gt; a.mtx[2][0] &gt;&gt; a.mtx[2][1] &gt;&gt; a.mtx[2][2];
+        return in;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;ou, matrix &amp;a)
+    {
+        ou &lt;&lt; a.mtx[0][0] &lt;&lt; &quot; &quot; &lt;&lt; a.mtx[0][1] &lt;&lt; &quot; &quot; &lt;&lt; a.mtx[0][2] &lt;&lt; &quot;\n&quot;
+           &lt;&lt; a.mtx[1][0] &lt;&lt; &quot; &quot; &lt;&lt; a.mtx[1][1] &lt;&lt; &quot; &quot; &lt;&lt; a.mtx[1][2] &lt;&lt; &quot;\n&quot;
+           &lt;&lt; a.mtx[2][0] &lt;&lt; &quot; &quot; &lt;&lt; a.mtx[2][1] &lt;&lt; &quot; &quot; &lt;&lt; a.mtx[2][2];
+        return ou;
+    }
+    friend matrix operator+(matrix &amp;a, matrix &amp;b)
+    {
+        matrix c;
+        c.mtx[0][0] = a.mtx[0][0] + b.mtx[0][0];
+        c.mtx[0][1] = a.mtx[0][1] + b.mtx[0][1];
+        c.mtx[0][2] = a.mtx[0][2] + b.mtx[0][2];
+        c.mtx[1][0] = a.mtx[1][0] + b.mtx[1][0];
+        c.mtx[1][1] = a.mtx[1][1] + b.mtx[1][1];
+        c.mtx[1][2] = a.mtx[1][2] + b.mtx[1][2];
+        c.mtx[2][0] = a.mtx[2][0] + b.mtx[2][0];
+        c.mtx[2][1] = a.mtx[2][1] + b.mtx[2][1];
+        c.mtx[2][2] = a.mtx[2][2] + b.mtx[2][2];
+        return c;
+    }
+};
+int main()
+{
+    matrix a, b, c;
+    cin &gt;&gt; a &gt;&gt; b;
+    c = a + b;
+    cout &lt;&lt; c;
+    return 0;
+}</code></pre>
+<h4 id="15、将一个double数据与Complex类数据相加"><a href="#15、将一个double数据与Complex类数据相加" class="headerlink" title="15、将一个double数据与Complex类数据相加"></a>15、将一个double数据与Complex类数据相加</h4><h5 id="问题描述-4"><a href="#问题描述-4" class="headerlink" title="问题描述"></a>问题描述</h5><p>要求补全下面的代码，使其能够运行并且输出正确的结果，要求使用类型转换函数，注意不能改动已有代码。</p>
+<pre><code class="c++">int main() {
+    Complex c1(3, 4), c2(5, -10), c3;
+    double d;
+    d = 2.5 + c1;
+    cout &lt;&lt; d &lt;&lt; endl;
+    return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/15.jpg" alt="输出样例15"></p>
+<h5 id="参考代码-4"><a href="#参考代码-4" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+class Complex
+{
+private:
+    double real, imag;
+
+public:
+    Complex(double a, double b) : real(a), imag(b)
+    {
+    }
+    Complex() : real(0), imag(0)
+    {
+    }
+    operator double()
+    {
+        return real;
+    }
+};
+
+int main()
+{
+
+    Complex c1(3, 4), c2(5, -10), c3;
+
+    double d;
+
+    d = 2.5 + c1;
+
+    cout &lt;&lt; d &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+<h4 id="16、定义复数类，并使用运算符重载来实现其功能"><a href="#16、定义复数类，并使用运算符重载来实现其功能" class="headerlink" title="16、定义复数类，并使用运算符重载来实现其功能"></a>16、定义复数类，并使用运算符重载来实现其功能</h4><h5 id="问题描述-5"><a href="#问题描述-5" class="headerlink" title="问题描述"></a>问题描述</h5><p>定义一个复数类Complex，重载运算符-,/，使之能用于复数的减法和除法。运算符的重载函数作为Complex类的友元函数，求两个复数的差和商。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码。</p>
+<pre><code class="c++">int main()
+{
+//...
+    c3=c1-c2;
+    cout&lt;&lt;c3;
+//...
+   c4=c1/c2;                            
+    cout&lt;&lt;c4;
+//...
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/16-1.jpg" alt="输出样例16-1"></p>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/16-2.jpg" alt="输出样例16-2"></p>
+<h5 id="参考代码-5"><a href="#参考代码-5" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Complex
+{
+private:
+    double real;
+    double imag;
+
+public:
+    Complex()
+    {
+    }
+    Complex(Complex &amp;c1)
+    {
+        real = c1.real;
+        imag = c1.imag;
+    }
+    Complex(double x, double y)
+    {
+        real = x;
+        imag = y;
+    }
+
+    friend Complex operator+(Complex &amp;c1, Complex &amp;c2)
+    {
+        Complex a(c1.real + c2.real, c1.imag + c2.imag);
+        return a;
+    }
+    friend Complex operator-(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real - c2.real, c1.imag - c2.imag);
+        return a;
+    }
+    friend Complex operator*(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real * c2.real, c1.imag * c2.imag);
+        return a;
+    }
+    friend Complex operator/(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        if (c2.real == 0 &amp;&amp; c2.imag == 0)
+        {
+            Complex a(0, 0);
+            return a;
+        }
+        else
+        {
+            Complex a(((c1.real * c2.real + c1.imag * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)), ((c1.imag * c2.real - c1.real * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)));
+            return a;
+        }
+    }
+    friend void operator+=(Complex &amp;c1, Complex &amp;c2)
+    {
+        c1.real = c1.real + c2.real;
+        c1.imag = c1.imag + c2.imag;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;output, const Complex &amp;c1)
+    {
+        if (c1.imag &gt;= 0)
+            output &lt;&lt; c1.real &lt;&lt; &quot;+&quot; &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        else
+            output &lt;&lt; c1.real &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        return output;
+    }
+};
+
+int main()
+{
+    double a, b, c, d;
+    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d;
+    Complex c1(a, b), c2(c, d);
+    Complex c3, c4;
+    c3 = c1 - c2;
+    cout &lt;&lt; c3;
+    c4 = c1 / c2;
+    cout &lt;&lt; c4;
+}</code></pre>
+<h4 id="17、定义复数类，并使用运算符重载来实现其功能"><a href="#17、定义复数类，并使用运算符重载来实现其功能" class="headerlink" title="17、定义复数类，并使用运算符重载来实现其功能"></a>17、定义复数类，并使用运算符重载来实现其功能</h4><h5 id="问题描述-6"><a href="#问题描述-6" class="headerlink" title="问题描述"></a>问题描述</h5><p>定义一个复数类Complex，重载运算符*，使之能用于复数的乘法。运算符的重载函数作为Complex类的友元函数，求两个复数的积。</p>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/17.jpg" alt="输出样例17"></p>
+<h5 id="参考代码-6"><a href="#参考代码-6" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Complex
+{
+private:
+    double real;
+    double imag;
+
+public:
+    Complex()
+    {
+    }
+    Complex(Complex &amp;c1)
+    {
+        real = c1.real;
+        imag = c1.imag;
+    }
+    Complex(double x, double y)
+    {
+        real = x;
+        imag = y;
+    }
+
+    friend Complex operator+(Complex &amp;c1, Complex &amp;c2)
+    {
+        Complex a(c1.real + c2.real, c1.imag + c2.imag);
+        return a;
+    }
+    friend Complex operator-(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real - c2.real, c1.imag - c2.imag);
+        return a;
+    }
+    friend Complex operator*(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real * c2.real - c1.imag * c2.imag, c1.real * c2.imag + c1.imag * c2.real);
+        return a;
+    }
+    friend Complex operator/(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        if (c2.real == 0 &amp;&amp; c2.imag == 0)
+        {
+            Complex a(0, 0);
+            return a;
+        }
+        else
+        {
+            Complex a(((c1.real * c2.real + c1.imag * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)), ((c1.imag * c2.real - c1.real * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)));
+            return a;
+        }
+    }
+    friend void operator+=(Complex &amp;c1, Complex &amp;c2)
+    {
+        c1.real = c1.real + c2.real;
+        c1.imag = c1.imag + c2.imag;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;output, const Complex &amp;c1)
+    {
+        if (c1.imag &gt; 0)
+            output &lt;&lt; c1.real &lt;&lt; &quot;+&quot; &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        else
+            output &lt;&lt; c1.real &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        return output;
+    }
+};
+
+int main()
+{
+    double a, b, c, d;
+    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d;
+    Complex c1(a, b), c2(c, d);
+    Complex c3;
+    c3 = c1 * c2;
+    cout &lt;&lt; c3;
+}</code></pre>
+<h4 id="18、定义复数类，并使用运算符重载来实现其功能"><a href="#18、定义复数类，并使用运算符重载来实现其功能" class="headerlink" title="18、定义复数类，并使用运算符重载来实现其功能"></a>18、定义复数类，并使用运算符重载来实现其功能</h4><h5 id="问题描述-7"><a href="#问题描述-7" class="headerlink" title="问题描述"></a>问题描述</h5><p>定义一个复数类Complex，重载运算符+，使之能用于复数的加法。运算符的重载函数作为Complex类的友元函数，求两个复数的和。</p>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/18.jpg" alt="输出样例18"></p>
+<h5 id="参考代码-7"><a href="#参考代码-7" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Complex
+{
+private:
+    double real;
+    double imag;
+
+public:
+    Complex()
+    {
+    }
+    Complex(Complex &amp;c1)
+    {
+        real = c1.real;
+        imag = c1.imag;
+    }
+    Complex(double x, double y)
+    {
+        real = x;
+        imag = y;
+    }
+
+    friend Complex operator+(Complex &amp;c1, Complex &amp;c2)
+    {
+        Complex a(c1.real + c2.real, c1.imag + c2.imag);
+        return a;
+    }
+    friend Complex operator-(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real - c2.real, c1.imag - c2.imag);
+        return a;
+    }
+    friend Complex operator*(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real * c2.real - c1.imag * c2.imag, c1.real * c2.imag + c1.imag * c2.real);
+        return a;
+    }
+    friend Complex operator/(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        if (c2.real == 0 &amp;&amp; c2.imag == 0)
+        {
+            Complex a(0, 0);
+            return a;
+        }
+        else
+        {
+            Complex a(((c1.real * c2.real + c1.imag * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)), ((c1.imag * c2.real - c1.real * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)));
+            return a;
+        }
+    }
+    friend void operator+=(Complex &amp;c1, Complex &amp;c2)
+    {
+        c1.real = c1.real + c2.real;
+        c1.imag = c1.imag + c2.imag;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;output, const Complex &amp;c1)
+    {
+        if (c1.imag &gt; 0)
+            output &lt;&lt; c1.real &lt;&lt; &quot;+&quot; &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        else
+            output &lt;&lt; c1.real &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        return output;
+    }
+};
+
+int main()
+{
+    double a, b, c, d;
+    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d;
+    Complex c1(a, b), c2(c, d);
+    Complex c3;
+    c3 = c1 + c2;
+    cout &lt;&lt; c3;
+}</code></pre>
+<h4 id="19、定义复数类，并使用运算符重载来实现其功能"><a href="#19、定义复数类，并使用运算符重载来实现其功能" class="headerlink" title="19、定义复数类，并使用运算符重载来实现其功能"></a>19、定义复数类，并使用运算符重载来实现其功能</h4><h5 id="问题描述-8"><a href="#问题描述-8" class="headerlink" title="问题描述"></a>问题描述</h5><p>定义一个复数类Complex，重载运算符-、/，使之能用于复数的减法和除法。运算符的重载函数作为Complex类的成员函数，求两个复数的差和商。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码。</p>
+<pre><code class="c++">int main()
+{
+//...
+    c3=c1-c2;
+    cout&lt;&lt;c3;
+//...
+   c4=c1/c2;                            
+    cout&lt;&lt;c4;
+//...
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/19-1.jpg" alt="输出样例19-1"></p>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/19-2.jpg" alt="输出样例19-2"></p>
+<h5 id="参考代码-8"><a href="#参考代码-8" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Complex
+{
+private:
+    double real;
+    double imag;
+
+public:
+    Complex()
+    {
+    }
+    Complex(Complex &amp;c1)
+    {
+        real = c1.real;
+        imag = c1.imag;
+    }
+    Complex(double x, double y)
+    {
+        real = x;
+        imag = y;
+    }
+
+    friend Complex operator+(Complex &amp;c1, Complex &amp;c2)
+    {
+        Complex a(c1.real + c2.real, c1.imag + c2.imag);
+        return a;
+    }
+    friend Complex operator-(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real - c2.real, c1.imag - c2.imag);
+        return a;
+    }
+    friend Complex operator*(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real * c2.real - c1.imag * c2.imag, c1.real * c2.imag + c1.imag * c2.real);
+        return a;
+    }
+    friend Complex operator/(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        if (c2.real == 0 &amp;&amp; c2.imag == 0)
+        {
+            Complex a(0, 0);
+            return a;
+        }
+        else
+        {
+            Complex a(((c1.real * c2.real + c1.imag * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)), ((c1.imag * c2.real - c1.real * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)));
+            return a;
+        }
+    }
+    friend void operator+=(Complex &amp;c1, Complex &amp;c2)
+    {
+        c1.real = c1.real + c2.real;
+        c1.imag = c1.imag + c2.imag;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;output, const Complex &amp;c1)
+    {
+        if (c1.imag &gt;= 0)
+            output &lt;&lt; c1.real &lt;&lt; &quot;+&quot; &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        else
+            output &lt;&lt; c1.real &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        return output;
+    }
+};
+
+int main()
+{
+    double a, b, c, d;
+    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d;
+    Complex c1(a, b), c2(c, d);
+    Complex c3, c4;
+    c3 = c1 - c2;
+    cout &lt;&lt; c3;
+    c4 = c1 / c2;
+    cout &lt;&lt; c4;
+}</code></pre>
+<h4 id="20、定义复数类，并使用运算符重载来实现其功能"><a href="#20、定义复数类，并使用运算符重载来实现其功能" class="headerlink" title="20、定义复数类，并使用运算符重载来实现其功能"></a>20、定义复数类，并使用运算符重载来实现其功能</h4><h5 id="问题描述-9"><a href="#问题描述-9" class="headerlink" title="问题描述"></a>问题描述</h5><p>定义一个复数类Complex，重载运算符*，使之能用于复数的乘法。运算符的重载函数作为Complex类的成员函数，求两个复数的积。</p>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-2/20.jpg" alt="输出样例20"></p>
+<h5 id="参考代码-9"><a href="#参考代码-9" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Complex
+{
+private:
+    double real;
+    double imag;
+
+public:
+    Complex()
+    {
+    }
+    Complex(Complex &amp;c1)
+    {
+        real = c1.real;
+        imag = c1.imag;
+    }
+    Complex(double x, double y)
+    {
+        real = x;
+        imag = y;
+    }
+
+    friend Complex operator+(Complex &amp;c1, Complex &amp;c2)
+    {
+        Complex a(c1.real + c2.real, c1.imag + c2.imag);
+        return a;
+    }
+    friend Complex operator-(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real - c2.real, c1.imag - c2.imag);
+        return a;
+    }
+    friend Complex operator*(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        Complex a(c1.real * c2.real - c1.imag * c2.imag, c1.real * c2.imag + c1.imag * c2.real);
+        return a;
+    }
+    friend Complex operator/(const Complex &amp;c1, const Complex &amp;c2)
+    {
+        if (c2.real == 0 &amp;&amp; c2.imag == 0)
+        {
+            Complex a(0, 0);
+            return a;
+        }
+        else
+        {
+            Complex a(((c1.real * c2.real + c1.imag * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)), ((c1.imag * c2.real - c1.real * c2.imag) / (c2.real * c2.real + c2.imag * c2.imag)));
+            return a;
+        }
+    }
+    friend void operator+=(Complex &amp;c1, Complex &amp;c2)
+    {
+        c1.real = c1.real + c2.real;
+        c1.imag = c1.imag + c2.imag;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;output, const Complex &amp;c1)
+    {
+        if (c1.imag &gt;= 0)
+            output &lt;&lt; c1.real &lt;&lt; &quot;+&quot; &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        else
+            output &lt;&lt; c1.real &lt;&lt; c1.imag &lt;&lt; &quot;i&quot; &lt;&lt; endl;
+        return output;
+    }
+};
+
+int main()
+{
+    double a, b, c, d;
+    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d;
+    Complex c1(a, b), c2(c, d);
+    Complex c3;
+    c3 = c1 * c2;
+    cout &lt;&lt; c3;
+}</code></pre>
+<h2 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h2><p>​    文章作者：Zam9036</p>
+<p>​    文章链接：<a href="https://zam9036.gitee.io/2019/11/06/面向对象技术题型归类示例-2">https://zam9036.gitee.io/2019/11/06/面向对象技术题型归类示例-2</a></p>
+<p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>
+]]></content>
       <categories>
         <category>代码示例</category>
       </categories>
@@ -2353,11 +3011,6 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
       </tags>
   </entry>
   <entry>
-    <title>archives</title>
-    <url>/archives/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>分类Categories|Zam9036的博客</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
@@ -2365,6 +3018,11 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
   <entry>
     <title>标签Tags|Zam9036的博客</title>
     <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>archives</title>
+    <url>/archives/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>

@@ -597,9 +597,9 @@
     
     
     <entry>
-      <title>标签Tags|Zam9036的博客</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>archives</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -608,9 +608,9 @@
     
     
     <entry>
-      <title>archives</title>
-      <link href="/archives/index.html"/>
-      <url>/archives/index.html</url>
+      <title>分类Categories|Zam9036的博客</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -630,9 +630,9 @@
     
     
     <entry>
-      <title>分类Categories|Zam9036的博客</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>标签Tags|Zam9036的博客</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

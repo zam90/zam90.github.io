@@ -3962,11 +3962,11 @@ int main()
         <category>技术Demo</category>
       </categories>
       <tags>
+        <tag>MarkDown</tag>
         <tag>GitHub</tag>
         <tag>Hexo</tag>
         <tag>Web</tag>
         <tag>教程</tag>
-        <tag>MarkDown</tag>
       </tags>
   </entry>
   <entry>
@@ -4200,11 +4200,11 @@ cond(no)-&gt;sub-&gt;io</code></pre>
         <category>技术Demo</category>
       </categories>
       <tags>
+        <tag>MarkDown</tag>
         <tag>GitHub</tag>
         <tag>Hexo</tag>
         <tag>Web</tag>
         <tag>教程</tag>
-        <tag>MarkDown</tag>
       </tags>
   </entry>
   <entry>
@@ -4343,8 +4343,13 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
       </tags>
   </entry>
   <entry>
-    <title>archives</title>
-    <url>/archives/index.html</url>
+    <title>标签Tags|Zam9036的博客</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>分类Categories|Zam9036的博客</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -4372,13 +4377,8 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
 ]]></content>
   </entry>
   <entry>
-    <title>分类Categories|Zam9036的博客</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签Tags|Zam9036的博客</title>
-    <url>/tags/index.html</url>
+    <title>archives</title>
+    <url>/archives/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zam9036.gitee.io/2019/10/24/3-Change-the-theme-of-the-Hexo-blog/</loc>
+    <lastmod>2019-12-27</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/10/23/2-A-detailed-tutorial-on-building-a-personal-blog-with-GitHub-Hexo/</loc>
+    <lastmod>2019-12-27</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/10/23/1-First-blog/</loc>
+    <lastmod>2019-12-27</lastmod>
+  </url>  <url>
     <loc>https://zam9036.gitee.io/2019/10/30/8-Record-problems-encountered-in-installing-GD-image-support-library-on-Ubuntu/</loc>
     <lastmod>2019-12-27</lastmod>
   </url>  <url>
@@ -9,9 +18,6 @@
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/12/05/20-Use-adjacency-list-to-store-undirected-disconnected-graphs-and-traverse-adjacency-lists-with-DFS-and-BFS/</loc>
     <lastmod>2019-12-27</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/10/23/1-First-blog/</loc>
-    <lastmod>2019-12-08</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/12/03/19-Eight-Queens-Expansion-Using-DFS-Depth-First-Search-Algorithm-to-Solve-N-Queens-Problem/</loc>
     <lastmod>2019-12-05</lastmod>
@@ -38,12 +44,6 @@
     <lastmod>2019-11-14</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/10/27/6-Use-Hexo-to-insert-local-pictures-in-your-blog-no-external-link-required/</loc>
-    <lastmod>2019-11-14</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/10/23/2-A-detailed-tutorial-on-building-a-personal-blog-with-GitHub-Hexo/</loc>
-    <lastmod>2019-11-14</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/10/24/3-Change-the-theme-of-the-Hexo-blog/</loc>
     <lastmod>2019-11-14</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/11/09/14-Pre-order-mid-order-subsequent-recursion-and-non-recursive-traversal-of-binary-tree-and-left-and-right-subtree-exchange/</loc>

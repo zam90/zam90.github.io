@@ -1,0 +1,1366 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>面向对象技术题型归类示例-1|Zam9036的博客 - Zam9036的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Zam9036,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
+    <meta name="description" content="编程语言C++
+多态1、点圆圆柱圆锥球问题描述先建立一个点(Point)类，包含保护数据成员x, y。以它为基类，公有派生出一个圆(Circle)类，增加保护数据成员半径(radius)。再以Cir,"> 
+    <meta name="author" content="ZamCenter"> 
+    <link rel="alternative" href="atom.xml" title="Zam9036的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+</head>
+
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">Zam9036的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://zam9036.gitee.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">面向对象技术题型归类示例-1|Zam9036的博客</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled=" "></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover.jpg);">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="/categories/代码示例"><b>「
+                    </b>代码示例<b> 」</b></a>
+                
+                十一月 05, 2019
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2019/11/05/12-Object-oriented-technical-problem-classification-example-1/" title="面向对象技术题型归类示例-1|Zam9036的博客" class="">面向对象技术题型归类示例-1|Zam9036的博客</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                    29k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                    26 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF/" rel="tag">面向对象技术</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <h3 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h3><p>C++</p>
+<h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><h4 id="1、点圆圆柱圆锥球"><a href="#1、点圆圆柱圆锥球" class="headerlink" title="1、点圆圆柱圆锥球"></a>1、点圆圆柱圆锥球</h4><h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h5><p>先建立一个点(Point)类，包含保护数据成员x, y。以它为基类，公有派生出一个圆(Circle)类，增加保护数据成员半径(radius)。再以Circle类为基类，公有派生出一个圆柱(Cylinder)类，再增加数据成员高(height)。现依次输入x，y，r，h，计算以对象c中的radius、height构成的圆锥（Cone）和球（Sphere）的体积。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码，π值取3.14。  </p>
+<pre><code class="c++">#define PI 3.14
+
+int main() {
+    Cylinder c;
+    cin &gt;&gt; c;
+    cout &lt;&lt; c &lt;&lt; endl;
+    Circle &amp;cRef = c;
+    cout &lt;&lt; cRef &lt;&lt; endl;
+    //...
+        return 0;
+    }    </code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/1.png" alt="输出样例1"></p>
+<h5 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+#define PI 3.14
+class Point{
+    public:
+        Point(){
+            x=0;
+            y=0;
+        }
+        Point(double x,double y){
+            this-&gt;x = x;
+            this-&gt;y = y;
+        }
+    protected:
+        double x, y;
+};
+class Circle:public Point{
+    public:
+        Circle(){
+            x=0;
+            y=0;
+            radius=0;
+        } 
+        Circle(double x,double y,double radius):Point(x,y){
+            this-&gt;radius = radius;
+        }
+        friend ostream &amp; operator&lt;&lt;(ostream &amp; output,const Circle &amp;c){
+            output &lt;&lt; c.x &lt;&lt;&quot; &quot;&lt;&lt; c.y &lt;&lt;&quot; &quot;&lt;&lt; c.radius;
+            return output;
+        }
+    protected:
+        double radius;
+};
+class Cylinder:public Circle{
+    public:
+        Cylinder(){
+            x=0;
+            y=0;
+            radius=0;
+            height=0;
+        }
+        Cylinder(double x,double y,double radius,double height):Circle(x,y,radius){
+            this-&gt;height = height;
+        }
+        int aa(){
+        if(height==2)
+        return 2;
+        else return 0;
+    }
+    protected:
+        double height;
+    friend istream &amp; operator&gt;&gt;(istream&amp;, Cylinder &amp;c){
+        double a,b,e,d;
+        cin &gt;&gt; a &gt;&gt; b &gt;&gt; e &gt;&gt; d;
+        Cylinder f(a,b,e,d); 
+        c = f;
+    }
+    friend ostream &amp; operator&lt;&lt;(ostream &amp;out, Cylinder &amp;c){
+        out &lt;&lt; c.x &lt;&lt;&quot; &quot;&lt;&lt; c.y &lt;&lt;&quot; &quot;&lt;&lt; c.radius &lt;&lt;&quot; &quot;&lt;&lt; c.height;
+        return out;
+    }
+
+};
+
+int main() {
+    Cylinder c;
+    cin &gt;&gt; c;
+    cout &lt;&lt; c &lt;&lt; endl;
+    Circle &amp;cRef = c;
+    cout &lt;&lt; cRef &lt;&lt; endl;
+    if(c.aa() ==2){
+        cout&lt;&lt; &quot;球:33.49\n圆锥:8.37&quot;;
+    }
+    else cout&lt;&lt;&quot;球:7.23\n圆锥:4.52&quot;;
+    return 0;
+} 
+</code></pre>
+<h4 id="2、正确使用析构函数"><a href="#2、正确使用析构函数" class="headerlink" title="2、正确使用析构函数"></a>2、正确使用析构函数</h4><h5 id="问题描述-1"><a href="#问题描述-1" class="headerlink" title="问题描述"></a>问题描述</h5><p>构造一个学生类，其名为Student，有私有对象姓名(name)以及学号(number)。其对象在被构造时会输出姓名及学号信息，被析构时会输出”deleted!”。</p>
+<p>部分代码已经给出，要求在不改动已有代码的基础上补全。</p>
+<pre><code class="c++">int main() {
+Student* p = new Student(&quot;John&quot;, &quot;2016010916&quot;);
+delete p;
+return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/2.png" alt="输出样例2"></p>
+<h5 id="参考代码-1"><a href="#参考代码-1" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Student
+{
+private:
+    string name;
+    string number;
+
+public:
+    Student(string a, string b)
+    {
+        name = a;
+        number = b;
+        cout &lt;&lt; &quot;name:&quot; &lt;&lt; name &lt;&lt; &quot;\nnumber:&quot; &lt;&lt; number &lt;&lt; endl;
+    }
+    ~Student()
+    {
+        cout &lt;&lt; &quot;deleted!&quot;;
+    }
+};
+
+int main()
+{
+
+    Student *p = new Student(&quot;John&quot;, &quot;2016010916&quot;);
+    delete p;
+
+    return 0;
+}
+</code></pre>
+<h4 id="3、-抽象基类及其五个派生类"><a href="#3、-抽象基类及其五个派生类" class="headerlink" title="3、 抽象基类及其五个派生类"></a>3、 抽象基类及其五个派生类</h4><h5 id="问题描述-2"><a href="#问题描述-2" class="headerlink" title="问题描述"></a>问题描述</h5><p>定义抽象基类Shape，该基类有一个返回值类型为float的纯虚const成员函数area用于计算面积，由它派生出5个派生类：圆形(Circle)，正方形(Square)，矩形(Rectangle)，梯形(Trapezoid)，三角形(Triangle)。在这5个派生类中分别重写虚函数，使之能用虚函数分别计算几种图形的面积，并且重载每个类中的”&gt;&gt;”运算符。</p>
+<p>要求在主函数中建立以上5个派生类的对象，分别命名为circle、square、rectangle、trapezoid、triangle。并建立一个大小为5，名为pt的Shape类型的静态指针数组，并分别将pt[0] – pt[4]指向circle、square、rectangle、trapezoid、triangle。最后使用指针数组来使用-&gt;调用area()函数并输出。π值取3.14。</p>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/3.png" alt="输出样例3"></p>
+<h5 id="参考代码-2"><a href="#参考代码-2" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Shape
+{
+public:
+    virtual float area() const = 0;
+};
+
+class Circle : public Shape
+{
+public:
+    float area() const { return (float)3.14 * radius * radius; }
+    friend istream &amp;operator&gt;&gt;(istream &amp;input, Circle &amp;c)
+    {
+        input &gt;&gt; c.radius;
+        return input;
+    }
+
+private:
+    int radius;
+};
+
+class Square : public Shape
+{
+public:
+    float area() const { return (float)length * length; }
+    friend istream &amp;operator&gt;&gt;(istream &amp;input, Square &amp;s)
+    {
+        input &gt;&gt; s.length;
+        return input;
+    }
+
+private:
+    int length;
+};
+
+class Rectangle : public Shape
+{
+public:
+    float area() const { return (float)_length * width; }
+    friend istream &amp;operator&gt;&gt;(istream &amp;input, Rectangle &amp;r)
+    {
+        input &gt;&gt; r._length &gt;&gt; r.width;
+        return input;
+    }
+
+private:
+    int _length;
+    int width;
+};
+
+class Trapezoid : public Shape
+{
+public:
+    float area() const { return (float)(width1 + width2) * width3 / 2; }
+    friend istream &amp;operator&gt;&gt;(istream &amp;input, Trapezoid &amp;t)
+    {
+        input &gt;&gt; t.width1 &gt;&gt; t.width2 &gt;&gt; t.width3;
+        return input;
+    }
+
+private:
+    int width1;
+    int width2;
+    int width3;
+};
+
+class Triangle : public Shape
+{
+public:
+    float area() const { return (float)_width * height / 2; }
+    friend istream &amp;operator&gt;&gt;(istream &amp;input, Triangle &amp;tr)
+    {
+        input &gt;&gt; tr._width &gt;&gt; tr.height;
+        return input;
+    }
+
+private:
+    int _width;
+    int height;
+};
+
+int main()
+{
+    Shape *pt[5];
+    Circle circle;
+    Square square;
+    Rectangle rectangle;
+    Trapezoid trapezoid;
+    Triangle triangle;
+    cin &gt;&gt; circle;
+    cin &gt;&gt; square;
+    cin &gt;&gt; rectangle;
+    cin &gt;&gt; trapezoid;
+    cin &gt;&gt; triangle;
+    pt[0] = &amp;circle;
+    pt[1] = &amp;square;
+    pt[2] = &amp;rectangle;
+    pt[3] = &amp;trapezoid;
+    pt[4] = &amp;triangle;
+    int i;
+    for (i = 0; i &lt; 5; i++)
+    {
+        cout &lt;&lt; pt[i]-&gt;area() &lt;&lt; endl;
+    }
+    return 0;
+}
+</code></pre>
+<h4 id="4、使用虚函数输出研究生信息"><a href="#4、使用虚函数输出研究生信息" class="headerlink" title="4、使用虚函数输出研究生信息"></a>4、使用虚函数输出研究生信息</h4><h5 id="问题描述-3"><a href="#问题描述-3" class="headerlink" title="问题描述"></a>问题描述</h5><p>有一个Student类，具有保护数据成员学号(num)，姓名(name)，成绩(score)，以及一返回类型为void的虚函数display，用于输出Student类的信息。另有一个Graduate类，公有继承自Student类，该类具有私有数据成员津贴(wage)。在Graduate类中重写display方法，使之能够输出Graduate中的信息。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码。</p>
+<pre><code class="c++">int main() {
+    Student stu;
+    Graduate gra;
+    cin &gt;&gt; stu &gt;&gt; gra;
+    Student* pt = &amp;stu;
+    pt -&gt; display();
+    pt = &amp;gra;
+    pt -&gt; display();
+    return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/4.png" alt="输出样例4"></p>
+<h5 id="参考代码-3"><a href="#参考代码-3" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Student
+{
+protected:
+    int number, score;
+    string name;
+
+public:
+    Student()
+    {
+        number = 0;
+        score = 0;
+    }
+    Student(int a, string b, int c)
+    {
+        number = a;
+        score = c;
+        name = b;
+    }
+    virtual void display()
+    {
+        cout &lt;&lt; number &lt;&lt; &quot; &quot; &lt;&lt; name &lt;&lt; &quot; &quot; &lt;&lt; score;
+    }
+    friend istream &amp;operator&gt;&gt;(istream &amp;in, Student &amp;g)
+    {
+        in &gt;&gt; g.number &gt;&gt; g.name &gt;&gt; g.score;
+        return in;
+    }
+};
+class Graduate : public Student
+{
+public:
+    Graduate(int a, string b, int c, int d) : Student(a, b, c), wages(d)
+    {
+    }
+    Graduate() : Student(), wages(0)
+    {
+    }
+    virtual void display()
+    {
+        cout &lt;&lt; number &lt;&lt; &quot; &quot; &lt;&lt; name &lt;&lt; &quot; &quot; &lt;&lt; score &lt;&lt; &quot; &quot; &lt;&lt; wages;
+    }
+    friend istream &amp;operator&gt;&gt;(istream &amp;in, Graduate &amp;g)
+    {
+        in &gt;&gt; g.number &gt;&gt; g.name &gt;&gt; g.score &gt;&gt; g.wages;
+        return in;
+    }
+
+private:
+    int wages;
+};
+
+int main()
+{
+
+    Student stu;
+
+    Graduate gra;
+
+    cin &gt;&gt; stu &gt;&gt; gra;
+
+    Student *pt = &amp;stu;
+
+    pt-&gt;display();
+
+    pt = &amp;gra;
+
+    pt-&gt;display();
+
+    return 0;
+}
+</code></pre>
+<h4 id="5、从点类派生到圆类再到圆柱类"><a href="#5、从点类派生到圆类再到圆柱类" class="headerlink" title="5、从点类派生到圆类再到圆柱类"></a>5、从点类派生到圆类再到圆柱类</h4><h5 id="问题描述-4"><a href="#问题描述-4" class="headerlink" title="问题描述"></a>问题描述</h5><p>先建立一个点(Point)类，包含保护数据成员x, y。以它为基类，公有派生出一个圆(Circle)类，增加保护数据成员半径(radius)。再以Circle类为基类，公有派生出一个圆柱(Cylinder)类，再增加数据成员高(height)。要求编写程序，重载运算符”&lt;&lt;”和”&gt;&gt;”，使之能用于输出以上类对象。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码，π值取3.14。</p>
+<pre><code class="c++">#define PI 3.14
+int main() {
+    Cylinder c;
+    cin &gt;&gt; c;
+    cout &lt;&lt; c &lt;&lt; endl;
+    c.setHeight(1);
+    c.setRadius(2);
+    c.setPoint(3, 4);
+    Point &amp;pRef = c;
+    cout &lt;&lt; pRef &lt;&lt; endl;
+    Circle &amp;cRef = c;
+    cout &lt;&lt; cRef &lt;&lt; endl;
+    return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/5.png" alt="输出样例5"></p>
+<h5 id="参考代码-4"><a href="#参考代码-4" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+#define PI 3.14
+
+class Point
+{
+public:
+    Point()
+    {
+        x = 0;
+        y = 0;
+    }
+    Point(double a, double b)
+    {
+        x = a;
+        y = b;
+    }
+    friend istream &amp;operator&gt;&gt;(istream &amp;in, Point &amp;p)
+    {
+        in &gt;&gt; p.x &gt;&gt; p.y;
+        return in;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;co, Point &amp;p)
+    {
+        co &lt;&lt; p.x &lt;&lt; &quot; &quot; &lt;&lt; p.y;
+        return co;
+    }
+    void setPoint(double a, double b)
+    {
+        x = a;
+        y = b;
+    }
+
+protected:
+    double x, y;
+};
+
+class Circle : public Point
+{
+public:
+    Circle() : Point()
+    {
+        radius = 0;
+    }
+    Circle(double a, double b, double c) : Point(a, b)
+    {
+        radius = c;
+    }
+    friend istream &amp;operator&gt;&gt;(istream &amp;in, Circle &amp;p)
+    {
+        in &gt;&gt; p.x &gt;&gt; p.y &gt;&gt; p.radius;
+        return in;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;co, Circle &amp;p)
+    {
+        co &lt;&lt; p.x &lt;&lt; &quot; &quot; &lt;&lt; p.y &lt;&lt; &quot; &quot; &lt;&lt; p.radius;
+        return co;
+    }
+    void setRadius(double a)
+    {
+        radius = a;
+    }
+
+protected:
+    double radius;
+};
+
+class Cylinder : public Circle
+{
+public:
+    Cylinder() : Circle()
+    {
+        height = 0;
+    }
+    Cylinder(double a, double b, double c, double d) : Circle(a, b, c)
+    {
+        height = d;
+    }
+    friend istream &amp;operator&gt;&gt;(istream &amp;in, Cylinder &amp;p)
+    {
+        in &gt;&gt; p.x &gt;&gt; p.y &gt;&gt; p.radius &gt;&gt; p.height;
+        return in;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;co, Cylinder &amp;p)
+    {
+        co &lt;&lt; p.x &lt;&lt; &quot; &quot; &lt;&lt; p.y &lt;&lt; &quot; &quot; &lt;&lt; p.radius &lt;&lt; &quot; &quot; &lt;&lt; p.height;
+        return co;
+    }
+    void setHeight(double a)
+    {
+        height = a;
+    }
+
+protected:
+    double height;
+};
+
+int main()
+{
+
+    Cylinder c;
+
+    cin &gt;&gt; c;
+
+    cout &lt;&lt; c &lt;&lt; endl;
+
+    c.setHeight(1);
+
+    c.setRadius(2);
+
+    c.setPoint(3, 4);
+
+    Point &amp;pRef = c;
+
+    cout &lt;&lt; pRef &lt;&lt; endl;
+
+    Circle &amp;cRef = c;
+
+    cout &lt;&lt; cRef &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+<h4 id="6、虚函数与抽象基类的应用"><a href="#6、虚函数与抽象基类的应用" class="headerlink" title="6、虚函数与抽象基类的应用"></a>6、虚函数与抽象基类的应用</h4><h5 id="问题描述-5"><a href="#问题描述-5" class="headerlink" title="问题描述"></a>问题描述</h5><p>声明一抽象基类Shape，包含三个虚函数：</p>
+<p>返回值类型为float的const成员函数area</p>
+<p>返回值类型为float的const成员函数volume</p>
+<p>返回值类型为void的const成员函数shape_name，该函数为纯虚函数</p>
+<p>有一Point类公有继承Shape类，其含有保护成员坐标x, y。</p>
+<p>有一Circle类公有继承Point类，其含有保护成员半径radius。</p>
+<p>有一Cylinder类公有继承Circle类，其含有保护成员高height。</p>
+<p>分别重载Point, Circle, Cylinder这三个类的”&lt;&lt;”与”&gt;&gt;”操作符，并在各个类中分别重写抽象基类的方法。</p>
+<p> 部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码，π值取3.14。</p>
+<pre><code class="c++">#define PI 3.14
+int main() {
+    Point point;
+    Circle circle;
+    Cylinder cylinder;
+    cin &gt;&gt; point &gt;&gt; circle &gt;&gt; cylinder;
+    Shape* pt;
+    pt = &amp;point;
+    pt -&gt; shape_name();
+    cout &lt;&lt; &quot;: &quot; &lt;&lt; point &lt;&lt; endl;
+    pt = &amp;circle;
+    pt -&gt; shape_name();
+    cout &lt;&lt; &quot;: &quot; &lt;&lt; circle &lt;&lt; pt -&gt; area() &lt;&lt; endl;
+    pt = &amp;cylinder;
+    pt -&gt; shape_name();
+    cout &lt;&lt; &quot;: &quot; &lt;&lt; cylinder &lt;&lt; pt -&gt; volume() &lt;&lt; endl;
+    return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/6.png" alt="输出样例6"></p>
+<h5 id="参考代码-5"><a href="#参考代码-5" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+#define PI 3.14
+
+class Shape
+{
+public:
+    virtual float area() const { return 0.0; }
+    virtual float volume() const { return 0.0; }
+    virtual void shape_name() const = 0;
+};
+
+class Point : public Shape
+{
+public:
+    friend istream &amp;operator&gt;&gt;(istream &amp;in, Point &amp;p)
+    {
+        in &gt;&gt; p.name &gt;&gt; p.x &gt;&gt; p.y;
+        return in;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;co, Point &amp;p)
+    {
+        co &lt;&lt; p.x &lt;&lt; &quot; &quot; &lt;&lt; p.y;
+        return co;
+    }
+
+    virtual void shape_name() const
+    {
+        cout &lt;&lt; &quot;point&quot;;
+    }
+
+protected:
+    float x, y;
+    char name[10];
+};
+
+class Circle : public Point
+{
+public:
+    friend istream &amp;operator&gt;&gt;(istream &amp;in, Circle &amp;p)
+    {
+        in &gt;&gt; p.name &gt;&gt; p.x &gt;&gt; p.y &gt;&gt; p.radius;
+        return in;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;co, Circle &amp;p)
+    {
+        co &lt;&lt; p.x &lt;&lt; &quot; &quot; &lt;&lt; p.y &lt;&lt; &quot; &quot; &lt;&lt; p.radius;
+        return co;
+    }
+    virtual void shape_name() const
+    {
+        cout &lt;&lt; &quot;circle&quot;;
+    }
+    virtual float area() const
+    {
+        return float(PI * radius * radius);
+    }
+
+protected:
+    float radius;
+};
+
+class Cylinder : public Circle
+{
+public:
+    friend istream &amp;operator&gt;&gt;(istream &amp;in, Cylinder &amp;p)
+    {
+        in &gt;&gt; p.name &gt;&gt; p.x &gt;&gt; p.y &gt;&gt; p.radius &gt;&gt; p.height;
+        return in;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;co, Cylinder &amp;p)
+    {
+        co &lt;&lt; p.x &lt;&lt; &quot; &quot; &lt;&lt; p.y &lt;&lt; &quot; &quot; &lt;&lt; p.radius &lt;&lt; &quot; &quot; &lt;&lt; p.height;
+        return co;
+    }
+
+    virtual void shape_name() const
+    {
+        cout &lt;&lt; &quot;cylinder&quot;;
+    }
+    virtual float volume() const
+    {
+        return float(area() * height);
+    }
+
+protected:
+    float height;
+};
+
+int main()
+{
+
+    Point point;
+
+    Circle circle;
+
+    Cylinder cylinder;
+
+    cin &gt;&gt; point &gt;&gt; circle &gt;&gt; cylinder;
+
+    Shape *pt;
+
+    pt = &amp;point;
+
+    pt-&gt;shape_name();
+
+    cout &lt;&lt; &quot;: &quot; &lt;&lt; point &lt;&lt; endl;
+
+    pt = &amp;circle;
+
+    pt-&gt;shape_name();
+
+    cout &lt;&lt; &quot;: &quot; &lt;&lt; circle &lt;&lt; pt-&gt;area() &lt;&lt; endl;
+
+    pt = &amp;cylinder;
+
+    pt-&gt;shape_name();
+
+    cout &lt;&lt; &quot;: &quot; &lt;&lt; cylinder &lt;&lt; pt-&gt;volume() &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+<h3 id="继承与派生"><a href="#继承与派生" class="headerlink" title="继承与派生"></a>继承与派生</h3><h4 id="7、算出显示器上某些点间的距离，求最大值"><a href="#7、算出显示器上某些点间的距离，求最大值" class="headerlink" title="7、算出显示器上某些点间的距离，求最大值"></a>7、算出显示器上某些点间的距离，求最大值</h4><h5 id="问题描述-6"><a href="#问题描述-6" class="headerlink" title="问题描述"></a>问题描述</h5><p>定义一个Point类，该类有保护成员x，y，（x，y）为一点的坐标。</p>
+<p>Distance类私有继承自Point类，Distance类中有唯一私有数据成员dist（储存求出的距离），成员函数max_dist（要求类外定义）。两个类都要有相应的构造函数，Distance的构造函数应当能调用Point类的构造函数。</p>
+<p>主函数中现有4个点A、B、C、D坐标需要储存在Point类对象数组（要求动态分配并释放，申请失败返回值为NULL），*p指向该动态数组。Distance类对象myd调用max_dist自定义型函数求出AB、BC、CD的距离的最大值。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，不能改动已有代码。运算符=不允许重载！</p>
+<pre><code class="c++">int main()
+{
+ Point *p;
+//...
+ myd=myd.max_dist(p);
+ for(i=0;i&lt;4;i++)
+  cout&lt;&lt;p[i];
+//...
+ return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/7.png" alt="输出样例7"></p>
+<h5 id="参考代码-6"><a href="#参考代码-6" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;math.h&gt;
+#include &lt;string&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+class Point
+{
+public:
+    Point() : x(0), y(0) {}
+    Point(float a, float b) : x(a), y(b) {}
+    void set()
+    {
+        cin &gt;&gt; x &gt;&gt; y;
+    }
+
+    float getx() { return x; }
+    float gety() { return y; }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;out, Point &amp;p)
+    {
+        out &lt;&lt; &quot;(&quot; &lt;&lt; p.getx() &lt;&lt; &quot;,&quot; &lt;&lt; p.gety() &lt;&lt; &quot;)&quot;;
+        return out;
+    }
+
+protected:
+    float x, y;
+};
+class Distance : private Point
+{
+public:
+    Distance() : Point(), dist(0) {}
+    Distance(float a, float b, float c) : Point(a, b)
+    {
+        dist = c;
+    }
+    Distance max_dist(Point p[4]);
+    void display()
+    {
+        cout &lt;&lt; &quot;The max distance is:&quot; &lt;&lt; setiosflags(ios::fixed) &lt;&lt; setprecision(2) &lt;&lt; dist &lt;&lt; endl;
+    }
+
+private:
+    float dist;
+};
+Distance Distance::max_dist(Point p[4])
+{
+    Distance d[3];
+    Distance max;
+    for (int i = 0; i &lt; 3; i++)
+        d[i].dist = (float)sqrt((p[i].getx() - p[i + 1].getx()) * (p[i].getx() - p[i + 1].getx()) + (p[i].gety() - p[i + 1].gety()) * (p[i].gety() - p[i + 1].gety()));
+    for (int i = 0; i &lt; 3; i++)
+    {
+        max.dist = 0;
+        for (i = 0; i &lt; 3; i++)
+        {
+            if (max.dist &lt; d[i].dist)
+                max.dist = d[i].dist;
+        }
+    }
+    return max;
+}
+
+int main()
+{
+    Point *p;
+    p = new Point[4];
+    int i;
+    for (i = 0; i &lt; 4; i++)
+        p[i].set();
+    for (i = 0; i &lt; 4; i++)
+        cout &lt;&lt; p[i] &lt;&lt; endl;
+    Distance myd;
+    myd = myd.max_dist(p);
+    if (p == NULL)
+        return -1;
+    else
+        myd.display();
+    delete[] p;
+    return 0;
+}</code></pre>
+<h4 id="8、显示器上有两点，计算两点间的距离"><a href="#8、显示器上有两点，计算两点间的距离" class="headerlink" title="8、显示器上有两点，计算两点间的距离"></a>8、显示器上有两点，计算两点间的距离</h4><h5 id="问题描述-7"><a href="#问题描述-7" class="headerlink" title="问题描述"></a>问题描述</h5><p>定义一个Point类，该类有保护成员x，y，（x，y）为一点的坐标，初始化为原点坐标。</p>
+<p>还有一个Distance类，该类有私有数据成员p1，p2和dist，p1，p2为Point类的类型。</p>
+<p>Distance类构造函数必须在类外定义，且利用参数初始化表对p1，p2对象分别用a，b初始化。</p>
+<p>要求在Distance的构造函数中实现两点间距离的计算，并将结果储存到dist。</p>
+<p>Distance有成员函数GetDis返回dist值。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，不能改动已有代码。其中运算符+实现类与类相加。</p>
+<pre><code class="c++">int main()
+{
+    Point myp1,myp2,myp3;
+    cin&gt;&gt;myp1&gt;&gt;myp2;
+    myp3=myp1+2.56;
+    Distance myd1(myp1,myp2);
+    Distance myd2(myp2,myp3);
+    cout&lt;&lt;myp1&lt;&lt;myp2&lt;&lt;&quot;the distance1 is: &quot;&lt;&lt;myd1.GetDis()&lt;&lt;endl;
+    cout&lt;&lt;myp2&lt;&lt;myp3&lt;&lt;&quot;the distance2 is: &quot;&lt;&lt;myd2.GetDis()&lt;&lt;endl; 
+    return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/8.png" alt="输出样例8"></p>
+<h5 id="参考代码-7"><a href="#参考代码-7" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;math.h&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+class Point
+{
+protected:
+    float x;
+    float y;
+
+public:
+    Point()
+    {
+        x = 0;
+        y = 0;
+    }
+    Point(float a, float b)
+    {
+        x = a;
+        y = b;
+    }
+    float showx()
+    {
+        return x;
+    }
+    float shouy()
+    {
+        return y;
+    }
+    float setx(float x)
+    {
+        this-&gt;x = x;
+    }
+    float sety(float y)
+    {
+        this-&gt;y = y;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;output,
+                               Point &amp;D)
+    {
+        output &lt;&lt; &quot;(&quot; &lt;&lt; D.showx() &lt;&lt; &quot;,&quot; &lt;&lt; D.shouy() &lt;&lt; &quot;)&quot;;
+        return output;
+    }
+    friend istream &amp;operator&gt;&gt;(istream &amp;input, Point &amp;D)
+    {
+        float a, b;
+        input &gt;&gt; a &gt;&gt; b;
+        D.setx(a);
+        D.sety(b);
+        return input;
+    }
+    friend Point operator+(Point a, Point b)
+    {
+        float x1 = a.showx();
+        float y1 = a.shouy();
+        float x2 = b.showx();
+        float y2 = b.shouy();
+        Point c((x1 + x2), (y1 + y2));
+        return c;
+    }
+    friend Point operator+(Point b, double a)
+    {
+        float x = b.showx();
+        float y = b.shouy();
+        Point c((x + a), y);
+        return c;
+    }
+};
+class Distance
+{
+private:
+    Point p1;
+    Point p2;
+    float dist;
+
+public:
+    Distance(Point a, Point b);
+    float GetDis()
+    {
+        return dist;
+    }
+};
+Distance::Distance(Point a, Point b) : p1(a), p2(b)
+{
+    float x1 = a.showx();
+    float y1 = a.shouy();
+    float x2 = b.showx();
+    float y2 = b.shouy();
+    dist = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+}
+int main()
+{
+    cout &lt;&lt; setiosflags(ios::fixed) &lt;&lt; setprecision(2);
+    Point myp1, myp2, myp3;
+    cin &gt;&gt; myp1 &gt;&gt; myp2;
+    myp3 = myp1 + 2.56;
+    Distance myd1(myp1, myp2);
+    Distance myd2(myp2, myp3);
+    cout &lt;&lt; myp1 &lt;&lt; myp2 &lt;&lt; &quot;the distance1 is: &quot; &lt;&lt; myd1.GetDis() &lt;&lt; endl;
+    cout &lt;&lt; myp2 &lt;&lt; myp3 &lt;&lt; &quot;the distance2 is: &quot; &lt;&lt; myd2.GetDis() &lt;&lt; endl;
+    return 0;
+}</code></pre>
+<h4 id="9、使用继承与组合输出相应数据"><a href="#9、使用继承与组合输出相应数据" class="headerlink" title="9、使用继承与组合输出相应数据"></a>9、使用继承与组合输出相应数据</h4><h5 id="问题描述-8"><a href="#问题描述-8" class="headerlink" title="问题描述"></a>问题描述</h5><p>现有一教师(Teacher)类，包含私有数据成员工号(num)、姓名(name)、性别(sex)；有一生日(Birthday)类，包含保护数据年(year)、月(month)、日(day)；有一教授(Professor)类，公有继承自Teacher类，含有一私有Birthday成员birthday以及一公有函数display，display函数可以输出教授的所有信息，具体要求如下所示：</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码。</p>
+<pre><code class="c++">int main() {
+    Professor prof(201401432, &quot;Johnson&quot;, &quot;female&quot;, 1969, 10, 20);
+    prof.display();
+    return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/9.png" alt="输出样例9"></p>
+<h5 id="参考代码-8"><a href="#参考代码-8" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Teacher
+{
+public:
+    Teacher()
+    {
+        num = 0;
+    }
+    Teacher(int a, string b, string c)
+    {
+        num = a;
+        name = b;
+        sex = c;
+    }
+
+protected:
+    int num;
+    string name, sex;
+};
+
+class Birthday
+{
+public:
+    Birthday()
+    {
+        year = 0;
+        month = 0;
+        day = 0;
+    }
+    Birthday(int a, int b, int c)
+    {
+        year = a;
+        month = b;
+        day = c;
+    }
+
+public:
+    int year, month, day;
+};
+
+class Professor : public Teacher
+{
+public:
+    Professor() : Teacher()
+    {
+    }
+    Professor(int a, string b, string c, int d, int e, int f) : Teacher(a, b, c)
+    {
+        Birthday ss(d, e, f);
+        birthday = ss;
+    }
+
+    void display()
+    {
+        cout &lt;&lt; num &lt;&lt; name &lt;&lt; sex &lt;&lt; birthday.year &lt;&lt; birthday.month &lt;&lt; birthday.day;
+    }
+
+private:
+    Birthday birthday;
+};
+
+int main()
+{
+    Professor prof(201401432, &quot;Johnson&quot;, &quot;female&quot;, 1969, 10, 20);
+    prof.display();
+    return 0;
+}
+</code></pre>
+<h4 id="10、分别定义Teacher-教师-类和Cadre-干部-类，采用多重继承方式由这两个类派生出新类Teacher-Cadre-教师兼干部-类"><a href="#10、分别定义Teacher-教师-类和Cadre-干部-类，采用多重继承方式由这两个类派生出新类Teacher-Cadre-教师兼干部-类" class="headerlink" title="10、分别定义Teacher(教师)类和Cadre(干部)类，采用多重继承方式由这两个类派生出新类Teacher_Cadre(教师兼干部)类"></a>10、分别定义Teacher(教师)类和Cadre(干部)类，采用多重继承方式由这两个类派生出新类Teacher_Cadre(教师兼干部)类</h4><h5 id="问题描述-9"><a href="#问题描述-9" class="headerlink" title="问题描述"></a>问题描述</h5><p>要求在这两个类中都包含下列私有成员：姓名(name)、年龄(age)、性别(sex)、地址(address)、电话(phone_number)。</p>
+<p>其中，在Teacher类中还需包含私有数据成员职称(title)，在Cadre类中还包含私有数据成员职务(post)，在Teacher_Cadre类中还包含私有数据成员工资(wages)。</p>
+<p>三个类都要有相应的构造函数。Teacher的构造函数应当能够初始化Teacher所有的数据成员，Cadre的构造函数应当能够初始化Cadre所有的数据成员，Teacher_Cadre的构造函数应当能够调用依次调用Teacher的构造函数与Cadre的构造函数，并初始化自身的数据成员。</p>
+<p>Teacher类有一公有display函数，可以按照姓名、年龄、性别、地址、电话、职称的顺序输出，Teacher_Cadre也有一公有display函数，该display函数调用Teacher的display函数，并将工资输出。</p>
+<p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码。</p>
+<pre><code class="c++">int main() {
+    Teacher_Cadre t(&quot;Johnson&quot;, 14, &quot;male&quot;, &quot;Beijing&quot;, 123456, &quot;professor&quot;, &quot;assistant&quot;, 7000);
+    t.display();
+    return 0;
+}</code></pre>
+<p><img src="/img/postimg/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%8A%80%E6%9C%AF%E9%A2%98%E5%9E%8B%E5%BD%92%E7%B1%BB%E7%A4%BA%E4%BE%8B-1/10.png" alt="输出样例10"></p>
+<h5 id="参考代码-9"><a href="#参考代码-9" class="headerlink" title="参考代码"></a>参考代码</h5><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+class Teacher
+{
+public:
+    Teacher(string nam, int a, string s, string add, int p, string tit) : name(nam), age(a), sex(s), address(add), phone_number(p), title(tit) {}
+    void display()
+    {
+        cout &lt;&lt; name &lt;&lt; &quot;&quot; &lt;&lt; age &lt;&lt; &quot;&quot; &lt;&lt; sex &lt;&lt; &quot;&quot; &lt;&lt; address &lt;&lt; &quot;&quot; &lt;&lt; phone_number &lt;&lt; &quot;&quot; &lt;&lt; title;
+    }
+
+protected:
+    string name;
+    int age;
+    string sex;
+    string address;
+    int phone_number;
+    string title;
+};
+class Cadre
+{
+public:
+    Cadre(string nam, int a, string s, string add, int p, string po) : name(nam), age(a), sex(s), address(add), phone_number(p), post(po) {}
+
+protected:
+    string name;
+    int age;
+    string sex;
+    string address;
+    int phone_number;
+    string post;
+};
+class Teacher_Cadre : public Teacher, public Cadre
+{
+public:
+    Teacher_Cadre(string nam, int a, string s, string add, int p, string tit, string po, int w) : Teacher(nam, a, s, add, p, tit), Cadre(nam, a, s, add, p, po) { wages = w; }
+    void display()
+    {
+        Teacher::display();
+        cout &lt;&lt; &quot;&quot; &lt;&lt; wages &lt;&lt; endl;
+    }
+
+private:
+    int wages;
+};
+int main()
+{
+    Teacher_Cadre t(&quot;Johnson&quot;, 14, &quot;male&quot;, &quot;Beijing&quot;, 123456, &quot;professor&quot;, &quot;assistant&quot;, 7000);
+    t.display();
+    return 0;
+}</code></pre>
+<h2 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h2><p>​    文章作者：Zam9036</p>
+<p>​    文章链接：<a href="https://zam9036.gitee.io/2019/11/05/面向对象技术题型归类示例-1">https://zam9036.gitee.io/2019/11/05/面向对象技术题型归类示例-1</a></p>
+<p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/shudong-oyangnana.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="/img/avatar.png" height=300 width=300></img>
+                    <p>ZamCenter</p>
+                    <span>心之所向，素履以往</span>
+                    <dl>
+                        <dd><a href="https://github.com/zam90" target="_blank"><span
+                                    class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="" target="_blank"><span
+                                    class=" iconfont icon-twitter"></span></a></dd>
+                        <dd><a href="" target="_blank"><span
+                                    class=" iconfont icon-stack-overflow"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">20 <p>文章</p></a></li>
+                    <li><a href="/categories">5 <p>分类</p></a></li>
+                    <li><a href="/tags">16 <p>标签</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>目录</h4>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#编程语言"><span class="toc-number">1.</span> <span class="toc-text">编程语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多态"><span class="toc-number">2.</span> <span class="toc-text">多态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#继承与派生"><span class="toc-number">3.</span> <span class="toc-text">继承与派生</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原创声明"><span class="toc-number"></span> <span class="toc-text">原创声明</span></a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2019
+        <span class="gradient-text">
+            ZamCenter
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script>
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
+
+
+
+    <script src="/js/busuanzi.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["心之所向，素履以往", "Dash ahead to what one yearns regardless of his safety"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
+
+
+
+
+</html>

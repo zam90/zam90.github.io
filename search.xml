@@ -233,8 +233,10 @@ int main()
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>数据结构&amp;算法</tag>
-        <tag>课程实验&amp;项目</tag>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>课程实验</tag>
+        <tag>项目</tag>
       </tags>
   </entry>
   <entry>
@@ -360,8 +362,10 @@ bool checkQueens(int i ,int j) {
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>数据结构&amp;算法</tag>
-        <tag>课程实验&amp;项目</tag>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>课程实验</tag>
+        <tag>项目</tag>
       </tags>
   </entry>
   <entry>
@@ -1386,7 +1390,8 @@ deploy:
         <category>技术Demo</category>
       </categories>
       <tags>
-        <tag>Hexo&amp;MarkDown</tag>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -1432,7 +1437,7 @@ npm install hexo-generator-searchdb --save</code></pre>
         <category>问题记录</category>
       </categories>
       <tags>
-        <tag>Hexo&amp;MarkDown</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1755,8 +1760,10 @@ int main()
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>数据结构&amp;算法</tag>
-        <tag>课程实验&amp;项目</tag>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>课程实验</tag>
+        <tag>项目</tag>
       </tags>
   </entry>
   <entry>
@@ -3446,7 +3453,7 @@ int main()
         <category>语法指令</category>
       </categories>
       <tags>
-        <tag>Linux&amp;服务器</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -3471,7 +3478,7 @@ cd ../path      //跳转到上层目录中的path目录中，“..”表示上�
         <category>语法指令</category>
       </categories>
       <tags>
-        <tag>Linux&amp;服务器</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -3868,8 +3875,10 @@ int main()
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>数据结构&amp;算法</tag>
-        <tag>课程实验&amp;项目</tag>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>课程实验</tag>
+        <tag>项目</tag>
       </tags>
   </entry>
   <entry>
@@ -3889,7 +3898,8 @@ int main()
         <category>问题记录</category>
       </categories>
       <tags>
-        <tag>Linux&amp;服务器</tag>
+        <tag>Linux</tag>
+        <tag>服务器</tag>
       </tags>
   </entry>
   <entry>
@@ -3917,7 +3927,8 @@ int main()
         <category>语法指令</category>
       </categories>
       <tags>
-        <tag>Linux&amp;服务器</tag>
+        <tag>Linux</tag>
+        <tag>服务器</tag>
       </tags>
   </entry>
   <entry>
@@ -3943,7 +3954,8 @@ int main()
         <category>技术Demo</category>
       </categories>
       <tags>
-        <tag>Hexo&amp;MarkDown</tag>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -4136,7 +4148,8 @@ cond(no)-&gt;sub-&gt;io</code></pre>
         <category>语法指令</category>
       </categories>
       <tags>
-        <tag>Hexo&amp;MarkDown</tag>
+        <tag>Hexo</tag>
+        <tag>MarkDown</tag>
       </tags>
   </entry>
   <entry>
@@ -4177,7 +4190,8 @@ cond(no)-&gt;sub-&gt;io</code></pre>
         <category>技术Demo</category>
       </categories>
       <tags>
-        <tag>Hexo&amp;MarkDown</tag>
+        <tag>Hexo</tag>
+        <tag>MarkDown</tag>
       </tags>
   </entry>
   <entry>
@@ -4204,7 +4218,7 @@ theme: obsidian
         <category>技术Demo</category>
       </categories>
       <tags>
-        <tag>Hexo&amp;MarkDown</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -4291,7 +4305,8 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
         <category>技术Demo</category>
       </categories>
       <tags>
-        <tag>Hexo&amp;MarkDown</tag>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -4305,21 +4320,6 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
       <categories>
         <category>文章随笔</category>
       </categories>
-  </entry>
-  <entry>
-    <title>标签Tags|Zam9036的博客</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>分类Categories|Zam9036博客</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>时间轴Archives|Zam9036博客</title>
-    <url>/archives/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>关于About|Zam9036博客</title>
@@ -4344,5 +4344,20 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
 <h3 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a><code>原创声明</code></h3><p>​    博客作者：<b style="color: #42d2ca"> <strong>Zam9036</strong> </b></p>
 <p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam90.github.io/" target="_blank" rel="noopener">Zam9036的博客</a>！</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>标签Tags|Zam9036的博客</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>时间轴Archives|Zam9036博客</title>
+    <url>/archives/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>分类Categories|Zam9036博客</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>

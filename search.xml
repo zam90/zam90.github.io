@@ -4,27 +4,38 @@
     <title>图解数据结构—冒泡排序|Zam9036博客</title>
     <url>/2020/01/10/21-Graphical-data-structure%E2%80%94bubble-sort/</url>
     <content><![CDATA[<h1 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h1><p>冒泡排序重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从从Z到A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换为止，也就是说该元素列已经排序完成为止。</p>
-<h1 id="核心原理"><a href="#核心原理" class="headerlink" title="核心原理"></a>核心原理</h1><p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/1.jpg" alt="冒泡排序核心原理1"></p>
+<h1 id="核心原理"><a href="#核心原理" class="headerlink" title="核心原理"></a>核心原理</h1><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/1.jpg" alt="冒泡排序核心原理1" style="zoom:80%;" />
+
 <p>首先，我们将天平放在序列的右端，并比较天平左右的数字。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/2.jpg" alt="冒泡排序核心原理2"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/2.jpg" alt="冒泡排序核心原理2" style="zoom:80%;" />
+
 <p>在这种情况下，我们来比较7和6。比较后如果右边的数字较小，则被交换。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/3.jpg" alt="冒泡排序核心原理3"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/3.jpg" alt="冒泡排序核心原理3" style="zoom:80%;" />
+
 <p>比较完成后，逐一移动天平继续比较。这次6大于4，所以数字不交换。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/4.jpg" alt="冒泡排序核心原理4"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/4.jpg" alt="冒泡排序核心原理4" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次4小于8，交换4和8。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/5.jpg" alt="冒泡排序核心原理5"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/5.jpg" alt="冒泡排序核心原理5" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次4大于2，所以数字不交换。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/6.jpg" alt="冒泡排序核心原理6"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/6.jpg" alt="冒泡排序核心原理6" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次2大于1，所以数字不交换。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/7.jpg" alt="冒泡排序核心原理7"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/7.jpg" alt="冒泡排序核心原理7" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次1小于3，交换1和3。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/8.jpg" alt="冒泡排序核心原理8"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/8.jpg" alt="冒泡排序核心原理8" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次1小于9，交换1和9。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/9.jpg" alt="冒泡排序核心原理9"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/9.jpg" alt="冒泡排序核心原理9" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次1小于5，交换1和5。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/10.jpg" alt="冒泡排序核心原理10"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/10.jpg" alt="冒泡排序核心原理10" style="zoom:80%;" />
+
 <p>此时天平到达序列最左端。在一系列操作中，序列中最小的数字已经移动到最左端。保持该数字位置不再改变，天平返回右端。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/11.jpg" alt="冒泡排序核心原理11"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/11.jpg" alt="冒泡排序核心原理11" style="zoom:80%;" />
+
 <p>重复相同的操作，直到所有数字都被排序……</p>
 <h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
 <p>部分资料来自：<a href="http://algorithm.wiki" target="_blank" rel="noopener">http://algorithm.wiki</a></p>
@@ -271,9 +282,9 @@ int main()
         <category>技术Demo</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>数据结构</tag>
         <tag>算法</tag>
-        <tag>C++</tag>
         <tag>课程实验</tag>
         <tag>项目</tag>
       </tags>
@@ -400,9 +411,9 @@ bool checkQueens(int i ,int j) {
         <category>技术Demo</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>数据结构</tag>
         <tag>算法</tag>
-        <tag>C++</tag>
         <tag>课程实验</tag>
         <tag>项目</tag>
       </tags>
@@ -1798,9 +1809,9 @@ int main()
         <category>技术Demo</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>数据结构</tag>
         <tag>算法</tag>
-        <tag>C++</tag>
         <tag>课程实验</tag>
         <tag>项目</tag>
       </tags>
@@ -3913,9 +3924,9 @@ int main()
         <category>技术Demo</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>数据结构</tag>
         <tag>算法</tag>
-        <tag>C++</tag>
         <tag>课程实验</tag>
         <tag>项目</tag>
       </tags>
@@ -4362,11 +4373,6 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
       </categories>
   </entry>
   <entry>
-    <title>标签Tags|Zam9036的博客</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>时间轴Archives|Zam9036博客</title>
     <url>/archives/index.html</url>
     <content><![CDATA[]]></content>
@@ -4399,5 +4405,10 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
 <h3 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a><code>原创声明</code></h3><p>​    博客作者：<b style="color: #42d2ca"> <strong>Zam9036</strong> </b></p>
 <p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam90.github.io/" target="_blank" rel="noopener">Zam9036的博客</a>！</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>标签Tags|Zam9036的博客</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>

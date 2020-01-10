@@ -68,7 +68,7 @@
             animation-duration: 1.2s;
             background-image: 
                 radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
-                url(/img/cover1.jpg);">
+                url(/img/cover6.jpg);">
         </div>
         <div class="else">
             <p class="animated fadeInDown">
@@ -126,27 +126,38 @@
     <div class='main'>
         <div class="content markdown animated fadeIn">
             <h1 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h1><p>冒泡排序重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从从Z到A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换为止，也就是说该元素列已经排序完成为止。</p>
-<h1 id="核心原理"><a href="#核心原理" class="headerlink" title="核心原理"></a>核心原理</h1><p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/1.jpg" alt="冒泡排序核心原理1"></p>
+<h1 id="核心原理"><a href="#核心原理" class="headerlink" title="核心原理"></a>核心原理</h1><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/1.jpg" alt="冒泡排序核心原理1" style="zoom:80%;" />
+
 <p>首先，我们将天平放在序列的右端，并比较天平左右的数字。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/2.jpg" alt="冒泡排序核心原理2"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/2.jpg" alt="冒泡排序核心原理2" style="zoom:80%;" />
+
 <p>在这种情况下，我们来比较7和6。比较后如果右边的数字较小，则被交换。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/3.jpg" alt="冒泡排序核心原理3"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/3.jpg" alt="冒泡排序核心原理3" style="zoom:80%;" />
+
 <p>比较完成后，逐一移动天平继续比较。这次6大于4，所以数字不交换。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/4.jpg" alt="冒泡排序核心原理4"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/4.jpg" alt="冒泡排序核心原理4" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次4小于8，交换4和8。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/5.jpg" alt="冒泡排序核心原理5"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/5.jpg" alt="冒泡排序核心原理5" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次4大于2，所以数字不交换。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/6.jpg" alt="冒泡排序核心原理6"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/6.jpg" alt="冒泡排序核心原理6" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次2大于1，所以数字不交换。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/7.jpg" alt="冒泡排序核心原理7"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/7.jpg" alt="冒泡排序核心原理7" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次1小于3，交换1和3。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/8.jpg" alt="冒泡排序核心原理8"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/8.jpg" alt="冒泡排序核心原理8" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次1小于9，交换1和9。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/9.jpg" alt="冒泡排序核心原理9"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/9.jpg" alt="冒泡排序核心原理9" style="zoom:80%;" />
+
 <p>将天平向左移动一个位置，继续比较。这次1小于5，交换1和5。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/10.jpg" alt="冒泡排序核心原理10"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/10.jpg" alt="冒泡排序核心原理10" style="zoom:80%;" />
+
 <p>此时天平到达序列最左端。在一系列操作中，序列中最小的数字已经移动到最左端。保持该数字位置不再改变，天平返回右端。</p>
-<p><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure%E2%80%94bubble-sort/11.jpg" alt="冒泡排序核心原理11"></p>
+<img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/11.jpg" alt="冒泡排序核心原理11" style="zoom:80%;" />
+
 <p>重复相同的操作，直到所有数字都被排序……</p>
 <h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
 <p>部分资料来自：<a href="http://algorithm.wiki" target="_blank" rel="noopener">http://algorithm.wiki</a></p>

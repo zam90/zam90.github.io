@@ -1,15 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>22-Graphical-data-structure-selection-sort</title>
+    <title>图解数据结构—选择排序|Zam9036博客</title>
     <url>/2020/01/11/22-Graphical-data-structure-selection-sort/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h1><p>选择排序（Selection sort）是一种简单直观的排序算法。它的工作原理是：第一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，然后再从剩余的未排序元素中寻找到最小（大）元素，然后放到已排序的序列的末尾。以此类推，直到全部待排序的数据元素的个数为零。选择排序是不稳定的排序方法。</p>
+<h1 id="图解核心原理"><a href="#图解核心原理" class="headerlink" title="图解核心原理"></a>图解核心原理</h1><img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/1.jpg" alt="选择排序核心原理1" style="zoom:80%;" />
+
+<p>假设我们需要对上图数列进行排序。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/2.jpg" alt="选择排序核心原理2" style="zoom:80%;" />
+
+<p>首先，我们需要对数列进行线性搜索(从头到尾逐个元素搜索)，找出最小的元素值(最小为1)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/3.jpg" alt="选择排序核心原理3" style="zoom:80%;" />
+
+<p>将值最小的元素(最小为1)与数列最左端的元素(原来数列最左端元素为6)互换。如果最小值已经在最左端，则不需要执行任何操作。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/4.jpg" alt="选择排序核心原理4" style="zoom:80%;" />
+
+<p>保持已经排好的元素位置不变(即1的位置不再改变)，在剩余元素中找出值最小的元素(最小为2)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/5.jpg" alt="选择排序核心原理5" style="zoom:80%;" />
+
+<p>将此时值最小的元素(最小为2)与未排序的数列最左端的元素(原来未排序的数列最左端元素为6)互换。同样，如果最小值已经在最左端，则不需要执行任何操作。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/6.jpg" alt="选择排序核心原理6" style="zoom:80%;" />
+
+<p>继续保持已经排好的元素位置不变(即1、2的位置不再改变)，在剩余元素中找出值最小的元素(最小为3)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/7.jpg" alt="选择排序核心原理7" style="zoom:80%;" />
+
+<p>将此时值最小的元素(最小为3)与未排序的数列最左端的元素(原来未排序的数列最左端元素为7)互换。同样，如果最小值已经在最左端，则不需要执行任何操作。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/8.jpg" alt="选择排序核心原理8" style="zoom:80%;" />
+
+<p>继续保持已经排好的元素位置不变(即1、2、3的位置不再改变)，在剩余元素中找出值最小的元素(最小为4)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/9.jpg" alt="选择排序核心原理9" style="zoom:80%;" />
+
+<p>将此时值最小的元素(最小为4)与未排序的数列最左端的元素(原来未排序的数列最左端元素为8)互换。同样，如果最小值已经在最左端，则不需要执行任何操作。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/10.jpg" alt="选择排序核心原理10" style="zoom:80%;" />
+
+<p>继续保持已经排好的元素位置不变(即1、2、3、4的位置不再改变)，在剩余元素中找出值最小的元素(最小为5)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/11.jpg" alt="选择排序核心原理11" style="zoom:80%;" />
+
+<p>将此时值最小的元素(最小为5)与未排序的数列最左端的元素(原来未排序的数列最左端元素为9)互换。同样，如果最小值已经在最左端，则不需要执行任何操作。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/12.jpg" alt="选择排序核心原理12" style="zoom:80%;" />
+
+<p>继续保持已经排好的元素位置不变(即1、2、3、4、5的位置不再改变)，在剩余元素中找出值最小的元素(最小为6)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/13.jpg" alt="选择排序核心原理13" style="zoom:80%;" />
+
+<p>将此时值最小的元素(最小为6)与未排序的数列最左端的元素(原来未排序的数列最左端元素为7)互换。同样，如果最小值已经在最左端，则不需要执行任何操作。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/14.jpg" alt="选择排序核心原理14" style="zoom:80%;" />
+
+<p>继续保持已经排好的元素位置不变(即1、2、3、4、5、6的位置不再改变)，在剩余元素中找出值最小的元素(最小为7)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/15.jpg" alt="选择排序核心原理15" style="zoom:80%;" />
+
+<p>将此时值最小的元素(最小为7)与未排序的数列最左端的元素(原来未排序的数列最左端元素为9)互换。同样，如果最小值已经在最左端，则不需要执行任何操作。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/16.jpg" alt="选择排序核心原理16" style="zoom:80%;" />
+
+<p>继续保持已经排好的元素位置不变(即1、2、3、4、5、6、7的位置不再改变)，在剩余元素中找出值最小的元素(最小为8)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/17.jpg" alt="选择排序核心原理17" style="zoom:80%;" />
+
+<p>将此时值最小的元素(最小为8)已经在最左端，则不需要执行任何操作。</p>
+<img src="https://zam9036.gitee.io/img/postimg/22-Graphical-data-structure-selection-sort/18.jpg" alt="选择排序核心原理18" style="zoom:80%;" />
+
+<p>继续保持已经排好的元素位置不变(即1、2、3、4、5、6、7、8的位置不再改变)，在剩余元素中找出值最小的元素(最小为9)。将此时值最小的元素(最小为9)已经在最左端，则不需要执行任何操作。</p>
+<p>现在，数列的顺序已经排好。</p>
+<h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
+<p>部分资料来自：<a href="http://algorithm.wiki" target="_blank" rel="noopener">http://algorithm.wiki</a></p>
+<p>文章链接：<a href="https://zam9036.gitee.io/2020/01/11/22-Graphical-data-structure-selection-sort">https://zam9036.gitee.io/2020/01/11/22-Graphical-data-structure-selection-sort</a></p>
+<p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+      </tags>
   </entry>
   <entry>
     <title>图解数据结构—冒泡排序|Zam9036博客</title>
     <url>/2020/01/10/21-Graphical-data-structure%E2%80%94bubble-sort/</url>
     <content><![CDATA[<h1 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h1><p>冒泡排序重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从从Z到A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换为止，也就是说该元素列已经排序完成为止。</p>
-<h1 id="核心原理"><a href="#核心原理" class="headerlink" title="核心原理"></a>核心原理</h1><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/1.jpg" alt="冒泡排序核心原理1" style="zoom:80%;" />
+<h1 id="图解核心原理"><a href="#图解核心原理" class="headerlink" title="图解核心原理"></a>图解核心原理</h1><img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/1.jpg" alt="冒泡排序核心原理1" style="zoom:80%;" />
 
 <p>首先，我们将天平放在序列的右端，并比较天平左右的数字。在这种情况下，我们来比较7和6。</p>
 <img src="https://zam9036.gitee.io/img/postimg/21-Graphical-data-structure—bubble-sort/2.jpg" alt="冒泡排序核心原理2" style="zoom:80%;" />
@@ -4378,8 +4445,8 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
       </categories>
   </entry>
   <entry>
-    <title>标签Tags|Zam9036的博客</title>
-    <url>/tags/index.html</url>
+    <title>分类Categories|Zam9036博客</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -4412,8 +4479,8 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
 ]]></content>
   </entry>
   <entry>
-    <title>分类Categories|Zam9036博客</title>
-    <url>/categories/index.html</url>
+    <title>标签Tags|Zam9036的博客</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

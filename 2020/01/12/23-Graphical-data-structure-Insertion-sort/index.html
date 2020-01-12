@@ -5,13 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Windows与Linux服务器间快速上传、下载文件（SCP指令）|Zam9036博客 - Zam9036博客</title>
+    <title>图解数据结构-插入排序|Zam9036博客 - Zam9036博客</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
-    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,SCP指令​    scp的指令的作用是可以将本地的文件上传到一台远端服务器，或将远端服务器的文件下载到本地，其格式如下：
-​    scp 本地文件地址 远端Liunx用户名@远端IP地址:远端文,"> 
+    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,算法概述插入排序（Insertion sort）是一种简单直观且稳定的排序算法。如果有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用,"> 
     <meta name="author" content="ZamCenter"> 
     <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -44,7 +43,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://zam9036.gitee.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Windows与Linux服务器间快速上传、下载文件（SCP指令）|Zam9036博客</h3>
+        <h3 class="subtitle">图解数据结构-插入排序|Zam9036博客</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -69,30 +68,30 @@
             animation-duration: 1.2s;
             background-image: 
                 radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
-                url(/img/cover.jpg);">
+                url(/img/cover5.jpg);">
         </div>
         <div class="else">
             <p class="animated fadeInDown">
                 
-                <a href="/categories/语法指令"><b>「
-                    </b>语法指令<b> 」</b></a>
+                <a href="/categories/学习笔记"><b>「
+                    </b>学习笔记<b> 」</b></a>
                 
-                十月 28, 2019
+                一月 12, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2019/10/28/7-Quickly-upload-and-download-files-between-Windows-and-Linux-servers-SCP-instructions/" title="Windows与Linux服务器间快速上传、下载文件（SCP指令）|Zam9036博客" class="">Windows与Linux服务器间快速上传、下载文件（SCP指令）|Zam9036博客</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/01/12/23-Graphical-data-structure-Insertion-sort/" title="图解数据结构-插入排序|Zam9036博客" class="">图解数据结构-插入排序|Zam9036博客</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    2.4k
+                    6.3k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    2 mins.
+                    6 mins.
                 </span>
                 
                 
@@ -105,7 +104,7 @@
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">服务器</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
             
         </div>
     </div>
@@ -126,23 +125,88 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h2 id="SCP指令"><a href="#SCP指令" class="headerlink" title="SCP指令"></a>SCP指令</h2><p>​    scp的指令的作用是可以将本地的文件上传到一台远端服务器，或将远端服务器的文件下载到本地，其格式如下：</p>
-<p>​    <code>scp 本地文件地址 远端Liunx用户名@远端IP地址:远端文件存储地址    //上传指令</code></p>
-<p>​    <code>scp 远端Liunx用户名@远端IP地址:远端文件地址 本地文件存储地址    //下载指令</code></p>
-<h2 id="利用SCP指令从Windows上传文件到Linux服务器"><a href="#利用SCP指令从Windows上传文件到Linux服务器" class="headerlink" title="利用SCP指令从Windows上传文件到Linux服务器"></a>利用SCP指令从Windows上传文件到Linux服务器</h2><p>​    现有一个本地的BBS-Forum.zip文件需要上传到Linux服务器。</p>
-<p><img src="/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/1.png" alt="本地文件"></p>
-<p>​    首先打开命令提示符cmd，按SCP指令格式输入<code>scp F:\GitHub\BBS-Forum.zip root@211.68.46.235:/var/www/html</code>，其中root是远端Liunx用户名，然后输入密码（密码不显示），开始上传。</p>
-<p><img src="/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/2.png" alt="命令提示符"></p>
-<p>​    然后去云服务器端查看文件，成功上传！</p>
-<p><img src="/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/3.png" alt="云服务器端"></p>
-<h2 id="利用SCP指令从Linux服务器下载文件到Windows"><a href="#利用SCP指令从Linux服务器下载文件到Windows" class="headerlink" title="利用SCP指令从Linux服务器下载文件到Windows"></a>利用SCP指令从Linux服务器下载文件到Windows</h2><p>​    原理同上传，执行<code>scp root@211.68.46.235:/var/www/html/BBS-Forum.zip F:\GitHub</code>，输入密码，开始下载。</p>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>在cmd中输入密码时，考虑安全性问题，密码默认不显示，但实际已经成功输入。</li>
-<li>请注意用 \ 作为Windows端文件目录，用 / 作为Linux端文件目录。</li>
-</ul>
-<h2 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h2><p>​    文章作者：Zam9036</p>
-<p>​    文章链接：<a href="https://zam9036.gitee.io/2019/10/28/7-Quickly-upload-and-download-files-between-Windows-and-Linux-servers-SCP-instructions">https://zam9036.gitee.io/2019/10/28/7-Quickly-upload-and-download-files-between-Windows-and-Linux-servers-SCP-instructions</a></p>
-<p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>
+            <h1 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h1><p>插入排序（Insertion sort）是一种简单直观且稳定的排序算法。如果有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法—插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。是稳定的排序方法。插入算法把要排序的数组分成两部分：第一部分包含了这个数组的所有元素，但将最后一个元素除外（让数组多一个空间才有插入的位置），而第二部分就只包含这一个元素（即待插入元素）。在第一部分排序完成后，再将这个最后元素插入到已排好序的第一部分中。<br>插入排序的基本思想是：每步将一个待排序的记录，按其数值的大小插入前面已经排序的数字中适当位置上，直到全部插入完为止。</p>
+<h1 id="图解核心原理"><a href="#图解核心原理" class="headerlink" title="图解核心原理"></a>图解核心原理</h1><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/1.jpg" alt="插入排序核心原理1" style="zoom:80%;" />
+
+<p>插入排序需要把数列分为两个部分，一部分为排好的有序数列和另一部分未排的无序数列。假如我们需要对上图数列进行排序。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/2.jpg" alt="插入排序核心原理2" style="zoom:80%;" />
+
+<p>排序开始时首先把最左端的数字归为已排序数列(5)，其余数字为未排数列(34728691)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/3.jpg" alt="插入排序核心原理3" style="zoom:80%;" />
+
+<p>然后，取出未排数列中未操作过的最左端的数字(3)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/4.jpg" alt="插入排序核心原理4" style="zoom:80%;" />
+
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/5.jpg" alt="插入排序核心原理5" style="zoom:80%;" />
+
+<p>将未排数列中未操作过的最左端的数字(3)与已排数列的数字(5)从右到左逐个进行比较。如果已排数列的数字大，则交换两个数字，并继续与该已排数列数字的前一个数字进行比较，重复此操作，直到出现一个较小的数字或者达到已排数列的最左端(此时3到达最左端，则停止移动，插入已排数列，完成排序)；如果已排数列的数字小，则停止移动，并将该未排数字插入已排数列，完成排序。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/6.jpg" alt="插入排序核心原理6" style="zoom:80%;" />
+
+<p>重复以上操作，取出未排数列中未操作过的最左端的数字(4)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/7.jpg" alt="插入排序核心原理7" style="zoom:80%;" />
+
+<p>将未排数列中未操作过的最左端的数字(4)与已排数列的数字(35)从右到左逐个进行比较。此时已排数列的数字(5)大，未排序数列最左端数字(4)小，则交换两个数字(交换5和4)，并继续与该已排数列数字的前一个数字(3)进行比较。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/8.jpg" alt="插入排序核心原理8" style="zoom:80%;" />
+
+<p>此时已排数列的数字(3)小，则停止移动，并将该未排数字(4)插入已排数列，完成排序(得到已排数列345)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/9.jpg" alt="插入排序核心原理9" style="zoom:80%;" />
+
+<p>重复以上操作，取出未排数列中未操作过的最左端的数字(7)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/10.jpg" alt="插入排序核心原理10" style="zoom:80%;" />
+
+<p>将未排数列中未操作过的最左端的数字(7)与已排数列的数字(345)从右到左逐个进行比较。此时已排数列的数字(5)小，则停止移动，并将该未排数字(7)插入已排数列(得到已排数列3457)，完成排序。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/11.jpg" alt="插入排序核心原理11" style="zoom:80%;" />
+
+<p>重复以上操作，取出未排数列中未操作过的最左端的数字(2)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/12.jpg" alt="插入排序核心原理12" style="zoom:80%;" />
+
+<p>将未排数列中未操作过的最左端的数字(2)与已排数列的数字(3457)从右到左逐个进行比较。此时已排数列的数字(7)大，未排序数列最左端数字(2)小，则交换两个数字(交换7和2)，并继续与该已排数列数字的前一个数字(5)进行比较。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/13.jpg" alt="插入排序核心原理13" style="zoom:80%;" />
+
+<p>此时已排数列的数字(5)大，未排序数列最左端数字(2)小，则交换两个数字(交换5和2)，并继续与该已排数列数字的前一个数字(4)进行比较。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/14.jpg" alt="插入排序核心原理14" style="zoom:80%;" />
+
+<p>此时已排数列的数字(4)大，未排序数列最左端数字(2)小，则交换两个数字(交换4和2)，并继续与该已排数列数字的前一个数字(3)进行比较。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/15.jpg" alt="插入排序核心原理15" style="zoom:80%;" />
+
+<p>此时已排数列的数字(3)大，未排序数列最左端数字(2)小，则交换两个数字(交换3和2)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/16.jpg" alt="插入排序核心原理16" style="zoom:80%;" />
+
+<p>交换后2到达最左端，则停止移动，插入已排数列，完成排序(得到已排数列23457)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/17.jpg" alt="插入排序核心原理17" style="zoom:80%;" />
+
+<p>重复以上操作，取出未排数列中未操作过的最左端的数字(8)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/18.jpg" alt="插入排序核心原理18" style="zoom:80%;" />
+
+<p>此时已排数列的数字(7)小，则停止移动，并将该未排数字(8)插入已排数列，完成排序(得到已排数列234578)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/19.jpg" alt="插入排序核心原理19" style="zoom:80%;" />
+
+<p>重复以上操作，取出未排数列中未操作过的最左端的数字(6)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/20.jpg" alt="插入排序核心原理20" style="zoom:80%;" />
+
+<p>将未排数列中未操作过的最左端的数字(6)与已排数列的数字(234578)从右到左逐个进行比较。7、8比6大，5比6小，所以6应该插在5、7之间。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/21.jpg" alt="插入排序核心原理21" style="zoom:80%;" />
+
+<p>将6插入已排数列，完成排序(得到已排数列2345678)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/22.jpg" alt="插入排序核心原理22" style="zoom:80%;" />
+
+<p>重复以上操作，取出未排数列中未操作过的最左端的数字(9)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/23.jpg" alt="插入排序核心原理23" style="zoom:80%;" />
+
+<p>8比9小，所以9直接插入已排数列末尾(得到已排数列23456789)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/24.jpg" alt="插入排序核心原理24" style="zoom:80%;" />
+
+<p>重复以上操作，取出未排数列中未操作过的最左端的数字(1)。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/25.jpg" alt="插入排序核心原理25" style="zoom:80%;" />
+
+<p>已排数列的数字23456789均比1大，所以1到达最左端，并插入已排数列，得到有序数列123456789。</p>
+<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/26.jpg" alt="插入排序核心原理26" style="zoom:80%;" />
+
+<p>此时未排数列为空，所有数字完成排序，排序结束。</p>
+<h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
+<p>部分资料来自：<a href="http://algorithm.wiki" target="_blank" rel="noopener">http://algorithm.wiki</a></p>
+<p>文章链接：<a href="https://zam9036.gitee.io/2020/01/12/23-Graphical-data-structure-Insertion-sort">https://zam9036.gitee.io/2020/01/12/23-Graphical-data-structure-Insertion-sort</a></p>
+<p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请保留文章链接并注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -188,7 +252,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#SCP指令"><span class="toc-number">1.</span> <span class="toc-text">SCP指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#利用SCP指令从Windows上传文件到Linux服务器"><span class="toc-number">2.</span> <span class="toc-text">利用SCP指令从Windows上传文件到Linux服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#利用SCP指令从Linux服务器下载文件到Windows"><span class="toc-number">3.</span> <span class="toc-text">利用SCP指令从Linux服务器下载文件到Windows</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意事项"><span class="toc-number">4.</span> <span class="toc-text">注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原创声明"><span class="toc-number">5.</span> <span class="toc-text">原创声明</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#算法概述"><span class="toc-number">1.</span> <span class="toc-text">算法概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#图解核心原理"><span class="toc-number">2.</span> <span class="toc-text">图解核心原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原创声明"><span class="toc-number">3.</span> <span class="toc-text">原创声明</span></a></li></ol>
                 </div>
             </div>
             

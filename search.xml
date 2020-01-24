@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Android学习笔记(一)|Zam9036博客</title>
+    <url>/2020/01/24/24-Android-Study-Notes-1/</url>
+    <content><![CDATA[<h1 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h1><p>Android（安卓）是基于Linux的移动设备操作系统，主要应用于智能手机与平板电脑，现已拓展应用于互联网电视、可穿戴设备、智能家居等领域。Android与IOS同为智能手机市场的两大操作系统。</p>
+<p>早期Android开发APP主要使用Eclipse和基于Eclipse的ADT，但Eclipse平台是专为Java工程开发而生的平台，先天性不足在所难免，所以Google打造了自家的Android开发平台：Android Studio。</p>
+<h1 id="Android-Studio"><a href="#Android-Studio" class="headerlink" title="Android Studio"></a>Android Studio</h1><p>Android Studio比Eclipse有如下优势：</p>
+<ul>
+<li>Android Studio使用v7库与design库只需要增加一行配置，而Eclipse如果想使用这些库需要引用整个工程</li>
+<li>高版本的SDK与NDK只支持Android Studio，不支持Eclipse</li>
+<li>许多新功能只能在Android Studio中应用</li>
+</ul>
+<h2 id="Android-Studio安装"><a href="#Android-Studio安装" class="headerlink" title="Android Studio安装"></a>Android Studio安装</h2>]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>图解数据结构-插入排序|Zam9036博客</title>
     <url>/2020/01/12/23-Graphical-data-structure-Insertion-sort/</url>
     <content><![CDATA[<h1 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h1><p>插入排序（Insertion sort）是一种简单直观且稳定的排序算法。如果有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法—插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。是稳定的排序方法。插入算法把要排序的数组分成两部分：第一部分包含了这个数组的所有元素，但将最后一个元素除外（让数组多一个空间才有插入的位置），而第二部分就只包含这一个元素（即待插入元素）。在第一部分排序完成后，再将这个最后元素插入到已排好序的第一部分中。<br>插入排序的基本思想是：每步将一个待排序的记录，按其数值的大小插入前面已经排序的数字中适当位置上，直到全部插入完为止。</p>
@@ -4539,21 +4558,6 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
       </categories>
   </entry>
   <entry>
-    <title>分类Categories|Zam9036博客</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签Tags|Zam9036的博客</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>时间轴Archives|Zam9036博客</title>
-    <url>/archives/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>关于About|Zam9036博客</title>
     <url>/about/index.html</url>
     <content><![CDATA[<img src="/img/avatar.png" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 15px" />
@@ -4576,5 +4580,20 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
 <h3 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a><code>原创声明</code></h3><p>​    博客作者：<b style="color: #42d2ca"> <strong>Zam9036</strong> </b></p>
 <p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam90.github.io/" target="_blank" rel="noopener">Zam9036的博客</a>！</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>分类Categories|Zam9036博客</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>时间轴Archives|Zam9036博客</title>
+    <url>/archives/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签Tags|Zam9036的博客</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>

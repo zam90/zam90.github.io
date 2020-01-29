@@ -43,7 +43,7 @@
 <h2 id="添加SDK路径至环境变量"><a href="#添加SDK路径至环境变量" class="headerlink" title="添加SDK路径至环境变量"></a>添加SDK路径至环境变量</h2><p>添加SDK路径至环境变量（我的SDK路径是G:\AndroidSDK\platform-tools）</p>
 <img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/7.png" alt="添加SDK路径至环境变量" style="zoom:80%;" />
 
-<h2 id="安装Android-Studio-Plugin"><a href="#安装Android-Studio-Plugin" class="headerlink" title="安装Android Studio Plugin"></a>安装Android Studio Plugin</h2><p>首先你需要有Android Studio（Android Studio安装详见）</p>
+<h2 id="安装Android-Studio-Plugin"><a href="#安装Android-Studio-Plugin" class="headerlink" title="安装Android Studio Plugin"></a>安装Android Studio Plugin</h2><p>首先你需要有Android Studio（Android Studio安装详见<a href="https://zam9036.gitee.io/2020/01/24/24-Android-Study-Notes-1">Android学习笔记(一)</a>）</p>
 <p>打开Android Studio，<code>File -&gt; Setting -&gt; Plugins -&gt; Browse repositories</code>，搜索flutter。</p>
 <img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/8.png" alt="安装Android Studio Plugin-1" style="zoom:80%;" />
 
@@ -4641,11 +4641,6 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
       </categories>
   </entry>
   <entry>
-    <title>分类Categories|Zam9036博客</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>关于About|Zam9036博客</title>
     <url>/about/index.html</url>
     <content><![CDATA[<img src="/img/avatar.png" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 15px" />
@@ -4668,6 +4663,11 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
 <h3 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a><code>原创声明</code></h3><p>​    博客作者：<b style="color: #42d2ca"> <strong>Zam9036</strong> </b></p>
 <p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam90.github.io/" target="_blank" rel="noopener">Zam9036的博客</a>！</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>分类Categories|Zam9036博客</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>时间轴Archives|Zam9036博客</title>

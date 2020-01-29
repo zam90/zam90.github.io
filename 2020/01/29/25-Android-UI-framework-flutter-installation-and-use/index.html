@@ -5,12 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>利用Hexo在博客中插入本地图片（无需外链）|Zam9036博客 - Zam9036博客</title>
+    <title>Android UI框架flutter的安装与使用|Zam9036博客 - Zam9036博客</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
-    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,前言​    在用Hexo写博客的过程中我们往往需要在博客中插入图片。MarkDown中插入图片有两种方式：一种是使用外链，一种是使用本地图片。而如果使用外链图片，我们需要找好用的图床，以防图片链接,"> 
+    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,适用平台Windows
+Flutter介绍Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。 Flutter可以与现有的代码一起工作。在全世界，Flut,"> 
     <meta name="author" content="ZamCenter"> 
     <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -43,7 +44,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://zam9036.gitee.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">利用Hexo在博客中插入本地图片（无需外链）|Zam9036博客</h3>
+        <h3 class="subtitle">Android UI框架flutter的安装与使用|Zam9036博客</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -68,7 +69,7 @@
             animation-duration: 1.2s;
             background-image: 
                 radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
-                url(/img/cover6.jpg);">
+                url(/img/cover4.jpg);">
         </div>
         <div class="else">
             <p class="animated fadeInDown">
@@ -76,22 +77,22 @@
                 <a href="/categories/技术Demo"><b>「
                     </b>技术DEMO<b> 」</b></a>
                 
-                十月 27, 2019
+                一月 29, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2019/10/27/6-Use-Hexo-to-insert-local-pictures-in-your-blog-no-external-link-required/" title="利用Hexo在博客中插入本地图片（无需外链）|Zam9036博客" class="">利用Hexo在博客中插入本地图片（无需外链）|Zam9036博客</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/01/29/25-Android-UI-framework-flutter-installation-and-use/" title="Android UI框架flutter的安装与使用|Zam9036博客" class="">Android UI框架flutter的安装与使用|Zam9036博客</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    3.1k
+                    5.7k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    3 mins.
+                    5 mins.
                 </span>
                 
                 
@@ -104,7 +105,7 @@
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Android/" rel="tag">Android</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/flutter/" rel="tag">flutter</a></li></ul>
             
         </div>
     </div>
@@ -125,21 +126,74 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    在用Hexo写博客的过程中我们往往需要在博客中插入图片。MarkDown中插入图片有两种方式：一种是使用外链，一种是使用本地图片。而如果使用外链图片，我们需要找好用的图床，以防图片链接不定时挂掉，这大大增加了写博客的时间成本。本地图片如果使用绝对路径会导致上传到Github上时链接不到，所以本文提供了一种利用本地图片的相对路径的方式来插入图片。</p>
-<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>​    我们在启用博客主题时会发现，博客主题中的内置图片，会随<code>hexo g</code>指令一起部署到public文件夹，上传时也会一同上传到Github上，这就为我们保存博客中的图片提供了一种思路。</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8Hexo%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%EF%BC%88%E6%97%A0%E9%9C%80%E5%A4%96%E9%93%BE%EF%BC%89/1.png" alt="public文件夹中的img文件夹"></p>
-<h2 id="新建本地图片库"><a href="#新建本地图片库" class="headerlink" title="新建本地图片库"></a>新建本地图片库</h2><p>​    查看<code>Hexo-themes</code>中的文件我们可以知道，主题文件的图片存在了<code>source-img</code>文件夹中，所以我们在这个文件夹中新建一个postimg文件夹，用于存放博客中需要保存的图片。</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8Hexo%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%EF%BC%88%E6%97%A0%E9%9C%80%E5%A4%96%E9%93%BE%EF%BC%89/2.png" alt="新建postimg文件夹"></p>
-<p>​    然后我们把图片存进去，执行<code>hexo g</code>，会发现在<code>public-img</code>文件夹中也多了一个postimg文件夹，里面有我们刚刚存进去的图片。这说明Hexo在部署博客时，也将postimg部署到了博客里。同理，上传时也会将postimg一起上传到Github上，这说明利用相对路径保存图片的方法可行。</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8Hexo%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%EF%BC%88%E6%97%A0%E9%9C%80%E5%A4%96%E9%93%BE%EF%BC%89/3.png" alt="postimg文件夹"></p>
-<h2 id="图片的相对路径"><a href="#图片的相对路径" class="headerlink" title="图片的相对路径"></a>图片的相对路径</h2><p>​    我们查看主题的配置文件，发现图片的相对路径是<code>/img/XXXXX.jpg</code>，所以可以推算出我们刚刚保存的图片的相对路径是<code>/img/postimg/XXXXX.jpg</code>（其中XXXXX为文件名，<code>.jpg</code>为文件后缀，均可修改）</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8Hexo%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%EF%BC%88%E6%97%A0%E9%9C%80%E5%A4%96%E9%93%BE%EF%BC%89/4.png" alt="图片的相对路径"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>​    所以我们只需要在MarkDown中插入图片时，填写图片的相对路径，然后将图片保存到主题文件夹下的<code>source-img-postimg</code>就可以实现利用本地图片的相对路径的方式来插入图片。</p>
-<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>​    在插入图片时，本地的MarkDown编辑器会找不到图片，这忽略这个问题。因为图片的相对路径在部署博客时会自动更新到public文件夹，自动更新后的相对路径才是正确的，才是可以被服务器访问的。</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8Hexo%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%EF%BC%88%E6%97%A0%E9%9C%80%E5%A4%96%E9%93%BE%EF%BC%89/5.png" alt="本地的MarkDown编辑器会找不到图片"></p>
-<h2 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h2><p>​    文章作者：Zam9036</p>
-<p>​    文章链接：<a href="https://zam9036.gitee.io/2019/10/27/6-Use-Hexo-to-insert-local-pictures-in-your-blog-no-external-link-required">https://zam9036.gitee.io/2019/10/27/6-Use-Hexo-to-insert-local-pictures-in-your-blog-no-external-link-required</a></p>
-<p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>
+            <h1 id="适用平台"><a href="#适用平台" class="headerlink" title="适用平台"></a>适用平台</h1><p>Windows</p>
+<h1 id="Flutter介绍"><a href="#Flutter介绍" class="headerlink" title="Flutter介绍"></a>Flutter介绍</h1><p>Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。 Flutter可以与现有的代码一起工作。在全世界，Flutter正在被越来越多的开发者和组织使用，并且Flutter是完全免费、开源的。</p>
+<h1 id="Flutter安装"><a href="#Flutter安装" class="headerlink" title="Flutter安装"></a>Flutter安装</h1><h2 id="下载flutter"><a href="#下载flutter" class="headerlink" title="下载flutter"></a>下载flutter</h2><p>访问<a href="https://flutter.dev/docs/development/tools/sdk/releases#windows" target="_blank" rel="noopener">flutter官网</a>，下载flutter。flutter集成了Dart，因此不需要单独安装dart-sdk。</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/1.png" alt="flutter官网" style="zoom:80%;" />
+
+<blockquote>
+<p>flutter有四个版本</p>
+<ul>
+<li>Stable channel    //稳定版。最近一年中最稳定的Beta版本。</li>
+<li>Beta channel    //测试版。每隔一段时间都会选择近个月中最好的Bev版本作为Beta版。</li>
+<li>Dev channel    //经过测试的最新版，但仍可能包含很多问题。</li>
+<li>Master channel    //未经过测试的最新版。</li>
+</ul>
+</blockquote>
+<p>我选择的是最新的Stable channel（v1.12.13+hotfix.7）。为避免不必要的麻烦，请不要选择C盘作为下载目录，否则可能遇到权限问题。</p>
+<h2 id="更新环境变量"><a href="#更新环境变量" class="headerlink" title="更新环境变量"></a>更新环境变量</h2><p>flutter下载完成后，解压到存放SDK的目录。</p>
+<p>注意：目标SDK路径仅能包含英文和数字，不能包含中文和空格！</p>
+<p>解压完成后，返回桌面，右击<code>我的电脑 -&gt; 属性 -&gt; 高级系统设置 -&gt; 环境变量 -&gt; 系统环境变量</code>，编辑Path，添加目标SDK的路径至Path内（我的路径是<code>G:\flutter\bin</code>）</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/2.png" alt="更新环境变量1" style="zoom:80%;" />
+
+<p>同时还需要添加以下系统环境变量</p>
+<pre><code class="环境变量">变量名：PUB_HOSTED_URL
+变量值：https://pub.flutter-io.cn
+
+变量名：FLUTTER_STORAGE_BASE_URL
+变量值：https://storage.flutter-io.cn</code></pre>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/3.png" alt="更新环境变量2" style="zoom:80%;" />
+
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/4.png" alt="更新环境变量3" style="zoom:80%;" />
+
+<p>所有环境变量添加完成后重启电脑！</p>
+<h2 id="flutter-doctor检测安装"><a href="#flutter-doctor检测安装" class="headerlink" title="flutter doctor检测安装"></a>flutter doctor检测安装</h2><p>打开cmd，输入<code>flutter</code>指令，如看到下图的flutter相关指令，说明安装成功。</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/5.png" alt="flutter指令" style="zoom:80%;" />
+
+<p>输入<code>flutter doctor</code>指令，检测安装情况，最左边打红叉的是必须要解决的，橙色感叹号是Warning，绿色说明正确。</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/6.png" alt="flutter doctor指令" style="zoom:80%;" />
+
+<h2 id="添加SDK路径至环境变量"><a href="#添加SDK路径至环境变量" class="headerlink" title="添加SDK路径至环境变量"></a>添加SDK路径至环境变量</h2><p>添加SDK路径至环境变量（我的SDK路径是G:\AndroidSDK\platform-tools）</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/7.png" alt="添加SDK路径至环境变量" style="zoom:80%;" />
+
+<h2 id="安装Android-Studio-Plugin"><a href="#安装Android-Studio-Plugin" class="headerlink" title="安装Android Studio Plugin"></a>安装Android Studio Plugin</h2><p>首先你需要有Android Studio（Android Studio安装详见）</p>
+<p>打开Android Studio，<code>File -&gt; Setting -&gt; Plugins -&gt; Browse repositories</code>，搜索flutter。</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/8.png" alt="安装Android Studio Plugin-1" style="zoom:80%;" />
+
+<p>就是这个，点击安装</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/9.png" alt="安装Android Studio Plugin-2" style="zoom:80%;" />
+
+<p>点击Yes，会自动帮你安装dart-sdk</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/10.png" alt="安装Android Studio Plugin-3" style="zoom:80%;" />
+
+<p>安装完成后需要重启Android Studio，然后可以看到安装的dart-sdk和flutter。</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/11.png" alt="安装Android Studio Plugin-4" style="zoom:80%;" />
+
+<h1 id="使用flutter"><a href="#使用flutter" class="headerlink" title="使用flutter"></a>使用flutter</h1><p>点开Android Studio的 File -&gt; New 可以看到 New Flutter Project</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/12.png" alt="使用flutter-1" style="zoom:80%;" />
+
+<p>选择喜欢的模板，开始flutter之旅吧！</p>
+<img src="https://zam9036.gitee.io/img/postimg/25-Android-UI-framework-flutter-installation-and-use/13.png" alt="使用flutter-2" style="zoom:80%;" />
+
+<h1 id="部分flutter指令"><a href="#部分flutter指令" class="headerlink" title="部分flutter指令"></a>部分flutter指令</h1><h2 id="升级flutter"><a href="#升级flutter" class="headerlink" title="升级flutter"></a>升级flutter</h2><p>打开cmd，定位到根目录，输入如下指令升级</p>
+<pre><code class="cmd">flutter upgrade</code></pre>
+<h2 id="切换flutter版本"><a href="#切换flutter版本" class="headerlink" title="切换flutter版本"></a>切换flutter版本</h2><p>指令如下：</p>
+<pre><code class="cmd">flutter channel [目标版本]</code></pre>
+<p>如<code>flutter channel dev</code></p>
+<h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
+<p>参考资料：<a href="https://blog.csdn.net/fyyyr/article/details/86593125" target="_blank" rel="noopener">https://blog.csdn.net/fyyyr/article/details/86593125</a></p>
+<p>文章链接：<a href="https://zam9036.gitee.io/2020/01/29/25-Android-UI-framework-flutter-installation-and-use">https://zam9036.gitee.io/2020/01/29/25-Android-UI-framework-flutter-installation-and-use</a></p>
+<p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请保留文章链接并注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -185,7 +239,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#思考"><span class="toc-number">2.</span> <span class="toc-text">思考</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新建本地图片库"><span class="toc-number">3.</span> <span class="toc-text">新建本地图片库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片的相对路径"><span class="toc-number">4.</span> <span class="toc-text">图片的相对路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">5.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#提示"><span class="toc-number">6.</span> <span class="toc-text">提示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原创声明"><span class="toc-number">7.</span> <span class="toc-text">原创声明</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#适用平台"><span class="toc-number">1.</span> <span class="toc-text">适用平台</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Flutter介绍"><span class="toc-number">2.</span> <span class="toc-text">Flutter介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Flutter安装"><span class="toc-number">3.</span> <span class="toc-text">Flutter安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载flutter"><span class="toc-number">3.1.</span> <span class="toc-text">下载flutter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新环境变量"><span class="toc-number">3.2.</span> <span class="toc-text">更新环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flutter-doctor检测安装"><span class="toc-number">3.3.</span> <span class="toc-text">flutter doctor检测安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加SDK路径至环境变量"><span class="toc-number">3.4.</span> <span class="toc-text">添加SDK路径至环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Android-Studio-Plugin"><span class="toc-number">3.5.</span> <span class="toc-text">安装Android Studio Plugin</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用flutter"><span class="toc-number">4.</span> <span class="toc-text">使用flutter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#部分flutter指令"><span class="toc-number">5.</span> <span class="toc-text">部分flutter指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#升级flutter"><span class="toc-number">5.1.</span> <span class="toc-text">升级flutter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#切换flutter版本"><span class="toc-number">5.2.</span> <span class="toc-text">切换flutter版本</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原创声明"><span class="toc-number">6.</span> <span class="toc-text">原创声明</span></a></li></ol>
                 </div>
             </div>
             

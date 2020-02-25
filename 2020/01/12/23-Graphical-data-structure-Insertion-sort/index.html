@@ -85,13 +85,13 @@
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    6.3k
+                    5.9k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    6 mins.
+                    5 mins.
                 </span>
                 
                 
@@ -126,82 +126,56 @@
     <div class='main'>
         <div class="content markdown animated fadeIn">
             <h1 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h1><p>插入排序（Insertion sort）是一种简单直观且稳定的排序算法。如果有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法—插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。是稳定的排序方法。插入算法把要排序的数组分成两部分：第一部分包含了这个数组的所有元素，但将最后一个元素除外（让数组多一个空间才有插入的位置），而第二部分就只包含这一个元素（即待插入元素）。在第一部分排序完成后，再将这个最后元素插入到已排好序的第一部分中。<br>插入排序的基本思想是：每步将一个待排序的记录，按其数值的大小插入前面已经排序的数字中适当位置上，直到全部插入完为止。</p>
-<h1 id="图解核心原理"><a href="#图解核心原理" class="headerlink" title="图解核心原理"></a>图解核心原理</h1><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/1.jpg" alt="插入排序核心原理1" style="zoom:80%;" />
-
+<h1 id="图解核心原理"><a href="#图解核心原理" class="headerlink" title="图解核心原理"></a>图解核心原理</h1><p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/1.jpg" alt="插入排序核心原理1"></p>
 <p>插入排序需要把数列分为两个部分，一部分为排好的有序数列和另一部分未排的无序数列。假如我们需要对上图数列进行排序。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/2.jpg" alt="插入排序核心原理2" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/2.jpg" alt="插入排序核心原理2"></p>
 <p>排序开始时首先把最左端的数字归为已排序数列(5)，其余数字为未排数列(34728691)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/3.jpg" alt="插入排序核心原理3" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/3.jpg" alt="插入排序核心原理3"></p>
 <p>然后，取出未排数列中未操作过的最左端的数字(3)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/4.jpg" alt="插入排序核心原理4" style="zoom:80%;" />
-
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/5.jpg" alt="插入排序核心原理5" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/4.jpg" alt="插入排序核心原理4"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/5.jpg" alt="插入排序核心原理5"></p>
 <p>将未排数列中未操作过的最左端的数字(3)与已排数列的数字(5)从右到左逐个进行比较。如果已排数列的数字大，则交换两个数字，并继续与该已排数列数字的前一个数字进行比较，重复此操作，直到出现一个较小的数字或者达到已排数列的最左端(此时3到达最左端，则停止移动，插入已排数列，完成排序)；如果已排数列的数字小，则停止移动，并将该未排数字插入已排数列，完成排序。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/6.jpg" alt="插入排序核心原理6" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/6.jpg" alt="插入排序核心原理6"></p>
 <p>重复以上操作，取出未排数列中未操作过的最左端的数字(4)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/7.jpg" alt="插入排序核心原理7" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/7.jpg" alt="插入排序核心原理7"></p>
 <p>将未排数列中未操作过的最左端的数字(4)与已排数列的数字(35)从右到左逐个进行比较。此时已排数列的数字(5)大，未排序数列最左端数字(4)小，则交换两个数字(交换5和4)，并继续与该已排数列数字的前一个数字(3)进行比较。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/8.jpg" alt="插入排序核心原理8" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/8.jpg" alt="插入排序核心原理8"></p>
 <p>此时已排数列的数字(3)小，则停止移动，并将该未排数字(4)插入已排数列，完成排序(得到已排数列345)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/9.jpg" alt="插入排序核心原理9" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/9.jpg" alt="插入排序核心原理9"></p>
 <p>重复以上操作，取出未排数列中未操作过的最左端的数字(7)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/10.jpg" alt="插入排序核心原理10" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/10.jpg" alt="插入排序核心原理10"></p>
 <p>将未排数列中未操作过的最左端的数字(7)与已排数列的数字(345)从右到左逐个进行比较。此时已排数列的数字(5)小，则停止移动，并将该未排数字(7)插入已排数列(得到已排数列3457)，完成排序。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/11.jpg" alt="插入排序核心原理11" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/11.jpg" alt="插入排序核心原理11"></p>
 <p>重复以上操作，取出未排数列中未操作过的最左端的数字(2)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/12.jpg" alt="插入排序核心原理12" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/12.jpg" alt="插入排序核心原理12"></p>
 <p>将未排数列中未操作过的最左端的数字(2)与已排数列的数字(3457)从右到左逐个进行比较。此时已排数列的数字(7)大，未排序数列最左端数字(2)小，则交换两个数字(交换7和2)，并继续与该已排数列数字的前一个数字(5)进行比较。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/13.jpg" alt="插入排序核心原理13" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/13.jpg" alt="插入排序核心原理13"></p>
 <p>此时已排数列的数字(5)大，未排序数列最左端数字(2)小，则交换两个数字(交换5和2)，并继续与该已排数列数字的前一个数字(4)进行比较。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/14.jpg" alt="插入排序核心原理14" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/14.jpg" alt="插入排序核心原理14"></p>
 <p>此时已排数列的数字(4)大，未排序数列最左端数字(2)小，则交换两个数字(交换4和2)，并继续与该已排数列数字的前一个数字(3)进行比较。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/15.jpg" alt="插入排序核心原理15" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/15.jpg" alt="插入排序核心原理15"></p>
 <p>此时已排数列的数字(3)大，未排序数列最左端数字(2)小，则交换两个数字(交换3和2)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/16.jpg" alt="插入排序核心原理16" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/16.jpg" alt="插入排序核心原理16"></p>
 <p>交换后2到达最左端，则停止移动，插入已排数列，完成排序(得到已排数列23457)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/17.jpg" alt="插入排序核心原理17" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/17.jpg" alt="插入排序核心原理17"></p>
 <p>重复以上操作，取出未排数列中未操作过的最左端的数字(8)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/18.jpg" alt="插入排序核心原理18" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/18.jpg" alt="插入排序核心原理18"></p>
 <p>此时已排数列的数字(7)小，则停止移动，并将该未排数字(8)插入已排数列，完成排序(得到已排数列234578)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/19.jpg" alt="插入排序核心原理19" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/19.jpg" alt="插入排序核心原理19"></p>
 <p>重复以上操作，取出未排数列中未操作过的最左端的数字(6)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/20.jpg" alt="插入排序核心原理20" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/20.jpg" alt="插入排序核心原理20"></p>
 <p>将未排数列中未操作过的最左端的数字(6)与已排数列的数字(234578)从右到左逐个进行比较。7、8比6大，5比6小，所以6应该插在5、7之间。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/21.jpg" alt="插入排序核心原理21" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/21.jpg" alt="插入排序核心原理21"></p>
 <p>将6插入已排数列，完成排序(得到已排数列2345678)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/22.jpg" alt="插入排序核心原理22" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/22.jpg" alt="插入排序核心原理22"></p>
 <p>重复以上操作，取出未排数列中未操作过的最左端的数字(9)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/23.jpg" alt="插入排序核心原理23" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/23.jpg" alt="插入排序核心原理23"></p>
 <p>8比9小，所以9直接插入已排数列末尾(得到已排数列23456789)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/24.jpg" alt="插入排序核心原理24" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/24.jpg" alt="插入排序核心原理24"></p>
 <p>重复以上操作，取出未排数列中未操作过的最左端的数字(1)。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/25.jpg" alt="插入排序核心原理25" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/25.jpg" alt="插入排序核心原理25"></p>
 <p>已排数列的数字23456789均比1大，所以1到达最左端，并插入已排数列，得到有序数列123456789。</p>
-<img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/26.jpg" alt="插入排序核心原理26" style="zoom:80%;" />
-
+<p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/26.jpg" alt="插入排序核心原理26"></p>
 <p>此时未排数列为空，所有数字完成排序，排序结束。</p>
 <h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
 <p>部分资料来自：<a href="http://algorithm.wiki" target="_blank" rel="noopener">http://algorithm.wiki</a></p>

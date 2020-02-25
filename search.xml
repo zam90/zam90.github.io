@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Linux系统在Windows虚拟机上的安装|Zam9036博客</title>
+      <link href="/2020/02/25/27-Linux-system-installation-on-Windows-virtual-machine/"/>
+      <url>/2020/02/25/27-Linux-system-installation-on-Windows-virtual-machine/</url>
+      
+        <content type="html"><![CDATA[<h1 id="平台与工具"><a href="#平台与工具" class="headerlink" title="平台与工具"></a>平台与工具</h1><p>Windows 10</p><p>Oracle VM VirtualBox 6.1 虚拟机</p><p>Ubuntukylin 19.10 Linux系统镜像文件</p><h1 id="虚拟机安装与使用"><a href="#虚拟机安装与使用" class="headerlink" title="虚拟机安装与使用"></a>虚拟机安装与使用</h1><h2 id="下载安装VirtualBox"><a href="#下载安装VirtualBox" class="headerlink" title="下载安装VirtualBox"></a>下载安装VirtualBox</h2><p>访问<a href="https://www.virtualbox.org/" target="_blank" rel="noopener">Oracle VM VirtualBox官方网站</a>，下载VM VirtualBox，我使用的版本是6.1。浏览英文网页如有困难，可以尝试使用Google/有道的网页翻译功能。</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/1.png" alt="下载Oracle VM VirtualBox"></p><p>下载完成后，按照提示安装即可，在此不过多赘述。</p><blockquote><p>注意：安装Oracle VM VirtualBox的时候会重置网络连接状态，并且可能会要求重启电脑。</p></blockquote><h2 id="VirtualBox的使用"><a href="#VirtualBox的使用" class="headerlink" title="VirtualBox的使用"></a>VirtualBox的使用</h2><p>安装完成后启动Oracle VM VirtualBox虚拟机控制台，如下图所示。</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/2.png" alt="VirtualBox控制台1"></p><blockquote><p>左侧列表是已经安装过的虚拟机</p><p>如图，我已经安装了Windows 95、MS-DOS 6.22、MS_DOS 3.30、Ubuntu-18.04</p></blockquote><p>点击对应的虚拟机，可以看到相应的虚拟机状态和所设置的参数。</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/3.png" alt="VirtualBox控制台2"></p><h1 id="Linux系统在虚拟机上的安装"><a href="#Linux系统在虚拟机上的安装" class="headerlink" title="Linux系统在虚拟机上的安装"></a>Linux系统在虚拟机上的安装</h1><h2 id="下载Linux系统"><a href="#下载Linux系统" class="headerlink" title="下载Linux系统"></a>下载Linux系统</h2><p>我以 Ubuntukylin 19.10作为例子演示，其他系统类似。从<a href="https://www.ubuntukylin.com/" target="_blank" rel="noopener">Ubuntukylin官网</a>上下载Linux系统的ISO镜像文件，储存备用。</p><h2 id="配置虚拟电脑"><a href="#配置虚拟电脑" class="headerlink" title="配置虚拟电脑"></a>配置虚拟电脑</h2><p>打开Oracle VM VirtualBox控制器，点击<code>工具-新建</code>（快捷键Ctrl+N），输入系统名称（系统安装完成后会在左侧列表显示）、Linux系统文件的安装路径（类似于Windows的C盘）、选择系统类型和版本。</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/4.png" alt="准备配置虚拟电脑"></p><p>选择分配给该虚拟电脑的运行内存大小。</p><blockquote><p>运行内存分配后不会立即占用，只有启动该系统的时候才会占用。</p><p>分配给虚拟电脑的内存建议2G+，4G-6G为最佳，请根据电脑配置自行决策（我电脑16G运行内存，分配给虚拟电脑6G）</p><p>运行内存分配不合理可能导致Windows系统崩溃</p></blockquote><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/5.png" alt="分配内存大小"></p><p>选择是否创建虚拟硬盘（即该虚拟电脑的存储硬盘），若之前没有添加过虚拟电脑，建议添加一个虚拟硬盘；若之前添加过虚拟电脑，可以使用之前创建的虚拟硬盘。</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/6.png" alt="创建虚拟硬盘"></p><p>选择新建虚拟磁盘的文件类型，一般默认即可。</p><blockquote><p>选用VHD或VMDK可以让其他的虚拟化软件访问新建的虚拟硬盘（但一般不需要）</p></blockquote><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/7.png" alt="选择虚拟硬盘文件类型"></p><p>选择虚拟硬盘的分配方式，建议使用动态分配。</p><blockquote><p>动态分配：虚拟磁盘逐步占用物理磁盘空间（至分配的数值为止）【需要多少 使用多少】</p><p>固定分配：一次性占用相应的物理磁盘空间【全部占用，不需要的也先占上】</p></blockquote><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/8.png" alt="选择虚拟硬盘分配方式"></p><p>选择分配给虚拟磁盘的空间大小，建议10G+</p><blockquote><p>请根据所装系统和电脑配置自行决策</p></blockquote><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/9.png" alt="分配虚拟硬盘空间大小"></p><h2 id="选择启动盘"><a href="#选择启动盘" class="headerlink" title="选择启动盘"></a>选择启动盘</h2><p>配置完虚拟电脑，我们就拥有一台属于自己的崭新“计算机”（我的是6G+20G喔），那么下一步，就是安装操作系统。这个时候我们刚刚下载完成的ISO文件就起到用途了。</p><p>左侧列表点击我们刚刚配置好的虚拟电脑，可以看到相应的配置。</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/10.png" alt="查看虚拟电脑配置"></p><p>点击右上方的启动按钮（快捷键Ctrl+T），尝试启动“计算机”，这个时候会提示选择启动盘</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/11.png" alt="选择启动盘1"></p><p>点击右方的浏览启动盘图标，弹出以下窗口，这个窗口就是启动盘选择窗口，可以看到都是后缀为.iso的文件。我们发现并没有刚刚下载的iso文件，那是因为刚刚那张“光盘”的数据并没有在虚拟机上</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/12.png" alt="选择启动盘2"></p><p>点击注册按钮，选择刚刚下载ISO文件的路径（模仿真实安装计算机时的操作系统安装盘的插入），这个时候会出现如下进度条，这表示正在准备读取“操作系统安装盘”</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/13.png" alt="注册启动盘"></p><p>然后返回刚刚的选择启动盘窗口，选择刚刚下载的ISO文件</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/14.png" alt="选择启动盘3"></p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/15.png" alt="选择启动盘4"></p><p>点击启动，待ISO文件读取完毕后，就会显示Ubuntu的界面，表示可以配置安装系统了</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/16.png" alt="启动成功界面"></p><h1 id="Linux系统配置"><a href="#Linux系统配置" class="headerlink" title="Linux系统配置"></a>Linux系统配置</h1><p>在弹出启动成功界面后不久，我们就会看到Ubuntu的安装界面，提示我们选择语言和安装方式（当然是选择中文简体+安装【英语大佬请选择英文】）</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/17.png" alt="选择语言和安装方式"></p><p>然后选择键盘布局（汉语-汉语）</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/18.png" alt="选择键盘布局"></p><p>选择更新和其他软件（看心情选吧）</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/19.png" alt="选择更新和其他软件"></p><p>选择安装类型（因为我们的虚拟电脑是“崭新的”，所以选择清除磁盘并安装即可）</p><blockquote><p>注意：在选择是否创建虚拟硬盘的时候，如果选择选择否，请重视此选项，并视情况做决定</p></blockquote><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/20.png" alt="选择安装类型"></p><p>选择地区</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/21.png" alt="选择地区"></p><p>设置用户和密码</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/22.png" alt="设置用户和密码"></p><p>开始安装！（预计20分钟-30分钟），并且需要根据提示进行重启</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/23.png" alt="提示重启"></p><p>安装成功！终于来到了系统桌面！</p><p><img src="https://zam9036.gitee.io/img/postimg/27-Linux-system-installation-on-Windows-virtual-machine/24.png" alt="系统桌面"></p><h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p><p>文章链接：<a href="https://zam9036.gitee.io/2020/02/25/27-Linux-system-installation-on-Windows-virtual-machine">https://zam9036.gitee.io/2020/02/25/27-Linux-system-installation-on-Windows-virtual-machine</a></p><p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请保留文章链接并注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术Demo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Windows </tag>
+            
+            <tag> Linux系统实践 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>计算机网络学习笔记（一）|Zam9036博客</title>
       <link href="/2020/02/24/26-Computer-network-study-notes-1/"/>
       <url>/2020/02/24/26-Computer-network-study-notes-1/</url>
@@ -715,11 +744,22 @@
     
     
     <entry>
-      <title>关于About|Zam9036博客</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>分类Categories|Zam9036博客</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<img src="/img/avatar.png" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 15px" /><h3 id="欢迎Welcome"><a href="#欢迎Welcome" class="headerlink" title="欢迎Welcome"></a><code>欢迎Welcome</code></h3><p>​    欢迎来到<b style="color: #42d2ca"> <strong>Zam9036的博客</strong> </b>，在这里记录了一些生活的点滴和技术Demo。</p><p>​    Welcome to the <b style="color: #42d2ca"> <strong>Zam9036’s Blog</strong> </b>, where you’ll find something for life and some demo.</p><h3 id="个人介绍Introduction"><a href="#个人介绍Introduction" class="headerlink" title="个人介绍Introduction"></a><code>个人介绍Introduction</code></h3><p>​    我是Zam9036，现就读于北京信息科技大学-计算机学院-计算机科学与技术系。</p><p>​    我的微信公众号：<b style="color: #42d2ca"> <strong>极客杂货铺Z</strong> </b>；</p><img src="/img/OfficialAccountQRCode.png" style="height: 150px; width: 525px; margin-bottom: 15px" /><p>​    微信小程序：<b style="color: #42d2ca"> <strong>极客杂货铺Z</strong> </b>，欢迎大家关注！</p><img src="/img/MiniProgramQRCode.png" style="height: 150px; width: 525px; margin-bottom: 15px" /><p>​    I am Zam9036 and I am currently studying at the Department of Computer Science and Technology, Beijing Information Science and Technology University.</p><p>​    My WeChat  Official Accounts : <b style="color: #42d2ca"> <strong>极客杂货铺Z</strong> </b>; </p><p>​    WeChat mini program : <b style="color: #42d2ca"> <strong>极客杂货铺Z</strong> </b>, welcome everyone to follow and pay attention!</p><h3 id="手机应用APP"><a href="#手机应用APP" class="headerlink" title="手机应用APP"></a><code>手机应用APP</code></h3><p>​    2019.11.3日，Zam9036正式推出了<b style="color: #42d2ca"> <strong>博客的Android端</strong> </b>，欢迎大家下载~</p><p>​    On 2019.11.3, Zam9036 officially launched <b style="color: #42d2ca"> <strong>the Android APP of the blog</strong> </b>, welcome everyone to download ~</p><p>​    <a href="https://pan.baidu.com/s/1wT_aJCdWudE73XFQL5FtwQ" target="_blank" rel="noopener">下载地址Download</a></p><h3 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a><code>原创声明</code></h3><p>​    博客作者：<b style="color: #42d2ca"> <strong>Zam9036</strong> </b></p><p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam90.github.io/" target="_blank" rel="noopener">Zam9036的博客</a>！</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>时间轴Archives|Zam9036博客</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -737,22 +777,11 @@
     
     
     <entry>
-      <title>分类Categories|Zam9036博客</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于About|Zam9036博客</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>时间轴Archives|Zam9036博客</title>
-      <link href="/archives/index.html"/>
-      <url>/archives/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<img src="/img/avatar.png" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 15px" /><h3 id="欢迎Welcome"><a href="#欢迎Welcome" class="headerlink" title="欢迎Welcome"></a><code>欢迎Welcome</code></h3><p>​    欢迎来到<b style="color: #42d2ca"> <strong>Zam9036的博客</strong> </b>，在这里记录了一些生活的点滴和技术Demo。</p><p>​    Welcome to the <b style="color: #42d2ca"> <strong>Zam9036’s Blog</strong> </b>, where you’ll find something for life and some demo.</p><h3 id="个人介绍Introduction"><a href="#个人介绍Introduction" class="headerlink" title="个人介绍Introduction"></a><code>个人介绍Introduction</code></h3><p>​    我是Zam9036，现就读于北京信息科技大学-计算机学院-计算机科学与技术系。</p><p>​    我的微信公众号：<b style="color: #42d2ca"> <strong>极客杂货铺Z</strong> </b>；</p><img src="/img/OfficialAccountQRCode.png" style="height: 150px; width: 525px; margin-bottom: 15px" /><p>​    微信小程序：<b style="color: #42d2ca"> <strong>极客杂货铺Z</strong> </b>，欢迎大家关注！</p><img src="/img/MiniProgramQRCode.png" style="height: 150px; width: 525px; margin-bottom: 15px" /><p>​    I am Zam9036 and I am currently studying at the Department of Computer Science and Technology, Beijing Information Science and Technology University.</p><p>​    My WeChat  Official Accounts : <b style="color: #42d2ca"> <strong>极客杂货铺Z</strong> </b>; </p><p>​    WeChat mini program : <b style="color: #42d2ca"> <strong>极客杂货铺Z</strong> </b>, welcome everyone to follow and pay attention!</p><h3 id="手机应用APP"><a href="#手机应用APP" class="headerlink" title="手机应用APP"></a><code>手机应用APP</code></h3><p>​    2019.11.3日，Zam9036正式推出了<b style="color: #42d2ca"> <strong>博客的Android端</strong> </b>，欢迎大家下载~</p><p>​    On 2019.11.3, Zam9036 officially launched <b style="color: #42d2ca"> <strong>the Android APP of the blog</strong> </b>, welcome everyone to download ~</p><p>​    <a href="https://pan.baidu.com/s/1wT_aJCdWudE73XFQL5FtwQ" target="_blank" rel="noopener">下载地址Download</a></p><h3 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a><code>原创声明</code></h3><p>​    博客作者：<b style="color: #42d2ca"> <strong>Zam9036</strong> </b></p><p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam90.github.io/" target="_blank" rel="noopener">Zam9036的博客</a>！</p>]]></content>
       
     </entry>
     

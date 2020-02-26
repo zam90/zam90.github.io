@@ -86,7 +86,7 @@
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    2.4k
+                    2.5k
                 </span>
                 
                 
@@ -130,11 +130,11 @@
 <p>​    <code>scp 本地文件地址 远端Liunx用户名@远端IP地址:远端文件存储地址    //上传指令</code></p>
 <p>​    <code>scp 远端Liunx用户名@远端IP地址:远端文件地址 本地文件存储地址    //下载指令</code></p>
 <h2 id="利用SCP指令从Windows上传文件到Linux服务器"><a href="#利用SCP指令从Windows上传文件到Linux服务器" class="headerlink" title="利用SCP指令从Windows上传文件到Linux服务器"></a>利用SCP指令从Windows上传文件到Linux服务器</h2><p>​    现有一个本地的BBS-Forum.zip文件需要上传到Linux服务器。</p>
-<p><img src="/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/1.png" alt="本地文件"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/1.png" alt="本地文件"></p>
 <p>​    首先打开命令提示符cmd，按SCP指令格式输入<code>scp F:\GitHub\BBS-Forum.zip root@211.68.46.235:/var/www/html</code>，其中root是远端Liunx用户名，然后输入密码（密码不显示），开始上传。</p>
-<p><img src="/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/2.png" alt="命令提示符"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/2.png" alt="命令提示符"></p>
 <p>​    然后去云服务器端查看文件，成功上传！</p>
-<p><img src="/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/3.png" alt="云服务器端"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/Windows%E4%B8%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%88SCP%E6%8C%87%E4%BB%A4%EF%BC%89/3.png" alt="云服务器端"></p>
 <h2 id="利用SCP指令从Linux服务器下载文件到Windows"><a href="#利用SCP指令从Linux服务器下载文件到Windows" class="headerlink" title="利用SCP指令从Linux服务器下载文件到Windows"></a>利用SCP指令从Linux服务器下载文件到Windows</h2><p>​    原理同上传，执行<code>scp root@211.68.46.235:/var/www/html/BBS-Forum.zip F:\GitHub</code>，输入密码，开始下载。</p>
 <h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
 <li>在cmd中输入密码时，考虑安全性问题，密码默认不显示，但实际已经成功输入。</li>

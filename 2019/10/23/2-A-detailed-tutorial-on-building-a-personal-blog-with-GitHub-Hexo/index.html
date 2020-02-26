@@ -85,7 +85,7 @@
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    8k
+                    8.2k
                 </span>
                 
                 
@@ -134,7 +134,7 @@
 <li>安装git for windows 或 GitHub Desktop（或者其它git客户端）</li>
 </ul>
 <h2 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h2><h3 id="创建GitHub博客仓库"><a href="#创建GitHub博客仓库" class="headerlink" title="创建GitHub博客仓库"></a>创建GitHub博客仓库</h3><p>​    如没有GitHub账号请自行百度并注册。在GitHub上新建一个名为<code>username.github.io</code>的仓库，其中username为GitHub的用户名（注意而非昵称！），那么最终生成的博客链接就为<code>https://username.github.io</code></p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/1.png" alt="创建仓库"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/1.png" alt="创建仓库"></p>
 <p><strong>例</strong>：如果你的github用户名是jack，那么你应该新建jack.github.io的仓库（其他名称无效）</p>
 <p><strong>注</strong>：</p>
 <ul>
@@ -149,23 +149,23 @@
 <h3 id="配置SSH-Key"><a href="#配置SSH-Key" class="headerlink" title="配置SSH Key"></a>配置SSH Key</h3><p>​    在很多地方都会用到SSH Key来解决直接使用账号密码不安全的问题。打开Git for Windows</p>
 <p>​    <code>ssh-keygen -t rsa -C &quot;邮件地址&quot;</code></p>
 <p>​    然后按提示进行并点击回车，最终会在电脑的<code>C:\Users\XXX\.ssh</code>目录下（XXX为电脑当前登录的用户名）生成 <code>.ssh\id_rsa.pub</code> 文件，用记事本打开并将里面的内容全部复制。</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/2.png" alt="生成SSH Key"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/2.png" alt="生成SSH Key"></p>
 <p>​    打开你的GitHub主页，进入<code>个人设置— SSH and GPG keys — New SSH key</code>，将刚刚复制的文本复制到Key方框内，Title可随意填写。</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/3.png" alt="配置SSH Key"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/3.png" alt="配置SSH Key"></p>
 <p>​    下面来检测一下是否通过SSH连接成功</p>
 <p>​    <code>$ ssh -T git@github.com # 无需更改git@github.com</code></p>
 <p>​    应该会提示 <code>Are you sure you want to continue connecting (yes/no)?</code> 输入yes，提示<code>Hi Zam90! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>说明SSH配置成功，然后输入以下指令</p>
 <pre><code>$ git config --global user.name &quot;Username&quot;// 你的github用户名，注意不是昵称
 $ git config --global user.email  &quot;xxx@xxx.com&quot;// 填写已经验证过的github注册邮箱</code></pre><h3 id="安装配置Hexo"><a href="#安装配置Hexo" class="headerlink" title="安装配置Hexo"></a>安装配置Hexo</h3><p>​    在电脑中新建一个文件夹（名字随意），但创建好之后无法随意更改，所以考虑好建在一个合适的位置。以我的<code>F:\Hexo</code>为例来做说明。</p>
 <pre><code>$ cd /f/Hexo/  #跳转到文件夹位置
-$ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/4.png" alt="创建Hexo工作区"></p>
+$ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="https://zam9036.gitee.io/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/4.png" alt="创建Hexo工作区"></p>
 <p>​    创建完成后文件夹内应该有以上内容（除了public）</p>
 <p>​    然后执行以下指令</p>
 <p>​    <code>$ hexo g # 生成Hexo博客文件</code></p>
 <p>​    此时Hexo会自动在public文件夹内生成博客文件</p>
 <p>​    <code>$ hexo s # 启动本地预览服务</code></p>
 <p>​    此时打开浏览器访问<code>localhost:4000</code>，可以看到默认生成的博客主页</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/5.png" alt="默认博客主页"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/5.png" alt="默认博客主页"></p>
 <h3 id="上传博客至GitHub"><a href="#上传博客至GitHub" class="headerlink" title="上传博客至GitHub"></a>上传博客至GitHub</h3><h4 id="Git-bash上传"><a href="#Git-bash上传" class="headerlink" title="Git bash上传"></a>Git bash上传</h4><p>​    首先，验证你的SSH成功配置</p>
 <p>​    然后用记事本打开Hexo工作区内的配置文件 <code>_config.yml</code> ，修改<code>deploy</code>部分：</p>
 <pre><code>deploy:
@@ -179,7 +179,7 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
 <p>​    然后再次<code>Hexo d</code>就可以了。</p>
 <h4 id="GitHub-Desktop上传"><a href="#GitHub-Desktop上传" class="headerlink" title="GitHub Desktop上传"></a>GitHub Desktop上传</h4><p>​    自从GitHub Desktop上线后，上传代码就有了更方便的选择。</p>
 <p>​    安装GitHub Desktop后，clone你的username.github.io仓库到Hexo工作区内的public文件夹，这样<code>Hexo g</code>后public文件夹内的新文件就会被GitHub Desktop检测到：</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/6.png" alt="GitHub Desktop端"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/6.png" alt="GitHub Desktop端"></p>
 <p>​    然后输入Summary，点击Fetch origin就可以直接上传。</p>
 <p>​    当然你也可以选择不把仓库clone到public文件夹内。clone时选择其他文件夹，然后把public内的文件复制到那个clone的文件夹，然后依然可以用GitHub Desktop上传。</p>
 <h3 id="检测连接"><a href="#检测连接" class="headerlink" title="检测连接"></a>检测连接</h3><p>​    尝试访问<a href="https://username.github.io，如果成功显示和本地预览相同的界面说明博客搭建成功！" target="_blank" rel="noopener">https://username.github.io，如果成功显示和本地预览相同的界面说明博客搭建成功！</a></p>
@@ -191,10 +191,10 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="/img/p
   repository: git@github.com:zam90/zam90.github.io.git
   branch: master</code></pre><p>​    注意<code>repository:</code>处不要写成 <code>repository: https:</code>（我遇过的坑）</p>
 <h3 id="博客上传成功后访问时收到GitHub的Error邮件"><a href="#博客上传成功后访问时收到GitHub的Error邮件" class="headerlink" title="博客上传成功后访问时收到GitHub的Error邮件"></a>博客上传成功后访问时收到GitHub的Error邮件</h3><p>​    如收到GitHub的以下邮件：（我遇过的坑）</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/7.jpg" alt="Error邮件"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/7.jpg" alt="Error邮件"></p>
 <p>​    请到<code>Hexo工作区—themes/landscape</code>下删除README.md文件后尝试重新上传，此问题可能是index.html与README.md文件冲突导致。</p>
 <h3 id="博客上传成功后访问时收到GitHub的Warning邮件"><a href="#博客上传成功后访问时收到GitHub的Warning邮件" class="headerlink" title="博客上传成功后访问时收到GitHub的Warning邮件"></a>博客上传成功后访问时收到GitHub的Warning邮件</h3><p>​    如收到GitHub的以下邮件：（我遇过的坑）</p>
-<p><img src="/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/8.jpg" alt="Warning邮件"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/%E5%88%A9%E7%94%A8GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/8.jpg" alt="Warning邮件"></p>
 <p>​    请尝试重新配置SSH Key文件，并使用Git for Windows上传博客。</p>
 <h3 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h3><p>​    如有其他问题，请参考<a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">官方文档</a>，逐一排查尝试解决。</p>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>​    至此个人博客已经搭建完成，在后续的文章中我会详细讲解如何更换博客主题、写博客、创建新页面、不使用外链插入图片……感谢您的持续关注！</p>

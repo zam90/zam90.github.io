@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zam9036.gitee.io/2019/12/05/20-Use-adjacency-list-to-store-undirected-disconnected-graphs-and-traverse-adjacency-lists-with-DFS-and-BFS/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/12/03/19-Eight-Queens-Expansion-Using-DFS-Depth-First-Search-Algorithm-to-Solve-N-Queens-Problem/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/24/18-Object-oriented-technical-problem-classification-example-4/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/20/17-Object-oriented-technical-problem-classification-example-3/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/16/16-GitHubPages-personal-blog-migrates-to-mayun-to-speed-blog-access/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/13/15-Record-the-problems-encountered-by-Hexo-blog-installation-hexo-generator-search/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/09/14-Pre-order-mid-order-subsequent-recursion-and-non-recursive-traversal-of-binary-tree-and-left-and-right-subtree-exchange/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/06/13-Object-oriented-technical-problem-classification-example-2/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/05/12-Object-oriented-technical-problem-classification-example-1/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/01/9-Implementing-a-simple-calculator-with-a-stack/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/10/28/7-Quickly-upload-and-download-files-between-Windows-and-Linux-servers-SCP-instructions/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/10/27/6-Use-Hexo-to-insert-local-pictures-in-your-blog-no-external-link-required/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/10/24/3-Change-the-theme-of-the-Hexo-blog/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/10/23/2-A-detailed-tutorial-on-building-a-personal-blog-with-GitHub-Hexo/</loc>
+    <lastmod>2020-02-26</lastmod>
+  </url>  <url>
     <loc>https://zam9036.gitee.io/2020/02/25/27-Linux-system-installation-on-Windows-virtual-machine/</loc>
     <lastmod>2020-02-25</lastmod>
   </url>  <url>
@@ -22,37 +64,10 @@
     <loc>https://zam9036.gitee.io/2020/01/24/24-Android-Study-Notes-1/</loc>
     <lastmod>2020-01-29</lastmod>
   </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/10/28/7-Quickly-upload-and-download-files-between-Windows-and-Linux-servers-SCP-instructions/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/16/16-GitHubPages-personal-blog-migrates-to-mayun-to-speed-blog-access/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/10/27/6-Use-Hexo-to-insert-local-pictures-in-your-blog-no-external-link-required/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/10/23/2-A-detailed-tutorial-on-building-a-personal-blog-with-GitHub-Hexo/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/12/05/20-Use-adjacency-list-to-store-undirected-disconnected-graphs-and-traverse-adjacency-lists-with-DFS-and-BFS/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/12/03/19-Eight-Queens-Expansion-Using-DFS-Depth-First-Search-Algorithm-to-Solve-N-Queens-Problem/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/13/15-Record-the-problems-encountered-by-Hexo-blog-installation-hexo-generator-search/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/09/14-Pre-order-mid-order-subsequent-recursion-and-non-recursive-traversal-of-binary-tree-and-left-and-right-subtree-exchange/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
     <loc>https://zam9036.gitee.io/2019/11/02/10-Cd-instruction-in-Linux/</loc>
     <lastmod>2020-01-07</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/11/04/11-Rm-delete-instruction-in-Linux/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/01/9-Implementing-a-simple-calculator-with-a-stack/</loc>
     <lastmod>2020-01-07</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/10/30/8-Record-problems-encountered-in-installing-GD-image-support-library-on-Ubuntu/</loc>
@@ -62,21 +77,6 @@
     <lastmod>2020-01-07</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/10/25/4-Write-a-blog-with-Hexo/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/10/24/3-Change-the-theme-of-the-Hexo-blog/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/24/18-Object-oriented-technical-problem-classification-example-4/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/20/17-Object-oriented-technical-problem-classification-example-3/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/06/13-Object-oriented-technical-problem-classification-example-2/</loc>
-    <lastmod>2020-01-07</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/05/12-Object-oriented-technical-problem-classification-example-1/</loc>
     <lastmod>2020-01-07</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/10/23/1-First-blog/</loc>

@@ -11,7 +11,8 @@
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
     <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,
-计算机网络的概念与组成计算机网络的概念计算机网络系统是将地理位置不同的多个计算机系统，通过通信设备和线路连接起来，并配以功能完善的网络软件(如网络操作系统等)，按照一定的协议实现相互通信和资源共享,"> 
+[TOC]
+计算机网络的概念与组成计算机网络的概念计算机网络系统是将地理位置不同的多个计算机系统，通过通信设备和线路连接起来，并配以功能完善的网络软件(如网络操作系统等)，按照一定的协议实现相互通,"> 
     <meta name="author" content="ZamCenter"> 
     <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -86,13 +87,13 @@
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    13k
+                    23k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    12 mins.
+                    21 mins.
                 </span>
                 
                 
@@ -127,6 +128,7 @@
     <div class='main'>
         <div class="content markdown animated fadeIn">
             <p><img src="https://zam9036.gitee.io/img/postimg/26-Computer-network-study-notes-1/wordCloud.png" alt="文章词云"></p>
+<p>[TOC]</p>
 <h1 id="计算机网络的概念与组成"><a href="#计算机网络的概念与组成" class="headerlink" title="计算机网络的概念与组成"></a>计算机网络的概念与组成</h1><h2 id="计算机网络的概念"><a href="#计算机网络的概念" class="headerlink" title="计算机网络的概念"></a>计算机网络的概念</h2><p>计算机网络系统是将地理位置不同的<strong>多个计算机系统</strong>，通过<strong>通信设备</strong>和<strong>线路</strong>连接起来，并配以功能完善的<strong>网络软件</strong>(如网络操作系统等)，按照一定的<strong>协议</strong>实现<strong>相互通信和资源共享</strong>的<strong>系统</strong>，称为计算机网络系统。 </p>
 <blockquote>
 <p>计算机网络的功能：相互通信、资源共享</p>
@@ -366,6 +368,214 @@
 <li>本企业组织的员工远程访问本公司的Intranet 。</li>
 <li>大的企业集团，分布在多个地域的分公司或办事机构需要作为一个整体，互相交换信息，访问对方的Intranet，将企业内部网Intranet连接在一起。</li>
 </ul>
+<h1 id="计算机网络的性能指标"><a href="#计算机网络的性能指标" class="headerlink" title="计算机网络的性能指标"></a>计算机网络的性能指标</h1><h2 id="计算机网络的技术指标"><a href="#计算机网络的技术指标" class="headerlink" title="计算机网络的技术指标"></a>计算机网络的技术指标</h2><h3 id="传输速率和带宽"><a href="#传输速率和带宽" class="headerlink" title="传输速率和带宽"></a>传输速率和带宽</h3><h4 id="传输速率-Data-Rate"><a href="#传输速率-Data-Rate" class="headerlink" title="传输速率(Data Rate)"></a>传输速率(Data Rate)</h4><p>每秒种传输的二进制比特数，描述数据流的一个参数，单位用BPS表示。</p>
+<h4 id="带宽（Bandwidth"><a href="#带宽（Bandwidth" class="headerlink" title="带宽（Bandwidth)"></a>带宽（Bandwidth)</h4><p>信道具有的频带宽度，描述媒介物理特性的一个参数，单位用HZ表示。</p>
+<blockquote>
+<p>两者关系的定性描述：</p>
+<p>具有一定带宽的信道，其信号传输速率是有限的。</p>
+<p>信号传输的速率越快，要求信道的带宽就越高。</p>
+<p>信道的带宽越高，信号的传输速率就越快。</p>
+<p>—— 两者成正比关系。</p>
+<p>——信号传输速率与信道带宽两个概念在工业上经常互换使用。</p>
+</blockquote>
+<blockquote>
+<p>两者关系的定量描述：</p>
+<p>（1）对于无热噪声的理想信道（无其他信号干扰）来说，用奈奎斯特（Nyquist）公式计算：</p>
+<p>极限传输速率（信道容量）C=2Flog$_2$S</p>
+<p>其中，F为信道带宽 (Hz) ，S为单位周期内数字信号的状态数。</p>
+<p>（2）对于有热噪声的实际信道（既有干扰信号）来说，这个极限值可以用香农（Shannon）公式计算：</p>
+<p>信道容量 C=Flog$_2$(1+S/N) </p>
+<p>其中，S为接收端信号平均功率（W），N为信道内噪声平均功率（W）。</p>
+<p>一般的数据通信系统都必须保证S/N的比值。</p>
+</blockquote>
+<h3 id="吞吐量-throughput"><a href="#吞吐量-throughput" class="headerlink" title="吞吐量(throughput)"></a>吞吐量(throughput)</h3><p>单位时间内通过某个网络（或信道、接口）的数据量。</p>
+<blockquote>
+<p>传输速率、带宽、吞吐量都是衡量网络传输质量的重要参数。</p>
+</blockquote>
+<h3 id="误码率（BER：bit-error）"><a href="#误码率（BER：bit-error）" class="headerlink" title="误码率（BER：bit error）"></a>误码率（BER：bit error）</h3><p>衡量网络传输质量的一个重要参数。</p>
+<p>定义：二进制符号在传输系统中被传错的概率。</p>
+<p>近似的等于被传错的二进制符号数与所传二进制符号总数的比值</p>
+<p>计算公式：误码率Pe = 接收的错误比特数/传输的总比特数</p>
+<p>量值概念：在计算机网络通讯中，误码率要求低于$10^-9$</p>
+<h3 id="分组延迟和延迟抖动"><a href="#分组延迟和延迟抖动" class="headerlink" title="分组延迟和延迟抖动"></a>分组延迟和延迟抖动</h3><h4 id="分组延迟"><a href="#分组延迟" class="headerlink" title="分组延迟"></a>分组延迟</h4><p>分组的第一个bit离开发送端与分组的最后一个bit到达接收端的时间间隔。</p>
+<p>分组延迟可以细分为4个部分：</p>
+<p>（1）发送延迟（传输延迟，transmission delay）：发送数据时，数据分组从结点进入网络所需的时间。</p>
+<p>（2）传播延迟：分组在网络中传播而花费的时间，即发送端发送出分组中的某一个比特到接收端接收到该比特所经过的时间间隔，它取决于传输介质和传输距离。</p>
+<blockquote>
+<p>注意：信号传输速率（即发送速率）和信号在信道上的传播速率是完全不同的概念。</p>
+</blockquote>
+<p>（3）处理延迟（processing delay）：交换结点为存储转发分组而进行一些必要的处理所花费的时间，即分组从到达节点到进入输出队列的时间间隔，包括对分组头处理，路由查找等，它取决于节点的处理能力和分组处理的复杂度</p>
+<p>（4）排队延迟（queuing delay）：分组从进入队列到开始传输所经过的时间间隔，或者说分组在路由器等结点的缓存队列中排队所经历的延迟。排队延迟取决于平均队列长度（反映的是网络中的数据流量）和调度策略。</p>
+<p><strong>分组总延迟＝发送延迟＋传播延迟＋处理延迟＋排队延迟</strong></p>
+<blockquote>
+<p>如何减少延迟？</p>
+<p>提高网络的带宽、增加路由器等结点的缓存空间和处理能力</p>
+</blockquote>
+<h4 id="延迟抖动"><a href="#延迟抖动" class="headerlink" title="延迟抖动"></a>延迟抖动</h4><p>分组延迟的变化程度。反映的是端到端延时的变化特性。</p>
+<p>产生原因：由延时的可变部分的变化导致的。如：流量的突发、不公平的队列调度算法。</p>
+<p>影响程度：延迟抖动越大，网络服务质量越难以控制，网络越容易出现拥塞。</p>
+<h3 id="分组丢失率和超时重传率"><a href="#分组丢失率和超时重传率" class="headerlink" title="分组丢失率和超时重传率"></a>分组丢失率和超时重传率</h3><p>丢失原因：因为出现拥塞而被迫丢失；因避免出现拥塞而被主动丢弃。</p>
+<h4 id="分组丢失率"><a href="#分组丢失率" class="headerlink" title="分组丢失率"></a>分组丢失率</h4><p>单位时间内丢失的分组数量与所传输的分组数量的比值。</p>
+<p>——取平均值(因为不同时刻，网络中的数据流量以及拥塞程度不同)</p>
+<h4 id="超时重传率"><a href="#超时重传率" class="headerlink" title="超时重传率"></a>超时重传率</h4><p>单位时间内被重传的分组数量与发送的分组总数的比率。</p>
+<p>——取一段时间内的平均值。</p>
+<blockquote>
+<p>分组丢失率、超时重传率和误码率都是衡量网络传输质量的重要参数。</p>
+</blockquote>
+<h3 id="信道利用率-amp-网络利用率"><a href="#信道利用率-amp-网络利用率" class="headerlink" title="信道利用率&amp;网络利用率"></a>信道利用率&amp;网络利用率</h3><h4 id="信道利用率"><a href="#信道利用率" class="headerlink" title="信道利用率"></a>信道利用率</h4><p>信道的使用效率。</p>
+<h4 id="网络利用率："><a href="#网络利用率：" class="headerlink" title="网络利用率："></a>网络利用率：</h4><p>网络中全部信道的利用率的加权平均值。</p>
+<blockquote>
+<p>考虑到可能出现的网络拥塞，信道利用率或网络利用率并非越高越好。</p>
+</blockquote>
+<h2 id="计算机网络的工程化指标"><a href="#计算机网络的工程化指标" class="headerlink" title="计算机网络的工程化指标"></a>计算机网络的工程化指标</h2><ul>
+<li>性价比</li>
+<li><strong>可靠性（稳定性）</strong></li>
+<li>可扩展性</li>
+<li>易于管理和维护</li>
+</ul>
+<h1 id="计算机网络的体系结构"><a href="#计算机网络的体系结构" class="headerlink" title="计算机网络的体系结构"></a><strong>计算机网络的体系结构</strong></h1><h2 id="计算机网络体系结构的形成"><a href="#计算机网络体系结构的形成" class="headerlink" title="计算机网络体系结构的形成"></a>计算机网络体系结构的形成</h2><p>协议的必要性：双（多）方协调一致，相互匹配。</p>
+<p>协议集：对于一个功能强大的、既包括硬件又包括软件的、复杂的计算机网络来说，需要制订若干个协议，构成一个协议集。</p>
+<p>层次结构：对于数量繁多、庞大复杂的网络协议集来说，其最好的组织方式就是采用层次结构。 </p>
+<p>分层的好处</p>
+<ul>
+<li>灵活性好：各层之间是独立的，可以跟据需要裁剪组合，跨越某些层。</li>
+<li>易于设计（实现）和维护。</li>
+<li>易于标准化。</li>
+</ul>
+<p>层数设多少</p>
+<ul>
+<li>层数太少：每一层的协议太复杂。</li>
+<li>层数太多：各层之间关系太复杂。</li>
+<li>层数适当：4 ～ 7</li>
+</ul>
+<p>分层原则：</p>
+<ul>
+<li>逻辑关系</li>
+<li>功能独立性</li>
+</ul>
+<p>网络体系结构(architecture) ：网络协议的层次结构模型</p>
+<p>网络体系结构意义：</p>
+<ul>
+<li>促进标准化</li>
+<li>决定网络的功能和性能</li>
+</ul>
+<h2 id="开放系统互连参考模型OSI-RM"><a href="#开放系统互连参考模型OSI-RM" class="headerlink" title="开放系统互连参考模型OSI/RM"></a>开放系统互连参考模型OSI/RM</h2><p><strong>产生的背景：</strong></p>
+<ul>
+<li>层次化的网络体系结构被接受并得到普及和推广</li>
+<li>各计算机生产厂商纷纷推出自己的层次化网络体系结构</li>
+<li>这些网络体系结构普遍是以自己公司的产品为对象</li>
+<li>层次的划分、功能的分配与采用的技术术语各不相同，不具备与其它公司网络结构的兼容性</li>
+</ul>
+<p>ISO组成TC97/SC16，OSI/RM应运而生。</p>
+<p><strong>开放系统：</strong>一个系统在和其他系统进行通信时，如果能够遵守标准化的信息交换协议，就称其为开放系统。 </p>
+<p><strong>层次划分的原则：</strong></p>
+<ul>
+<li>网络中相同的结点具有相同的层次；相同的层次具有相同的功能</li>
+<li>同一结点内相邻层之间通过确定的接口进行交互通信</li>
+<li>网络中不同结点的同等层之间采用相同的协议，实现对等层之间的交互操作</li>
+</ul>
+<p><strong>分层情况：</strong></p>
+<p>以客户机为代表的每个端结点： 开放系统——七层</p>
+<p>以路由器/交换机(三层结构) 为代表的中继结点（中继开放系统）——三层</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/26-Computer-network-study-notes-1/11.png" alt="OSI参考模型的结构形式"></p>
+<p><strong>各层协议的功能：</strong></p>
+<ul>
+<li><p>应用层协议：提供各种规范的网络应用和服务 (如文件传递，电子邮件等)</p>
+</li>
+<li><p>表示层协议：用于协调两个应用实体之间进行数据交换时数据格式不一致以及数据表示方法不同等问题 。</p>
+</li>
+<li><p>会话层协议：组织和同步不同主机上各进程间的通信(会话) —— 在两个相互通信的实体(进程)之间，建立、组织、协调其交互会话过程。</p>
+</li>
+<li><p>传输层协议：确保两个客户端之间可以实现端——端的透明数据传输服务。</p>
+</li>
+<li><p>网络层协议：用于实现数据分组跨通信子网（物理网络）进行传输的管理和控制。</p>
+</li>
+<li><p>数据链路层：按某种规程(如HDLC)组织每条数据链路上的数据传输，提供高可靠性、无差错的数据传输质量。</p>
+</li>
+<li><p>物理层协议：使所有连网的计算机系统和通信设备都能够从接口上兼容，并使这些接口的定义独立于厂商的设备。</p>
+</li>
+</ul>
+<p><img src="https://zam9036.gitee.io/img/postimg/26-Computer-network-study-notes-1/12.png" alt="OSI参考模型的数据传输过程"></p>
+<p><strong>OSI/RM的应用：</strong></p>
+<p>CCITT（ITU—T）从一开始就提供对OSI的支持，协助制定标准。但在市场化方面 OSI 却失败了：</p>
+<ul>
+<li><p>OSI 标准的制定周期太长，因而使得按 OSI 标准生产的设备无法及时进入市场</p>
+</li>
+<li><p>OSI 的专家们在完成 OSI 标准时没有商业驱动力</p>
+</li>
+<li><p>OSI 的协议实现起来过分复杂，且运行效率很低</p>
+</li>
+<li><p>OSI 的层次划分并也不太合理，有些功能在多个层次中重复出现 </p>
+<p>——总之，没有得到市场的认可。</p>
+</li>
+</ul>
+<p><strong>OSI/RM的意义：</strong></p>
+<p>其它所有网络体系结构都要都要参照OSI/RM，并给出与其对应关系。—— 参照意义。</p>
+<h2 id="TCP-IP网络体系结构"><a href="#TCP-IP网络体系结构" class="headerlink" title="TCP/IP网络体系结构"></a>TCP/IP网络体系结构</h2><p>TCP/IP协议源于著名的ARPAnet及NSFNET</p>
+<p>TCP/IP协议是先于OSI模型开发的，因此不符合OSI/RM标准。</p>
+<p>TCP/IP协议被广泛采用的原因：</p>
+<ul>
+<li><p>Internet采用TCP/IP协议，各类网络都要和Internet或借助于Internet相互连接</p>
+</li>
+<li><p>TCP/IP已被公认为是异种计算机、异种网络彼此通信的可行协议</p>
+</li>
+<li><p>各主要计算机软、硬件厂商的网络产品几乎都支持TCP/IP协议</p>
+</li>
+</ul>
+<p><img src="https://zam9036.gitee.io/img/postimg/26-Computer-network-study-notes-1/13.png" alt="TCP/IP网络体系结构概览"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/26-Computer-network-study-notes-1/14.png" alt="IP可应用到各式各样的网络"></p>
+<blockquote>
+<p>TCP/IP不涉及接口层，所以可应用于各类网络</p>
+<p>UDP后于TCP出现，主要弥补TCP协议的不足。TCP与UDP互补</p>
+<p>TCP相对于UDP可靠性高；UDP相对于TCP传输效率高</p>
+</blockquote>
+<h3 id="网络接口层"><a href="#网络接口层" class="headerlink" title="网络接口层"></a>网络接口层</h3><p>没有具体的协议，适用于任何网络产品。—— 类似对应OSI/RM的物理层和数据链路层。</p>
+<h3 id="网际层"><a href="#网际层" class="headerlink" title="网际层"></a>网际层</h3><p>类似对应OSI/RM的网络层。</p>
+<p>包括4个重要的协议：IP、ICMP、ARP和RARP。</p>
+<h4 id="IP-互连网协议"><a href="#IP-互连网协议" class="headerlink" title="IP(互连网协议)"></a>IP(互连网协议)</h4><p>实现网际寻址，通过互连的网络找到目标结点，传送数据报。</p>
+<p>特点：不检查遗失的分组 → IP协议不保证服务的可靠性</p>
+<p>—— 端到端的流量控制、分组丢失的检测、分组排序等工作均由高层协议负责。 </p>
+<h4 id="ICMP-互连网控制报文协议"><a href="#ICMP-互连网控制报文协议" class="headerlink" title="ICMP(互连网控制报文协议)"></a>ICMP(互连网控制报文协议)</h4><p>使网际上的计算机能够检测和报告丢包等差错，或提供其它意外信息 。</p>
+<p>ICMP与IP的关系：嵌入到IP中，弥补IP的不足。（IP的补丁）</p>
+<h4 id="ARP-地址转换协议"><a href="#ARP-地址转换协议" class="headerlink" title="ARP(地址转换协议)"></a>ARP(地址转换协议)</h4><p>将IP地址变换成硬件接口地址(MAC)</p>
+<h4 id="RARP-反向地址转换协议"><a href="#RARP-反向地址转换协议" class="headerlink" title="RARP(反向地址转换协议)"></a>RARP(反向地址转换协议)</h4><p>根据MAC地址查找IP地址。</p>
+<h3 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h3><p>为通信双方的主机提供端到端的服务。—— 类似对应OSI/RM的运输层和会话层</p>
+<p>TCP/IP在传输层提供两个主要协议：</p>
+<h4 id="TCP-传输控制协议"><a href="#TCP-传输控制协议" class="headerlink" title="TCP(传输控制协议)"></a>TCP(传输控制协议)</h4><p>提供端到端可靠的进程间通信 —— TCP向高层提供的是面向连接的虚电路服务</p>
+<p>面向连接的通信分三个阶段：连接建立、数据传送和连接拆除</p>
+<p>由于建立了一条虚电路，因此可以实现可靠传输。</p>
+<h4 id="UDP-用户数据报协议"><a href="#UDP-用户数据报协议" class="headerlink" title="UDP(用户数据报协议)"></a>UDP(用户数据报协议)</h4><p>提供端到端快捷但不够可靠的进程间通信 —— UDP向高层提供的是非面向连接的数据报服务</p>
+<p>由于面向无连接的服务没有建立连接和拆除连接的过程，因此可直接进行数据传输，但每个包必须给出IP地址。</p>
+<p>端口号：一个16位的标志符，标识传输层协议和特定的应用程序之间的接口。</p>
+<p>套接字：端口号和IP地址合起来，唯一标识一个特定的应用程序。</p>
+<h3 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h3><p>大致和OSI模型的表示层和应用层对应，但没有明确的层次划分。</p>
+<p>其中，HTTP、Telnet、FTP、TFTP、SMTP、DNS等是广泛使用的应用层协议。 </p>
+<p><strong>TCP/IP的特点</strong></p>
+<ul>
+<li>TCP/IP虽然也分层，但其层次间的调用关系不像OSI那样严格</li>
+</ul>
+<blockquote>
+<p>可以越层</p>
+</blockquote>
+<ul>
+<li>OSI对可靠性的强调是第一位的，协议的所有各层都要检测和处理错误</li>
+</ul>
+<blockquote>
+<p>随着传输介质和通信子网的升级换代，没必要</p>
+</blockquote>
+<p>​        TCP/IP认为可靠性应该在传输层由端结点来解决</p>
+<blockquote>
+<p>TCP/IP效率很高（但如果通信子网可靠性较差，主机的负担就会加重）</p>
+</blockquote>
+<ul>
+<li><p>OSI由通信子网解决：监视数据流量、控制网络访问、记帐收费、甚至路由选择、流量控制等智能性活动；TCP/IP则要求主机参与几乎所有的智能性活动。</p>
+</li>
+<li><p>OSI一开始没有考虑网络互连问题，只好以后在网络层中划分出一个子层来完成类似IP的功能TCP/IP从一开始就考虑到网络互联问题，并将互连网协议IP作为TCP/IP的重要组成部分</p>
+</li>
+</ul>
+<p><img src="https://zam9036.gitee.io/img/postimg/26-Computer-network-study-notes-1/15.png" alt="5层网络体系结构模型"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/26-Computer-network-study-notes-1/16.png" alt="5层网络数据传输过程"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/26-Computer-network-study-notes-1/17.png" alt="小结"></p>
 <h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
 <p>文章链接：<a href="https://zam9036.gitee.io/2020/02/24/26-Computer-network-study-notes-1">https://zam9036.gitee.io/2020/02/24/26-Computer-network-study-notes-1</a></p>
 <p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请保留文章链接并注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>
@@ -414,7 +624,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机网络的概念与组成"><span class="toc-number">1.</span> <span class="toc-text">计算机网络的概念与组成</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机网络的概念"><span class="toc-number">1.1.</span> <span class="toc-text">计算机网络的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#计算机网络的应用"><span class="toc-number">1.1.1.</span> <span class="toc-text">计算机网络的应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#计算机网络的组成"><span class="toc-number">1.1.2.</span> <span class="toc-text">计算机网络的组成</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机网络的类别"><span class="toc-number">2.</span> <span class="toc-text">计算机网络的类别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#按照网络的地理覆盖范围分"><span class="toc-number">2.1.</span> <span class="toc-text">按照网络的地理覆盖范围分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#广域网（WAN）"><span class="toc-number">2.1.1.</span> <span class="toc-text">广域网（WAN）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#城域网（MAN）"><span class="toc-number">2.1.2.</span> <span class="toc-text">城域网（MAN）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#局域网（LAN）"><span class="toc-number">2.1.3.</span> <span class="toc-text">局域网（LAN）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#个人区域网（PAN）"><span class="toc-number">2.1.4.</span> <span class="toc-text">个人区域网（PAN）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#互联网（Internet"><span class="toc-number">2.1.5.</span> <span class="toc-text">互联网（Internet)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的应用群体分"><span class="toc-number">2.2.</span> <span class="toc-text">按网络的应用群体分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#公用网-public-network"><span class="toc-number">2.2.1.</span> <span class="toc-text">公用网 (public network)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#专用网-private-network"><span class="toc-number">2.2.2.</span> <span class="toc-text">专用网 (private network)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的作用分"><span class="toc-number">2.3.</span> <span class="toc-text">按网络的作用分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#骨-主-干网"><span class="toc-number">2.3.1.</span> <span class="toc-text">骨(主)干网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接入网"><span class="toc-number">2.3.2.</span> <span class="toc-text">接入网</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的管理方式分"><span class="toc-number">2.4.</span> <span class="toc-text">按网络的管理方式分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#对等网（P2P，Peer-to-Peer）"><span class="toc-number">2.4.1.</span> <span class="toc-text">对等网（P2P，Peer-to-Peer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非对等网（有服务器网络）"><span class="toc-number">2.4.2.</span> <span class="toc-text">非对等网（有服务器网络）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的拓扑结构分"><span class="toc-number">2.5.</span> <span class="toc-text">按网络的拓扑结构分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#星形结构"><span class="toc-number">2.5.1.</span> <span class="toc-text">星形结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#树形结构-——-从星形结构网络演变而来"><span class="toc-number">2.5.2.</span> <span class="toc-text">树形结构 —— 从星形结构网络演变而来</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环形结构"><span class="toc-number">2.5.3.</span> <span class="toc-text">环形结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总线式结构"><span class="toc-number">2.5.4.</span> <span class="toc-text">总线式结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分布式结构"><span class="toc-number">2.5.5.</span> <span class="toc-text">分布式结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的传输媒体分"><span class="toc-number">2.6.</span> <span class="toc-text">按网络的传输媒体分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#有线网"><span class="toc-number">2.6.1.</span> <span class="toc-text">有线网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#无线网"><span class="toc-number">2.6.2.</span> <span class="toc-text">无线网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卫星网"><span class="toc-number">2.6.3.</span> <span class="toc-text">卫星网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#移动网"><span class="toc-number">2.6.4.</span> <span class="toc-text">移动网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#虚拟网"><span class="toc-number">2.6.5.</span> <span class="toc-text">虚拟网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#企业内部网Intranet-企业外联网Extranet"><span class="toc-number">2.6.6.</span> <span class="toc-text">企业内部网Intranet/企业外联网Extranet</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原创声明"><span class="toc-number">3.</span> <span class="toc-text">原创声明</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机网络的概念与组成"><span class="toc-number">1.</span> <span class="toc-text">计算机网络的概念与组成</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机网络的概念"><span class="toc-number">1.1.</span> <span class="toc-text">计算机网络的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#计算机网络的应用"><span class="toc-number">1.1.1.</span> <span class="toc-text">计算机网络的应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#计算机网络的组成"><span class="toc-number">1.1.2.</span> <span class="toc-text">计算机网络的组成</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机网络的类别"><span class="toc-number">2.</span> <span class="toc-text">计算机网络的类别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#按照网络的地理覆盖范围分"><span class="toc-number">2.1.</span> <span class="toc-text">按照网络的地理覆盖范围分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#广域网（WAN）"><span class="toc-number">2.1.1.</span> <span class="toc-text">广域网（WAN）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#城域网（MAN）"><span class="toc-number">2.1.2.</span> <span class="toc-text">城域网（MAN）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#局域网（LAN）"><span class="toc-number">2.1.3.</span> <span class="toc-text">局域网（LAN）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#个人区域网（PAN）"><span class="toc-number">2.1.4.</span> <span class="toc-text">个人区域网（PAN）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#互联网（Internet"><span class="toc-number">2.1.5.</span> <span class="toc-text">互联网（Internet)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的应用群体分"><span class="toc-number">2.2.</span> <span class="toc-text">按网络的应用群体分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#公用网-public-network"><span class="toc-number">2.2.1.</span> <span class="toc-text">公用网 (public network)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#专用网-private-network"><span class="toc-number">2.2.2.</span> <span class="toc-text">专用网 (private network)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的作用分"><span class="toc-number">2.3.</span> <span class="toc-text">按网络的作用分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#骨-主-干网"><span class="toc-number">2.3.1.</span> <span class="toc-text">骨(主)干网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接入网"><span class="toc-number">2.3.2.</span> <span class="toc-text">接入网</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的管理方式分"><span class="toc-number">2.4.</span> <span class="toc-text">按网络的管理方式分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#对等网（P2P，Peer-to-Peer）"><span class="toc-number">2.4.1.</span> <span class="toc-text">对等网（P2P，Peer-to-Peer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非对等网（有服务器网络）"><span class="toc-number">2.4.2.</span> <span class="toc-text">非对等网（有服务器网络）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的拓扑结构分"><span class="toc-number">2.5.</span> <span class="toc-text">按网络的拓扑结构分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#星形结构"><span class="toc-number">2.5.1.</span> <span class="toc-text">星形结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#树形结构-——-从星形结构网络演变而来"><span class="toc-number">2.5.2.</span> <span class="toc-text">树形结构 —— 从星形结构网络演变而来</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环形结构"><span class="toc-number">2.5.3.</span> <span class="toc-text">环形结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总线式结构"><span class="toc-number">2.5.4.</span> <span class="toc-text">总线式结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分布式结构"><span class="toc-number">2.5.5.</span> <span class="toc-text">分布式结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按网络的传输媒体分"><span class="toc-number">2.6.</span> <span class="toc-text">按网络的传输媒体分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#有线网"><span class="toc-number">2.6.1.</span> <span class="toc-text">有线网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#无线网"><span class="toc-number">2.6.2.</span> <span class="toc-text">无线网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卫星网"><span class="toc-number">2.6.3.</span> <span class="toc-text">卫星网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#移动网"><span class="toc-number">2.6.4.</span> <span class="toc-text">移动网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#虚拟网"><span class="toc-number">2.6.5.</span> <span class="toc-text">虚拟网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#企业内部网Intranet-企业外联网Extranet"><span class="toc-number">2.6.6.</span> <span class="toc-text">企业内部网Intranet/企业外联网Extranet</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机网络的性能指标"><span class="toc-number">3.</span> <span class="toc-text">计算机网络的性能指标</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机网络的技术指标"><span class="toc-number">3.1.</span> <span class="toc-text">计算机网络的技术指标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#传输速率和带宽"><span class="toc-number">3.1.1.</span> <span class="toc-text">传输速率和带宽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#吞吐量-throughput"><span class="toc-number">3.1.2.</span> <span class="toc-text">吞吐量(throughput)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#误码率（BER：bit-error）"><span class="toc-number">3.1.3.</span> <span class="toc-text">误码率（BER：bit error）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分组延迟和延迟抖动"><span class="toc-number">3.1.4.</span> <span class="toc-text">分组延迟和延迟抖动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分组丢失率和超时重传率"><span class="toc-number">3.1.5.</span> <span class="toc-text">分组丢失率和超时重传率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#信道利用率-amp-网络利用率"><span class="toc-number">3.1.6.</span> <span class="toc-text">信道利用率&amp;网络利用率</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机网络的工程化指标"><span class="toc-number">3.2.</span> <span class="toc-text">计算机网络的工程化指标</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机网络的体系结构"><span class="toc-number">4.</span> <span class="toc-text">计算机网络的体系结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机网络体系结构的形成"><span class="toc-number">4.1.</span> <span class="toc-text">计算机网络体系结构的形成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开放系统互连参考模型OSI-RM"><span class="toc-number">4.2.</span> <span class="toc-text">开放系统互连参考模型OSI/RM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP-IP网络体系结构"><span class="toc-number">4.3.</span> <span class="toc-text">TCP/IP网络体系结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#网络接口层"><span class="toc-number">4.3.1.</span> <span class="toc-text">网络接口层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网际层"><span class="toc-number">4.3.2.</span> <span class="toc-text">网际层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#传输层"><span class="toc-number">4.3.3.</span> <span class="toc-text">传输层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#应用层"><span class="toc-number">4.3.4.</span> <span class="toc-text">应用层</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原创声明"><span class="toc-number">5.</span> <span class="toc-text">原创声明</span></a></li></ol>
                 </div>
             </div>
             

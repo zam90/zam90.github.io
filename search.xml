@@ -196,7 +196,6 @@
     <title>计算机网络学习笔记（一）|Zam9036博客</title>
     <url>/2020/02/24/26-Computer-network-study-notes-1/</url>
     <content><![CDATA[<p><img src="https://zam9036.gitee.io/img/postimg/26-Computer-network-study-notes-1/wordCloud.png" alt="文章词云"></p>
-<p>[TOC]</p>
 <h1 id="计算机网络的概念与组成"><a href="#计算机网络的概念与组成" class="headerlink" title="计算机网络的概念与组成"></a>计算机网络的概念与组成</h1><h2 id="计算机网络的概念"><a href="#计算机网络的概念" class="headerlink" title="计算机网络的概念"></a>计算机网络的概念</h2><p>计算机网络系统是将地理位置不同的<strong>多个计算机系统</strong>，通过<strong>通信设备</strong>和<strong>线路</strong>连接起来，并配以功能完善的<strong>网络软件</strong>(如网络操作系统等)，按照一定的<strong>协议</strong>实现<strong>相互通信和资源共享</strong>的<strong>系统</strong>，称为计算机网络系统。 </p>
 <blockquote>
 <p>计算机网络的功能：相互通信、资源共享</p>
@@ -5228,6 +5227,11 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="https:
       </categories>
   </entry>
   <entry>
+    <title>标签Tags|Zam9036的博客</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>关于About|Zam9036博客</title>
     <url>/about/index.html</url>
     <content><![CDATA[<img src="https://zam9036.gitee.io/img/avatar.png" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 15px" />
@@ -5262,11 +5266,6 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="https:
   <entry>
     <title>时间轴Archives|Zam9036博客</title>
     <url>/archives/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签Tags|Zam9036的博客</title>
-    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

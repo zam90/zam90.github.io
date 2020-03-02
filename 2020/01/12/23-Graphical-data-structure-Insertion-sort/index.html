@@ -10,7 +10,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
-    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,算法概述插入排序（Insertion sort）是一种简单直观且稳定的排序算法。如果有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用,"> 
+    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,[TOC]
+算法概述插入排序（Insertion sort）是一种简单直观且稳定的排序算法。如果有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这,"> 
     <meta name="author" content="ZamCenter"> 
     <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -125,7 +126,8 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h1 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h1><p>插入排序（Insertion sort）是一种简单直观且稳定的排序算法。如果有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法—插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。是稳定的排序方法。插入算法把要排序的数组分成两部分：第一部分包含了这个数组的所有元素，但将最后一个元素除外（让数组多一个空间才有插入的位置），而第二部分就只包含这一个元素（即待插入元素）。在第一部分排序完成后，再将这个最后元素插入到已排好序的第一部分中。<br>插入排序的基本思想是：每步将一个待排序的记录，按其数值的大小插入前面已经排序的数字中适当位置上，直到全部插入完为止。</p>
+            <p>[TOC]</p>
+<h1 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h1><p>插入排序（Insertion sort）是一种简单直观且稳定的排序算法。如果有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法—插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。是稳定的排序方法。插入算法把要排序的数组分成两部分：第一部分包含了这个数组的所有元素，但将最后一个元素除外（让数组多一个空间才有插入的位置），而第二部分就只包含这一个元素（即待插入元素）。在第一部分排序完成后，再将这个最后元素插入到已排好序的第一部分中。<br>插入排序的基本思想是：每步将一个待排序的记录，按其数值的大小插入前面已经排序的数字中适当位置上，直到全部插入完为止。</p>
 <h1 id="图解核心原理"><a href="#图解核心原理" class="headerlink" title="图解核心原理"></a>图解核心原理</h1><p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/1.jpg" alt="插入排序核心原理1"></p>
 <p>插入排序需要把数列分为两个部分，一部分为排好的有序数列和另一部分未排的无序数列。假如我们需要对上图数列进行排序。</p>
 <p><img src="https://zam9036.gitee.io/img/postimg/23-Graphical-data-structure-Insertion-sort/2.jpg" alt="插入排序核心原理2"></p>

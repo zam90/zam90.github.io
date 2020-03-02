@@ -10,8 +10,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
-    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,编程语言C++
-继承与派生11、多重继承派生类的构造函数问题描述声明一个教师(Teacher)类和一个学生(Student)类，用公有多重继承的方式声明一个在职研究生(Graduate)派生类，包含,"> 
+    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,[TOC]
+编程语言C++
+继承与派生11、多重继承派生类的构造函数问题描述声明一个教师(Teacher)类和一个学生(Student)类，用公有多重继承的方式声明一个在职研究生(Graduate),"> 
     <meta name="author" content="ZamCenter"> 
     <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -126,7 +127,8 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h3 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h3><p>C++</p>
+            <p>[TOC]</p>
+<h3 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h3><p>C++</p>
 <h3 id="继承与派生"><a href="#继承与派生" class="headerlink" title="继承与派生"></a>继承与派生</h3><h4 id="11、多重继承派生类的构造函数"><a href="#11、多重继承派生类的构造函数" class="headerlink" title="11、多重继承派生类的构造函数"></a>11、多重继承派生类的构造函数</h4><h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h5><p>声明一个教师(Teacher)类和一个学生(Student)类，用公有多重继承的方式声明一个在职研究生(Graduate)派生类，包含私有成员wages(津贴)。教师类中包含保护数据成员name(姓名)、age(年龄)、title(职称)。学生类中包含保护数据成员name1(姓名)、sex(性别)、score(成绩)。在定义派生类对象时给出初始化的数据，然后输出这些数据。</p>
 <p>要求Teacher与Student类的数据成员都在自己的构造函数内初始化，新建Graduate对象时，Graduate应通过自身的构造函数去依次调用Teacher与Student的构造函数及其他。</p>
 <p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码。</p>

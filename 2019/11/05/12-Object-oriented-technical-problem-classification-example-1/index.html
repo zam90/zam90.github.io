@@ -10,8 +10,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
-    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,编程语言C++
-多态1、点圆圆柱圆锥球问题描述先建立一个点(Point)类，包含保护数据成员x, y。以它为基类，公有派生出一个圆(Circle)类，增加保护数据成员半径(radius)。再以Cir,"> 
+    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,[TOC]
+编程语言C++
+多态1、点圆圆柱圆锥球问题描述先建立一个点(Point)类，包含保护数据成员x, y。以它为基类，公有派生出一个圆(Circle)类，增加保护数据成员半径(radius),"> 
     <meta name="author" content="ZamCenter"> 
     <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -126,7 +127,8 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h3 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h3><p>C++</p>
+            <p>[TOC]</p>
+<h3 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h3><p>C++</p>
 <h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><h4 id="1、点圆圆柱圆锥球"><a href="#1、点圆圆柱圆锥球" class="headerlink" title="1、点圆圆柱圆锥球"></a>1、点圆圆柱圆锥球</h4><h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h5><p>先建立一个点(Point)类，包含保护数据成员x, y。以它为基类，公有派生出一个圆(Circle)类，增加保护数据成员半径(radius)。再以Circle类为基类，公有派生出一个圆柱(Cylinder)类，再增加数据成员高(height)。现依次输入x，y，r，h，计算以对象c中的radius、height构成的圆锥（Cone）和球（Sphere）的体积。</p>
 <p>部分代码已在下面给出，请在已有代码上补全，要求不能改动已有代码，π值取3.14。  </p>
 <pre><code class="c++">#define PI 3.14

@@ -10,7 +10,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
-    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,前言GitHubPages部署静态网页十分方便与快捷，常常被用来建立个人博客。但因为其服务器设在国外，且曾经被中国防火长城GFW屏蔽（后来解除屏蔽），导致其访问速度十分缓慢，甚至极少数状态下出现访问,"> 
+    <meta name="description" content="Zam9036的个人技术博客；ZamCenter的官方技术博客。,[TOC]
+前言GitHubPages部署静态网页十分方便与快捷，常常被用来建立个人博客。但因为其服务器设在国外，且曾经被中国防火长城GFW屏蔽（后来解除屏蔽），导致其访问速度十分缓慢，甚至极少数状,"> 
     <meta name="author" content="ZamCenter"> 
     <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -125,7 +126,8 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>GitHubPages部署静态网页十分方便与快捷，常常被用来建立个人博客。但因为其服务器设在国外，且曾经被中国防火长城GFW屏蔽（后来解除屏蔽），导致其访问速度十分缓慢，甚至极少数状态下出现访问出错的状况，极大影响了博客的使用体验。所以我近期尝试将GitHub的Hexo博客迁移至国内码云，以解决博客访问过于缓慢的情况。</p>
+            <p>[TOC]</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>GitHubPages部署静态网页十分方便与快捷，常常被用来建立个人博客。但因为其服务器设在国外，且曾经被中国防火长城GFW屏蔽（后来解除屏蔽），导致其访问速度十分缓慢，甚至极少数状态下出现访问出错的状况，极大影响了博客的使用体验。所以我近期尝试将GitHub的Hexo博客迁移至国内码云，以解决博客访问过于缓慢的情况。</p>
 <h2 id="迁移流程"><a href="#迁移流程" class="headerlink" title="迁移流程"></a>迁移流程</h2><h3 id="建立码云仓库"><a href="#建立码云仓库" class="headerlink" title="建立码云仓库"></a>建立码云仓库</h3><p>创建码云账号的流程我在此就不过多赘述了，根据提示操作即可，下面我来说一下建立码云仓库的操作。码云的仓库建立机制和GitHub一样，只需要新建仓库然后填写信息即可，其中仓库名字尤为关键。码云的静态资源托管平台可以托管用户的任意仓库，不必像GitHub那样仓库名必须和用户名一致才可。用户创建任意仓库，然后点击<code>服务-GiteePages</code>即可开启该仓库的静态资源托管服务。</p>
 <p><img src="https://zam9036.gitee.io/img/postimg/GitHubPages%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E7%A0%81%E4%BA%91%E4%BB%8E%E8%80%8C%E5%8A%A0%E5%BF%AB%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6/1.jpg" alt="开启Page服务"></p>
 <p>但是！在这里建议大家仓库名仍使用和自己码云用户名相同的名称！！因为当博客仓库名与自己的个性地址不一致时，博客部署完成后会存在一些资源访问404。原因是当需要部署的仓库和自己的个性地址不一致时，如：<a href="https://gitee.com/ipvb/blog" target="_blank" rel="noopener">https://gitee.com/ipvb/blog</a> ，生成的pages url 为 <a href="https://ipvb.gitee.io/blog" target="_blank" rel="noopener">https://ipvb.gitee.io/blog</a> ，而访问的资源404，如 <a href="https://ipvb.gitee.io/style.css" target="_blank" rel="noopener">https://ipvb.gitee.io/style.css</a> 这是相应配置文件的相对路径存在问题导致的，生成的资源 url 应该为 <a href="https://ipvb.gitee.io/blog/style.css" target="_blank" rel="noopener">https://ipvb.gitee.io/blog/style.css</a> 才对。 而针对这个问题官方给出了解决方案。</p>

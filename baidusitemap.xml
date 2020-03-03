@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zam9036.gitee.io/2020/03/03/29-Installation-and-use-of-SQL-Server/</loc>
+    <lastmod>2020-03-03</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2020/02/25/27-Linux-system-installation-on-Windows-virtual-machine/</loc>
+    <lastmod>2020-03-03</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/12/05/20-Use-adjacency-list-to-store-undirected-disconnected-graphs-and-traverse-adjacency-lists-with-DFS-and-BFS/</loc>
+    <lastmod>2020-03-03</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/12/03/19-Eight-Queens-Expansion-Using-DFS-Depth-First-Search-Algorithm-to-Solve-N-Queens-Problem/</loc>
+    <lastmod>2020-03-03</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/09/14-Pre-order-mid-order-subsequent-recursion-and-non-recursive-traversal-of-binary-tree-and-left-and-right-subtree-exchange/</loc>
+    <lastmod>2020-03-03</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/01/9-Implementing-a-simple-calculator-with-a-stack/</loc>
+    <lastmod>2020-03-03</lastmod>
+  </url>  <url>
     <loc>https://zam9036.gitee.io/2020/02/27/28-Algorithm-design-and-analysis-study-notes-1/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2020/02/24/26-Computer-network-study-notes-1/</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2020/02/25/27-Linux-system-installation-on-Windows-virtual-machine/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2020/01/29/25-Android-UI-framework-flutter-installation-and-use/</loc>
@@ -22,12 +37,6 @@
     <loc>https://zam9036.gitee.io/2020/01/10/21-Graphical-data-structure%E2%80%94bubble-sort/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/12/05/20-Use-adjacency-list-to-store-undirected-disconnected-graphs-and-traverse-adjacency-lists-with-DFS-and-BFS/</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/12/03/19-Eight-Queens-Expansion-Using-DFS-Depth-First-Search-Algorithm-to-Solve-N-Queens-Problem/</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>  <url>
     <loc>https://zam9036.gitee.io/2019/11/24/18-Object-oriented-technical-problem-classification-example-4/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
@@ -40,9 +49,6 @@
     <loc>https://zam9036.gitee.io/2019/11/13/15-Record-the-problems-encountered-by-Hexo-blog-installation-hexo-generator-search/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/09/14-Pre-order-mid-order-subsequent-recursion-and-non-recursive-traversal-of-binary-tree-and-left-and-right-subtree-exchange/</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>  <url>
     <loc>https://zam9036.gitee.io/2019/11/06/13-Object-oriented-technical-problem-classification-example-2/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
@@ -53,9 +59,6 @@
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/11/02/10-Cd-instruction-in-Linux/</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/01/9-Implementing-a-simple-calculator-with-a-stack/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/10/30/8-Record-problems-encountered-in-installing-GD-image-support-library-on-Ubuntu/</loc>

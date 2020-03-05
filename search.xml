@@ -42,7 +42,7 @@
       <tags>
         <tag>数据库</tag>
         <tag>SQL Server</tag>
-        <tag>数据库原理与应用</tag>
+        <tag>课程:数据库原理与应用</tag>
       </tags>
   </entry>
   <entry>
@@ -141,7 +141,7 @@
       </categories>
       <tags>
         <tag>算法</tag>
-        <tag>算法设计与分析</tag>
+        <tag>课程:算法设计与分析</tag>
       </tags>
   </entry>
   <entry>
@@ -237,8 +237,9 @@
       <tags>
         <tag>Linux</tag>
         <tag>Windows</tag>
-        <tag>Linux系统实践</tag>
         <tag>虚拟机</tag>
+        <tag>操作系统</tag>
+        <tag>课程:Linux系统实践</tag>
       </tags>
   </entry>
   <entry>
@@ -701,7 +702,7 @@
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>计算机网络</tag>
+        <tag>课程:计算机网络</tag>
       </tags>
   </entry>
   <entry>
@@ -1194,8 +1195,8 @@ int main()
         <tag>C++</tag>
         <tag>数据结构</tag>
         <tag>算法</tag>
-        <tag>课程实验</tag>
         <tag>项目</tag>
+        <tag>课程:数据结构英文C</tag>
       </tags>
   </entry>
   <entry>
@@ -1324,8 +1325,8 @@ bool checkQueens(int i ,int j) {
         <tag>C++</tag>
         <tag>数据结构</tag>
         <tag>算法</tag>
-        <tag>课程实验</tag>
         <tag>项目</tag>
+        <tag>课程:数据结构英文C</tag>
       </tags>
   </entry>
   <entry>
@@ -2727,8 +2728,8 @@ int main()
         <tag>C++</tag>
         <tag>数据结构</tag>
         <tag>算法</tag>
-        <tag>课程实验</tag>
         <tag>项目</tag>
+        <tag>课程:数据结构英文C</tag>
       </tags>
   </entry>
   <entry>
@@ -4847,8 +4848,8 @@ int main()
         <tag>C++</tag>
         <tag>数据结构</tag>
         <tag>算法</tag>
-        <tag>课程实验</tag>
         <tag>项目</tag>
+        <tag>课程:数据结构英文C</tag>
       </tags>
   </entry>
   <entry>
@@ -5300,11 +5301,6 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="https:
       </categories>
   </entry>
   <entry>
-    <title>时间轴Archives|Zam9036博客</title>
-    <url>/archives/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>关于About|Zam9036博客</title>
     <url>/about/index.html</url>
     <content><![CDATA[<img src="https://zam9036.gitee.io/img/avatar.png" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 15px" />
@@ -5334,6 +5330,11 @@ $ hexo init  #在此文件内创建Hexo工作区</code></pre><p><img src="https:
   <entry>
     <title>分类Categories|Zam9036博客</title>
     <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>时间轴Archives|Zam9036博客</title>
+    <url>/archives/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>

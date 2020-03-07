@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>判断某数是否为同余数-C语言|Zam9036博客 - Zam9036博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
+    <meta name="description" content="ZamCenter官方技术博客,
+[TOC]
+代码语言C语言
+前言近期，一个数学系专业的朋友联系我，问我能不能写出一个程序实现“判断一个数是否为整同余数”的功能，他还给了我同余数的定义：同余数是一个三边均为有理数的直角三角形的面积,"> 
+    <meta name="author" content="ZamCenter"> 
+    <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+</head>
+
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">Zam9036博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://zam9036.gitee.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">判断某数是否为同余数-C语言|Zam9036博客</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled=" "></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <link rel="stylesheet" href="https://zam9036.gitee.io/font_b3z4vr7szgf/iconfont.css">
+
+<div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover6.jpg) ">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="/categories/技术Demo"><b>「
+                    </b>技术DEMO<b> 」</b></a>
+                
+                三月 06, 2020
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/03/06/31-Determine-if-a-number-is-congruent-C-language/" title="判断某数是否为同余数-C语言|Zam9036博客" class="">判断某数是否为同余数-C语言|Zam9036博客</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                    8.1k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                    7 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/C/" rel="tag">C</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/wordCloud.png" alt="文章词云"></p>
+<p>[TOC]</p>
+<h1 id="代码语言"><a href="#代码语言" class="headerlink" title="代码语言"></a>代码语言</h1><p>C语言</p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>近期，一个数学系专业的朋友联系我，问我能不能写出一个程序实现“判断一个数是否为整同余数”的功能，他还给了我同余数的定义：同余数是一个三边均为有理数的直角三角形的面积</p>
+<h1 id="问题研究"><a href="#问题研究" class="headerlink" title="问题研究"></a>问题研究</h1><p>对于程序设计来说，仅仅按照这个定义来实现“判断一个数是否为同余数”的功能实在困难，就单纯让计算机来判断一个数是不是有理数就是一门学问。</p>
+<p>所以我只好另辟蹊径，找找还有什么方法能验证一个数是同余数。在百度百科上，我看到了数学家给出的一个重要结论，也是验证n是整同余数的充要条件：</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/1.png" alt="重要结论"></p>
+<p>我很敬佩数学家们的智慧，能得出这个重要的结论，这对用程序验证一个数是整同余数指明了思路。</p>
+<h2 id="四个变量"><a href="#四个变量" class="headerlink" title="四个变量"></a>四个变量</h2><p>首先，我们需要<strong>四个变量：n,a,b,v</strong></p>
+<p>这四个变量的关系是：<strong>需要寻找n，要先确定a,b,v</strong></p>
+<h2 id="四个条件"><a href="#四个条件" class="headerlink" title="四个条件"></a>四个条件</h2><p>然后，这四个变量需要满足以下四个条件</p>
+<ul>
+<li><strong>(a,b)=1</strong></li>
+<li><strong>a,b一奇数一偶数</strong></li>
+<li><strong>a,b为正整数并且a&gt;b</strong></li>
+<li><strong>a,b,n,v需要满足图中等式</strong></li>
+</ul>
+<h3 id="条件一：-a-b-1"><a href="#条件一：-a-b-1" class="headerlink" title="条件一：(a,b)=1"></a>条件一：(a,b)=1</h3><p>我们需要弄清楚这个式子是什么意思。我问了一下数学系的朋友，这式子的意思是说a,b的最大公因数是1，即a,b互质。判断两个数互质的算法我依稀记得是C语言课的练习题，很好解决。在这里我采用<strong>欧几里德算法</strong>来求取两个数的最大公因数。如果最大公因数是1也就是a,b互质的话，则函数<code>huzhi</code>返回值为1；不互质返回值为0，代码如下：</p>
+<pre><code class="c">//条件一：a,b互质
+//若互质返回1,不互质返回0
+int huzhi(int a,int b){
+    int t;
+    if(a&lt;b)
+    {
+        t=a;a=b;b=t;
+    }
+    while(a%b)
+    {
+        t=b;
+        b=a%b;
+        a=t;
+    }
+    if(b==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}</code></pre>
+<h3 id="条件二：a-b一奇数一偶数"><a href="#条件二：a-b一奇数一偶数" class="headerlink" title="条件二：a,b一奇数一偶数"></a>条件二：a,b一奇数一偶数</h3><p>这个条件很简单，只有两种情况：</p>
+<ul>
+<li>a是奇数并且b是偶数</li>
+<li>b是奇数并且a是偶数</li>
+</ul>
+<pre><code class="c">//条件二：a,b一奇数一偶数
+//满足条件返回1，不满足条件返回0
+int jio(int a,int b){
+    if((a%2==0&amp;&amp;b%2!=0)||(a%2!=0&amp;&amp;b%2==0))
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}</code></pre>
+<h3 id="条件三：a-b为正整数并且a-gt-b"><a href="#条件三：a-b为正整数并且a-gt-b" class="headerlink" title="条件三：a,b为正整数并且a&gt;b"></a>条件三：a,b为正整数并且a&gt;b</h3><p>这个条件也很简单，可细化为三个条件：</p>
+<ul>
+<li>a,b为整数</li>
+<li>a&gt;0并且b&gt;0</li>
+<li>a&gt;b</li>
+</ul>
+<pre><code class="c">//条件三：a,b正整数并且a&gt;b
+//满足条件返回1，不满足条件返回0
+int tiaojian(int a,int b){
+    if(a&gt;0&amp;&amp;b&gt;0&amp;&amp;a&gt;b)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}</code></pre>
+<h3 id="条件四：a-b-n-v需要满足等式"><a href="#条件四：a-b-n-v需要满足等式" class="headerlink" title="条件四：a,b,n,v需要满足等式"></a>条件四：a,b,n,v需要满足等式</h3><p>来解释一下这个等式，这个等式or的意思是或者，所以这个等式也可以细化为三个等式三个条件：</p>
+<ul>
+<li>$nv^2=6a^2b^2-a^4-b^4$</li>
+<li>$nv^2=-6a^2b^2+a^4+b^4$</li>
+<li>$nv^2=4ab(a^2-b^2)$</li>
+</ul>
+<p>三个等式满足其一即可</p>
+<pre><code class="c">//条件四：满足判断公式
+//满足公式返回1，不满足公式返回0
+int gongshi(int a,int b,int v,int n){
+    int left=n*v*v,right1=4*a*b*(a*a-b*b),right2=6*a*a*b*b-a*a*a*a-b*b*b*b,right3=-6*a*a*b*b+a*a*a*a+b*b*b*b;
+    if(left==right1||left==right2||left==right3)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}</code></pre>
+<p>主函数暂且先用三个内嵌循环来寻找n，详见代码清单。</p>
+<h1 id="程序验证"><a href="#程序验证" class="headerlink" title="程序验证"></a>程序验证</h1><p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/2.png" alt="程序验证1"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/3.png" alt="程序验证2"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/4.png" alt="程序验证3"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/5.png" alt="程序验证4"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/6.png" alt="程序验证5"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/7.png" alt="程序验证6"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/8.png" alt="程序验证7"></p>
+<h1 id="代码清单"><a href="#代码清单" class="headerlink" title="代码清单"></a>代码清单</h1><pre><code class="c">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main()
+{
+    //声明函数
+    int huzhi(int a,int b);
+    int jio(int a,int b);
+    int tiaojian(int a,int b);
+    int gongshi(int a,int b,int v,int n);
+    //设置变量
+    int a=2,b=1,v=1,n=0;
+    int t=0;//求解标记，成功求解标记为1
+    int s=2048;//求解精度，即a,b,v的取值上限
+    printf(&quot;请输入需要验证是否为同余数的数字n：&quot;);
+    scanf(&quot;%d&quot;,&amp;n);
+    //在限定范围内循环枚举尝试求解
+    for(a=2;a&lt;=s;a++)
+    {
+        for(b=1;b&lt;a;b++)
+        {
+            for(v=1;v&lt;=s;v++)
+            {
+                //判断是否满足四个条件
+                if(huzhi(a,b)&amp;&amp;jio(a,b)&amp;&amp;tiaojian(a,b)&amp;&amp;gongshi(a,b,v,n))
+                {
+                    printf(&quot;n=%d是同余数\n&quot;,n);
+                    printf(&quot;公式中a=%d,b=%d,v=%d\n&quot;,a,b,v);
+                    t=1;
+                    break;
+                }
+            }
+            //若已求解成功则跳出循环
+            if(t==1)
+            {
+                break;
+            }
+        }
+        //若已求解成功则跳出循环
+        if(t==1)
+        {
+            break;
+        }
+    }
+    //若在精度内未找到解则提示
+    if(t==0)
+    {
+        printf(&quot;n=%d在该精度内不是同余数&quot;,n);
+    }
+    return 0;
+}
+
+//条件一：a,b互质
+//若互质返回1,不互质返回0
+int huzhi(int a,int b){
+    int t;
+    if(a&lt;b)
+    {
+        t=a;a=b;b=t;
+    }
+    while(a%b)
+    {
+        t=b;
+        b=a%b;
+        a=t;
+    }
+    if(b==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+//条件二：a,b一奇数一偶数
+//满足条件返回1，不满足条件返回0
+int jio(int a,int b){
+    if((a%2==0&amp;&amp;b%2!=0)||(a%2!=0&amp;&amp;b%2==0))
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+//条件三：a,b正整数并且a&gt;b
+//满足条件返回1，不满足条件返回0
+int tiaojian(int a,int b){
+    if(a&gt;0&amp;&amp;b&gt;0&amp;&amp;a&gt;b)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+//条件四：满足判断公式
+//满足公式返回1，不满足公式返回0
+int gongshi(int a,int b,int v,int n){
+    int left=n*v*v,right1=4*a*b*(a*a-b*b),right2=6*a*a*b*b-a*a*a*a-b*b*b*b,right3=-6*a*a*b*b+a*a*a*a+b*b*b*b;
+    if(left==right1||left==right2||left==right3)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+</code></pre>
+<h1 id="问题说明"><a href="#问题说明" class="headerlink" title="问题说明"></a>问题说明</h1><h2 id="关于精度问题的说明"><a href="#关于精度问题的说明" class="headerlink" title="关于精度问题的说明"></a>关于精度问题的说明</h2><p>因C语言int型变量的取值范围为：-2147483648 ~ 2147483647，而对于数学研究来说，这个范围是远远不够的，所以在程序中有可能会出现超出int精度问题，而导致某些数值判断不正确。比如：1</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/9.png" alt="精度说明1"></p>
+<p>在验证1是否为同余数的过程中，程序找到了a=129,b=64,v=68624这样一组数字，通过调试，可以发现由于这组数字超出了int型的取值范围，导致了错误。公式左边正确数值应为left=$nv^2$=68624<em>68624=4709253376，而程序在运行过程中left的错误数值为414286080。所以应*</em>合理调节精度<strong>：精度过高会导致超出int型取值，从而导致某些数值被错误地判定成</strong>是<strong>同余数；精度过低会导致a,b,v取值范围不够，从而导致某些数值被错误的判定成</strong>不是**同余数。</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/31-Determine-if-a-number-is-congruent-C-language/10.png" alt="精度说明2"></p>
+<p>有一种超精度四则运算算法可以利用字符串模拟人类四则运算法则，该算法可以避免精度问题，有兴趣的可以自行研究。</p>
+<h2 id="关于效率问题的说明"><a href="#关于效率问题的说明" class="headerlink" title="关于效率问题的说明"></a>关于效率问题的说明</h2><p>本算法时间复杂度O($n^3$)，算法效率较低，当精度取$10^4$时，预计时间达分钟级</p>
+<h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
+<p>参考资料：<a href="https://baike.baidu.com/item/%E5%90%8C%E4%BD%99%E6%95%B0" target="_blank" rel="noopener">同余数-百度百科</a></p>
+<p>文章链接：<a href="https://zam9036.gitee.io/2020/03/06/31-Determine-if-a-number-is-congruent-C-language">https://zam9036.gitee.io/2020/03/06/31-Determine-if-a-number-is-congruent-C-language</a></p>
+<p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请保留文章链接并注明来自<a href="https://zam9036.gitee.io/">Zam9036博客</a>！</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/shudong-oyangnana.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="/img/avatar.png" height=300 width=300></img>
+                    <p>ZamCenter</p>
+                    <span>心之所向，素履以往</span>
+                    <dl>
+                        <dd><a href="mailto:ZamCenter@163.com" target="_blank"><span
+                                    class=" iconfont icon-youxiang"></span></a></dd>
+                        <dd><a href="https://github.com/zam90" target="_blank"><span
+                                    class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://blog.csdn.net/weixin_44381143" target="_blank"><span
+                                    class=" iconfont icon-csdn"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">31 <p>文章</p></a></li>
+                    <li><a href="/categories">6 <p>分类</p></a></li>
+                    <li><a href="/tags">23 <p>标签</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>目录</h4>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#代码语言"><span class="toc-number">1.</span> <span class="toc-text">代码语言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">2.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#问题研究"><span class="toc-number">3.</span> <span class="toc-text">问题研究</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#四个变量"><span class="toc-number">3.1.</span> <span class="toc-text">四个变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四个条件"><span class="toc-number">3.2.</span> <span class="toc-text">四个条件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#条件一：-a-b-1"><span class="toc-number">3.2.1.</span> <span class="toc-text">条件一：(a,b)=1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#条件二：a-b一奇数一偶数"><span class="toc-number">3.2.2.</span> <span class="toc-text">条件二：a,b一奇数一偶数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#条件三：a-b为正整数并且a-gt-b"><span class="toc-number">3.2.3.</span> <span class="toc-text">条件三：a,b为正整数并且a&gt;b</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#条件四：a-b-n-v需要满足等式"><span class="toc-number">3.2.4.</span> <span class="toc-text">条件四：a,b,n,v需要满足等式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#程序验证"><span class="toc-number">4.</span> <span class="toc-text">程序验证</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码清单"><span class="toc-number">5.</span> <span class="toc-text">代码清单</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#问题说明"><span class="toc-number">6.</span> <span class="toc-text">问题说明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#关于精度问题的说明"><span class="toc-number">6.1.</span> <span class="toc-text">关于精度问题的说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于效率问题的说明"><span class="toc-number">6.2.</span> <span class="toc-text">关于效率问题的说明</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原创声明"><span class="toc-number">7.</span> <span class="toc-text">原创声明</span></a></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2020
+        <span class="gradient-text">
+            ZamCenter
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script>
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
+
+
+
+    <script src="/js/busuanzi.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["心之所向，素履以往", "Dash ahead to what one yearns regardless of his safety"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
+
+
+
+
+</html>

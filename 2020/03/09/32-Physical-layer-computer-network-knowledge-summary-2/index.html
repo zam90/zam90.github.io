@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>物理层-计算机网络知识汇总（二）|Zam9036博客 - Zam9036博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
+    <meta name="description" content="ZamCenter官方技术博客,
+[TOC]
+数据通信基础数据通信系统基本组成：
+
+
+发送端：实现数据的产生及发送，亦称为信源
+中间设备：泛指转发器、网桥、交换机、路由器、网关等
+介质：传输介质，实现数据传输的物理通路
+报文：泛指,"> 
+    <meta name="author" content="ZamCenter"> 
+    <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+</head>
+
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">Zam9036博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://zam9036.gitee.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">物理层-计算机网络知识汇总（二）|Zam9036博客</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled=" "></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <link rel="stylesheet" href="https://zam9036.gitee.io/font_b3z4vr7szgf/iconfont.css">
+
+<div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover7.jpg) ">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="/categories/学习笔记"><b>「
+                    </b>学习笔记<b> 」</b></a>
+                
+                三月 09, 2020
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/03/09/32-Physical-layer-computer-network-knowledge-summary-2/" title="物理层-计算机网络知识汇总（二）|Zam9036博客" class="">物理层-计算机网络知识汇总（二）|Zam9036博客</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                    8.8k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                    8 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E8%AF%BE%E7%A8%8B%EF%BC%9A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">课程：计算机网络</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/wordCloud.png" alt="文章词云"></p>
+<p>[TOC]</p>
+<h1 id="数据通信基础"><a href="#数据通信基础" class="headerlink" title="数据通信基础"></a>数据通信基础</h1><h2 id="数据通信系统"><a href="#数据通信系统" class="headerlink" title="数据通信系统"></a>数据通信系统</h2><p>基本组成：</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/1.png" alt="基本组成"></p>
+<ul>
+<li>发送端：实现数据的产生及发送，亦称为信源</li>
+<li>中间设备：泛指转发器、网桥、交换机、路由器、网关等</li>
+<li>介质：传输介质，实现数据传输的物理通路</li>
+<li>报文：泛指在传输信道上承载的具有特定结构的数据单元</li>
+<li>接收端：实现数据的接收，亦称为信宿</li>
+<li>协议：通信的各方为进行数据交换必须共同遵循的规则</li>
+</ul>
+<h2 id="通信方式与通信制式"><a href="#通信方式与通信制式" class="headerlink" title="通信方式与通信制式"></a>通信方式与通信制式</h2><h3 id="通信方式"><a href="#通信方式" class="headerlink" title="通信方式"></a>通信方式</h3><p><strong>并行通信</strong></p>
+<p>每个数据编码的各个比特都是同时发送的。</p>
+<blockquote>
+<p>通常用于计算机系统内部及与外设之间大量频繁的数据传输</p>
+</blockquote>
+<p><strong>串行通信</strong></p>
+<p>比特(bit)的逐位传送(从低位到高位)。</p>
+<blockquote>
+<p>线路成本低、无串扰，远距离数据传输较好的选择</p>
+</blockquote>
+<p>远距离网络传输？</p>
+<p>—— 线路的成本、串扰等原因，一般不采用并行通信。</p>
+<h3 id="通信制式"><a href="#通信制式" class="headerlink" title="通信制式"></a>通信制式</h3><p><strong>单工通信</strong></p>
+<p>利用一条物理信道(2线制）进行单向信息传输。</p>
+<blockquote>
+<p>多用于测试或控制环境下的数据传输</p>
+</blockquote>
+<p><strong>半双工通信</strong></p>
+<p>可以进行双向传输，但由于只有一条物理信道(2线制)，因此，同一时刻只限于一个方向传输。</p>
+<blockquote>
+<p>广泛应用于交互式会话通信情况下</p>
+</blockquote>
+<p><strong>全双工通信</strong></p>
+<p>通信双方在任何时刻，均可进行双向通信，无任何限制。</p>
+<blockquote>
+<p>需要两条以上的物理信道(3线制或4线制)</p>
+<p>可以构成全双工网络</p>
+</blockquote>
+<h2 id="数据的同步方式"><a href="#数据的同步方式" class="headerlink" title="数据的同步方式"></a>数据的同步方式</h2><p><strong>什么叫同步？</strong></p>
+<p>数据发送者和数据接收者协调一致，密切配合。</p>
+<p><strong>为什么要同步？</strong></p>
+<p>如果发送端和接收端的<strong>时钟</strong>不同步，即使只有极小的误差，随着时间的增加，误差逐渐积累，终究会造成收发之间的<strong>失步</strong>。</p>
+<blockquote>
+<p>同步技术直接影响着通信的质量</p>
+</blockquote>
+<p><strong>如何同步？</strong></p>
+<p><strong>接收端</strong>不但要知道<strong>一组二进制位的开始与结束</strong>，还需要知道<strong>每位的持续时间</strong>，这样才能做到用合适的采样频率适时采样所接收到的数据。—— 与发送端同步</p>
+<p><strong>能否利用各自的时钟信号同步？</strong></p>
+<p>由于发送端和接收端的时钟信号不可能绝对一致，因此不够可靠。—— 往往需要另外采取一定的同步手段。</p>
+<h3 id="异步传输控制-字符同步方式"><a href="#异步传输控制-字符同步方式" class="headerlink" title="异步传输控制(字符同步方式)"></a>异步传输控制(字符同步方式)</h3><p><strong>如何使接收端能准确判断出数据的开始与结束</strong></p>
+<p>以一个<strong>字符</strong>作为数据传输的基本单位，首末分别<strong>增加1位起始位和1位停止位</strong>，表示字符的开始和结束。—— 通常，起始位是“0”，结束位是“1”</p>
+<p><strong>数据传输形式</strong></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/2.png" alt="传输形式"></p>
+<p><strong>位的持续时间</strong></p>
+<p>由于位数少，不至于失步，不考虑。</p>
+<h3 id="同步传输控制"><a href="#同步传输控制" class="headerlink" title="同步传输控制"></a>同步传输控制</h3><p>以“<strong>数据块</strong>”(几千个数据位)为单位进行传输。</p>
+<p><strong>特定要求</strong></p>
+<p>由于单位大，为了防止发送端和接收端的失步，发送时钟和接收时钟必须<strong>高度同步</strong>。</p>
+<p><strong>如何使接收端能准确判断出数据的开始与结束</strong></p>
+<p>做法：在数据块前面加一个确定长度的位模式，称为前文，数据结束后也加上后文—— <strong>帧</strong></p>
+<p><strong>位持续时间</strong></p>
+<p><strong>自同步法</strong>，即从所接收的数据中提取时钟的特征。因为其发送数据中包含着发送时钟信号。——实现了双方采样点的同步</p>
+<p><strong>帧的接收过程</strong></p>
+<p>接收端检测到前文后，即说明有数据到达，接收端利用从数据中提取的时钟信号作为接收时钟，按顺序接收前文后的数据信息，直至接收到后文为止。</p>
+<blockquote>
+<p>效率高</p>
+</blockquote>
+<h1 id="数据传输介质"><a href="#数据传输介质" class="headerlink" title="数据传输介质"></a>数据传输介质</h1><h2 id="双绞线"><a href="#双绞线" class="headerlink" title="双绞线"></a>双绞线</h2><p>4对铜线，每对按螺旋结构排列</p>
+<blockquote>
+<p>电磁干扰(串扰)最小</p>
+</blockquote>
+<p>3类/5类/5e类/6类，屏蔽/非屏蔽 ，100米远</p>
+<h2 id="同轴电缆"><a href="#同轴电缆" class="headerlink" title="同轴电缆"></a>同轴电缆</h2><p>现已很少使用</p>
+<h2 id="光纤"><a href="#光纤" class="headerlink" title="光纤"></a>光纤</h2><p><strong>原理</strong>：光信号，在玻璃等纤维中全反射传输，光电转换</p>
+<p><strong>分类</strong>：</p>
+<ul>
+<li><strong>单模</strong>（纤芯：8~10μm，光源：单色(激)光，带宽大，传输距离远，主要用于城域网/广域网） </li>
+<li><strong>多模</strong>（纤芯：10~75μm，光源：多色(可见)光，带宽小，传输距离近，主要用于园区网）</li>
+<li>光纤跳线：SC/ST/FC/MT-RJ/LC连接器</li>
+</ul>
+<p><strong>通信光缆</strong></p>
+<p>多芯（2/4/8/12/16等）光纤，保护层，钢丝，护套</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/3.png" alt="各类光纤"></p>
+<h2 id="网络综合布线"><a href="#网络综合布线" class="headerlink" title="网络综合布线"></a>网络综合布线</h2><h3 id="网络综合布线概念"><a href="#网络综合布线概念" class="headerlink" title="网络综合布线概念"></a>网络综合布线概念</h3><p>结构化综合布线系统（Premises Distribution System，PDS）最早由贝尔（Bell）实验室首先提出，并于20世纪80年代末期率先推出产品。</p>
+<p><strong>什么是PDS</strong></p>
+<p>将分布在网络不同覆盖区域的所有线缆按照一定的标准和结构，并通过专用的器件集成起来，不仅满足网络设备连接的需要，而且方便网络设备的灵活调整和网络的维护。在形式上呈现一种立体交叉的层次化结构。</p>
+<p><strong>说明</strong>：电信网络、数据网络、监控网络目前大多因分别设计而呈分离状态。结构化综合布线系统主要指数据网络。</p>
+<p><strong>特点</strong>：网络综合布线系统本身与网络设备独立。每个部分都是相对独立的单元（模块化），所有连接器件都是标准化的，每个单元的改变都不会影响其它子系统。</p>
+<p>情况比较：</p>
+<p>情况1：按照网络连接原理：设备在哪里，线就布到哪里。</p>
+<p>后果：一旦增加设备或设备位置发生变化就要增加或者重新布线。</p>
+<p>情况2：按照结构化综合布线要求：先按结构化综合布线的规范将线路部署好，然后再将不同位置的设备接入到网络。</p>
+<p>效果：</p>
+<ul>
+<li>布线层次清晰，标注明确，便于管理和维护。</li>
+<li>如果增加设备或设备位置发生变化，不必重新布线，只要简单的调整配线间或设备间的跳接即可。</li>
+</ul>
+<h3 id="综合布线产品系列"><a href="#综合布线产品系列" class="headerlink" title="综合布线产品系列"></a>综合布线产品系列</h3><p>机柜、配线架、理线器、信息面板、跳线、工具。</p>
+<h1 id="信道复用技术"><a href="#信道复用技术" class="headerlink" title="信道复用技术"></a>信道复用技术</h1><p><strong>概念</strong>：信道复用即<strong>信道共享</strong></p>
+<p><strong>目的</strong>：充分利用信道的容量，提高信道的利用率。</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/4.png" alt="信道复用技术"></p>
+<p><strong>逻辑思想</strong>： 把<strong>单条物理信道</strong>划分成<strong>多条逻辑信道</strong>，每一条逻辑信道传输一路数据，那么，一条物理信道就可以传输多路数据。</p>
+<p><strong>使用设备</strong>：各种不同形式的“多路复用器”</p>
+<p>技术实现：</p>
+<ul>
+<li><p>频分多路复用 (FDM)</p>
+</li>
+<li><p>时分多路复用 (TDM)</p>
+</li>
+<li><p>统计时分多路复用（STDM）</p>
+</li>
+<li><p>波分多路复用(WDM)</p>
+</li>
+<li><p>码分多路复用（CDM）&amp;码分多址复用（CDMA）</p>
+</li>
+</ul>
+<h2 id="频分多路复用-FDM"><a href="#频分多路复用-FDM" class="headerlink" title="频分多路复用 (FDM)"></a>频分多路复用 (FDM)</h2><p>按信号占用的<strong>频谱范围</strong>对信道的(频)带宽(度)进行分割。</p>
+<p>在传输多路信号时，通过调制技术将不同路的信号搬到不同频段，使每路信号占用互不重叠的频率范围，在共享信道传输完成后，再利用解调技术将各路信号搬回原来的频段上。</p>
+<blockquote>
+<p>更适于模拟数据信号的传输</p>
+</blockquote>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/5.png" alt="FDM"></p>
+<h2 id="时分多路复用-TDM"><a href="#时分多路复用-TDM" class="headerlink" title="时分多路复用 (TDM)"></a>时分多路复用 (TDM)</h2><p>多路信号<strong>对信道的传输时间进行周期性分割</strong>，每路信号占用互不重叠的时间片。</p>
+<blockquote>
+<p>利用不同时隙传送不同路信号</p>
+</blockquote>
+<p>主要特点：</p>
+<ul>
+<li>各路信号在频谱上是重叠的(占用同样带宽)</li>
+<li>但在时间上是不重叠的。 </li>
+</ul>
+<blockquote>
+<p>更适合于数字信号的传输</p>
+</blockquote>
+<p>传输形式：</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/6.png" alt="TDM1"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/7.png" alt="TDM2"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/8.png" alt="TDM3"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/9.png" alt="TDM4"></p>
+<p>T1载波系统：将24路音频信道复用在一条通信线路上。24路PCM信号的每一路，轮流将一个字节插入到帧中。每帧由24×8＝192位组成，附加一位作为帧开始标志位，每帧共有193位。发送一帧需要125毫秒，T1载波的数据传输速率为：193/125=1.544Mbps 。</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/10.png" alt="TDM5"></p>
+<p>30路的E1载波系统</p>
+<p>效率分析：由于数据的<strong>突发性</strong>，用户对分配到的时隙利用率不高。</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/11.png" alt="TDM6"></p>
+<h2 id="统计时分多路复用（STDM）"><a href="#统计时分多路复用（STDM）" class="headerlink" title="统计时分多路复用（STDM）"></a>统计时分多路复用（STDM）</h2><p>统计时分多路复用 STDM (Statistic TDM)—— 不固定分配时隙，而是按需动态分配时隙。</p>
+<p>特点：</p>
+<ul>
+<li>每路的帧无固定插入位置</li>
+<li>每个帧必须给出地址信息，以便识别</li>
+</ul>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/12.png" alt="STDM"></p>
+<h2 id="波分多路复用-WDM"><a href="#波分多路复用-WDM" class="headerlink" title="波分多路复用(WDM)"></a>波分多路复用(WDM)</h2><p>按信号的波长(频率)对光纤信道的(频)带宽(度)进行分割。</p>
+<p>—— 通过调制技术使不同路的光信号具有不同的波长，在共享信道传输完成后，再利用解调技术将各路信号恢复为原来的波长。</p>
+<p>波分多路复用原理示意图 ：</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/13.png" alt="WDM1"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/32-Physical-layer-computer-network-knowledge-summary-2/14.png" alt="WDM2"></p>
+<h2 id="码分多路复用（CDM）-amp-码分多址复用（CDMA）"><a href="#码分多路复用（CDM）-amp-码分多址复用（CDMA）" class="headerlink" title="码分多路复用（CDM）&amp;码分多址复用（CDMA）"></a>码分多路复用（CDM）&amp;码分多址复用（CDMA）</h2><p>码分多路复用CDM (Code Division Multiplexing)</p>
+<p>码分多址复用CDMA (Code Division MultipleAccess)</p>
+<p>利用不同的编码(码形)实现多目标信息传输的系统。该技术建立在正交编码、相关接收的理论基础上。</p>
+<p>各个目标的数字化信号，经正交PN码扩频调制，使频谱扩展几百倍至上千倍，然后分别调制到上千兆赫兹的同一频率的载波上发送；接收端利用PN码的正交特性进行相关解扩，再经窄带滤波，恢复出与本地PN码所对应的目标信号。</p>
+<p>主要特点：</p>
+<ul>
+<li>扩频后，信号功率分布在很宽的频带中，接收不易发生“阻塞”现象</li>
+<li>抗干扰能力强，保密性好，误码率低</li>
+<li>使用的载波频率不需要向有关部门申请</li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/shudong-oyangnana.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="/img/avatar.png" height=300 width=300></img>
+                    <p>ZamCenter</p>
+                    <span>心之所向，素履以往</span>
+                    <dl>
+                        <dd><a href="mailto:ZamCenter@163.com" target="_blank"><span
+                                    class=" iconfont icon-youxiang"></span></a></dd>
+                        <dd><a href="https://github.com/zam90" target="_blank"><span
+                                    class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://blog.csdn.net/weixin_44381143" target="_blank"><span
+                                    class=" iconfont icon-csdn"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">32 <p>文章</p></a></li>
+                    <li><a href="/categories">6 <p>分类</p></a></li>
+                    <li><a href="/tags">23 <p>标签</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>目录</h4>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#数据通信基础"><span class="toc-number">1.</span> <span class="toc-text">数据通信基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据通信系统"><span class="toc-number">1.1.</span> <span class="toc-text">数据通信系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通信方式与通信制式"><span class="toc-number">1.2.</span> <span class="toc-text">通信方式与通信制式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#通信方式"><span class="toc-number">1.2.1.</span> <span class="toc-text">通信方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通信制式"><span class="toc-number">1.2.2.</span> <span class="toc-text">通信制式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据的同步方式"><span class="toc-number">1.3.</span> <span class="toc-text">数据的同步方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#异步传输控制-字符同步方式"><span class="toc-number">1.3.1.</span> <span class="toc-text">异步传输控制(字符同步方式)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同步传输控制"><span class="toc-number">1.3.2.</span> <span class="toc-text">同步传输控制</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据传输介质"><span class="toc-number">2.</span> <span class="toc-text">数据传输介质</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#双绞线"><span class="toc-number">2.1.</span> <span class="toc-text">双绞线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同轴电缆"><span class="toc-number">2.2.</span> <span class="toc-text">同轴电缆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#光纤"><span class="toc-number">2.3.</span> <span class="toc-text">光纤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网络综合布线"><span class="toc-number">2.4.</span> <span class="toc-text">网络综合布线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#网络综合布线概念"><span class="toc-number">2.4.1.</span> <span class="toc-text">网络综合布线概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#综合布线产品系列"><span class="toc-number">2.4.2.</span> <span class="toc-text">综合布线产品系列</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#信道复用技术"><span class="toc-number">3.</span> <span class="toc-text">信道复用技术</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#频分多路复用-FDM"><span class="toc-number">3.1.</span> <span class="toc-text">频分多路复用 (FDM)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#时分多路复用-TDM"><span class="toc-number">3.2.</span> <span class="toc-text">时分多路复用 (TDM)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#统计时分多路复用（STDM）"><span class="toc-number">3.3.</span> <span class="toc-text">统计时分多路复用（STDM）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#波分多路复用-WDM"><span class="toc-number">3.4.</span> <span class="toc-text">波分多路复用(WDM)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#码分多路复用（CDM）-amp-码分多址复用（CDMA）"><span class="toc-number">3.5.</span> <span class="toc-text">码分多路复用（CDM）&amp;码分多址复用（CDMA）</span></a></li></ol></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2020
+        <span class="gradient-text">
+            ZamCenter
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script>
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
+
+
+
+    <script src="/js/busuanzi.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["心之所向，素履以往", "Dash ahead to what one yearns regardless of his safety"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
+
+
+
+
+</html>

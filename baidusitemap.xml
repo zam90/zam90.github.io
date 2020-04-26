@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zam9036.gitee.io/2020/04/26/33-Linux-Shell/</loc>
+    <lastmod>2020-04-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/10/28/7-Quickly-upload-and-download-files-between-Windows-and-Linux-servers-SCP-instructions/</loc>
+    <lastmod>2020-04-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/02/10-Cd-instruction-in-Linux/</loc>
+    <lastmod>2020-04-26</lastmod>
+  </url>  <url>
+    <loc>https://zam9036.gitee.io/2019/11/04/11-Rm-delete-instruction-in-Linux/</loc>
+    <lastmod>2020-04-26</lastmod>
+  </url>  <url>
     <loc>https://zam9036.gitee.io/2020/03/09/32-Physical-layer-computer-network-knowledge-summary-2/</loc>
     <lastmod>2020-03-23</lastmod>
   </url>  <url>
@@ -64,16 +76,7 @@
     <loc>https://zam9036.gitee.io/2019/11/05/12-Object-oriented-technical-problem-classification-example-1/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/04/11-Rm-delete-instruction-in-Linux/</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/11/02/10-Cd-instruction-in-Linux/</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>  <url>
     <loc>https://zam9036.gitee.io/2019/10/30/8-Record-problems-encountered-in-installing-GD-image-support-library-on-Ubuntu/</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>  <url>
-    <loc>https://zam9036.gitee.io/2019/10/28/7-Quickly-upload-and-download-files-between-Windows-and-Linux-servers-SCP-instructions/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
     <loc>https://zam9036.gitee.io/2019/10/27/6-Use-Hexo-to-insert-local-pictures-in-your-blog-no-external-link-required/</loc>

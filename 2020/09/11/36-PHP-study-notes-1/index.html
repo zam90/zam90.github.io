@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>利用Hexo写一篇博客|Zam9036博客 - Zam9036博客</title>
+    <title>初识PHP——PHP学习笔记（1）|Zam9036博客 - Zam9036博客</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
     <meta name="description" content="ZamCenter官方技术博客,[TOC]
-文章布局（Layout）​    在写博客之前，先了解一下Hexo的文章布局。 Hexo 有三种默认布局：post、page 和 draft。在创建这三种不同类型的文件时，它们将会被保存,"> 
+PHP概述什么是PHPPHP：超文本预处理器（Hypertext Preprocessor），是一种服务器端、跨平台、HTML嵌入式的脚本语言
+PHP是B/S（浏览器/服务器结构）体系结,"> 
     <meta name="author" content="ZamCenter"> 
     <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -44,7 +45,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://zam9036.gitee.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">利用Hexo写一篇博客|Zam9036博客</h3>
+        <h3 class="subtitle">初识PHP——PHP学习笔记（1）|Zam9036博客</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -71,30 +72,30 @@
             animation-duration: 1.2s;
             background-image: 
                 radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
-                url(/img/cover5.jpg) ">
+                url(/img/cover4.jpg) ">
         </div>
         <div class="else">
             <p class="animated fadeInDown">
                 
-                <a href="/categories/技术Demo"><b>「
-                    </b>技术DEMO<b> 」</b></a>
+                <a href="/categories/学习笔记"><b>「
+                    </b>学习笔记<b> 」</b></a>
                 
-                十月 25, 2019
+                九月 11, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2019/10/25/4-Write-a-blog-with-Hexo/" title="利用Hexo写一篇博客|Zam9036博客" class="">利用Hexo写一篇博客|Zam9036博客</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/09/11/36-PHP-study-notes-1/" title="初识PHP——PHP学习笔记（1）|Zam9036博客" class="">初识PHP——PHP学习笔记（1）|Zam9036博客</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    2.1k
+                    3.3k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    2 mins.
+                    3 mins.
                 </span>
                 
                 
@@ -107,7 +108,7 @@
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/MarkDown/" rel="tag">MarkDown</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/PHP/" rel="tag">PHP</a></li></ul>
             
         </div>
     </div>
@@ -129,36 +130,88 @@
     <div class='main'>
         <div class="content markdown animated fadeIn">
             <p>[TOC]</p>
-<h2 id="文章布局（Layout）"><a href="#文章布局（Layout）" class="headerlink" title="文章布局（Layout）"></a>文章布局（Layout）</h2><p>​    在写博客之前，先了解一下Hexo的文章布局。 Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>。在创建这三种不同类型的文件时，它们将会被保存到不同的路径；大家自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹。 </p>
-<table>
-<thead>
-<tr>
-<th>布局</th>
-<th>路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>post</td>
-<td>source/_posts</td>
-</tr>
-<tr>
-<td>page</td>
-<td>source</td>
-</tr>
-<tr>
-<td>draft</td>
-<td>source/_drafts</td>
-</tr>
-</tbody></table>
-<h2 id="文章模板（Scaffold）"><a href="#文章模板（Scaffold）" class="headerlink" title="文章模板（Scaffold）"></a>文章模板（Scaffold）</h2><p>​    在新建文章时，Hexo 会根据 <code>scaffolds</code> 文件夹内相对应的文件来建立文件，例如：</p>
-<pre><code>$ hexo new photo &quot;My Gallery&quot;</code></pre><p>​    在执行这行指令时，Hexo 会尝试在 <code>scaffolds</code> 文件夹中寻找 <code>photo.md</code>，并根据其内容建立文章。所以大家可以在 <code>source/_posts</code> 文件夹中自定义文章模板，来节省重复操作的时间。</p>
-<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>​    你可以执行下列命令来创建一篇新文章或者新的页面。</p>
-<pre><code>$ hexo new [layout] &lt;title&gt;</code></pre><p>​    你可以在命令中指定文章的布局（layout），默认为 <code>post</code>，可以通过修改 <code>_config.yml</code> 中的 <code>default_layout</code> 参数来指定默认布局。</p>
-<p>​    新建文章后，可以在 <code>source</code> 中找到新建的文章（.md文件），然后使用Typora或其他md编辑器编写博客。MarkDown的语法请关注我后续的博客！</p>
-<h2 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h2><p>​    文章保存后，在<code>Hexo工作区</code>利用Git bash输入<code>hexo g</code>来发布博客，<code>hexo s</code>本地预览博客，没有问题以后用<code>hexo d</code>或者Github Desktop来上传代码。至此，一篇博客已经生成。</p>
-<h2 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h2><p>​    文章作者：Zam9036</p>
-<p>​    文章链接：<a href="https://zam9036.gitee.io/2019/10/25/4-Write-a-blog-with-Hexo">https://zam9036.gitee.io/2019/10/25/4-Write-a-blog-with-Hexo</a></p>
-<p>​    版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请注明来自<a href="https://zam9036.gitee.io/">Zam9036的博客</a>！</p>
+<h1 id="PHP概述"><a href="#PHP概述" class="headerlink" title="PHP概述"></a>PHP概述</h1><h2 id="什么是PHP"><a href="#什么是PHP" class="headerlink" title="什么是PHP"></a>什么是PHP</h2><p>PHP：超文本预处理器（Hypertext Preprocessor），是一种服务器端、跨平台、HTML嵌入式的<strong>脚本</strong>语言</p>
+<p>PHP是B/S（浏览器/服务器结构）体系结构，属于三层结构。</p>
+<blockquote>
+<p>三层架构就是为了符合“高内聚，低耦合”思想，把各个功能模块划分为表示层（UI）、业务逻辑层（BLL）和数据访问层（DAL）三层架构。</p>
+</blockquote>
+<h2 id="PHP优势"><a href="#PHP优势" class="headerlink" title="PHP优势"></a>PHP优势</h2><ul>
+<li>安全性高：开源软件</li>
+<li>跨平台特性</li>
+<li>支持广泛的数据库</li>
+<li>易学性</li>
+<li>执行速度快：占用系统资源少</li>
+<li>免费：LAMP全部开源免费</li>
+<li>模板化：程序逻辑与用户界面分离</li>
+<li>支持面向对象与面向过程</li>
+</ul>
+<h2 id="PHP应用领域"><a href="#PHP应用领域" class="headerlink" title="PHP应用领域"></a>PHP应用领域</h2><ul>
+<li>中小型网站的开发</li>
+<li>大型网站的业务逻辑结果展示</li>
+<li>Web应用系统</li>
+<li>硬件管控软件的GUI</li>
+<li>电子商务</li>
+<li>多媒体系统</li>
+<li>企业级应用</li>
+<li>移动互联网</li>
+</ul>
+<h1 id="PHP扩展库"><a href="#PHP扩展库" class="headerlink" title="PHP扩展库"></a>PHP扩展库</h1><p>PHP5扩展库包括<strong>标准库SPL</strong>和<strong>外部扩展库PECL</strong></p>
+<p>PHP扩展库的dll文件都具有<strong>“php_”</strong>前缀</p>
+<p>在Windows下加载PHP扩展库，是通过<strong>修改php.ini文件</strong>来完成的；用户也可以在脚本中使用<strong>dl()函数</strong>实现动态加载。</p>
+<pre><code class="php.ini">#通过修改php.ini开启/关闭扩展库
+#打开php.ini，搜索“.dll”
+#以下所示均为扩展库
+#“extension”前有“;”即表示该扩展库未启用，若想启用扩展库删除“;”即可。
+#更改PHP扩展库配置后，需要对Web服务器进行重启方可生效
+
+extension=bz2    #bz2扩展库已启用
+extension=curl
+;extension=dba    #dba扩展库未启用
+extension=com_dotnet
+;extension=enchant
+extension=fileinfo
+;extension=ftp
+extension=gd2
+extension=gettext
+extension=gmp
+extension=intl
+extension=imap
+;extension=interbase
+extension=ldap
+extension=mbstring
+extension=exif      ; Must be after mbstring as it depends on it
+extension=mysqli
+;extension=odbc
+extension=openssl
+;extension=pdo_firebird
+extension=pdo_mysql
+;extension=pdo_oci
+;extension=oci8_12c  ; Use with Oracle Database 12c Instant Client
+;extension=pdo_odbc
+;extension=pdo_pgsql
+extension=pdo_sqlite
+;extension=pgsql
+;extension=phpdbg_webhelper
+;extension=shmop</code></pre>
+<blockquote>
+<p>修改php.ini配置后，需要重启Web服务器，改动才能生效</p>
+</blockquote>
+<p>PHP5.3不再支持php_mssql.dll扩展库，即使使用PHP5.2中的php_mssql.dll也无法使用。想要使用PHP5.3连接SQL Server数据库，需要使用微软为PHP专门推出的SQL Server扩展库。</p>
+<h1 id="PHP开发"><a href="#PHP开发" class="headerlink" title="PHP开发"></a>PHP开发</h1><h2 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h2><p>Dreamweaver、PhpStorm</p>
+<h2 id="开发手册"><a href="#开发手册" class="headerlink" title="开发手册"></a>开发手册</h2><p><a href="https://www.php.net/docs.php" target="_blank" rel="noopener">点此下载</a></p>
+<h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><ul>
+<li>学会配置PHP开发环境</li>
+<li>选择一种适合自己的开发工具</li>
+<li>了解设计模式</li>
+<li>多实践，多借鉴</li>
+<li>遇到bug要冷静</li>
+<li>养成良好的开发习惯</li>
+<li>学会查看技术手册</li>
+</ul>
+<h1 id="网站建设基本流程"><a href="#网站建设基本流程" class="headerlink" title="网站建设基本流程"></a>网站建设基本流程</h1><p>确定主题——搜索资料——规划网站——选择开发工具——制作网页——测试网站——上传网站——宣传推广——维护更新</p>
+<h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
+<p>文章链接：<a href="https://zam9036.gitee.io/2020/09/11/36-PHP-study-notes-1">https://zam9036.gitee.io/2020/09/11/36-PHP-study-notes-1</a></p>
+<p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请保留文章链接并注明来自<a href="https://zam9036.gitee.io/">Zam9036博客</a>！</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -204,7 +257,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#文章布局（Layout）"><span class="toc-number">1.</span> <span class="toc-text">文章布局（Layout）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章模板（Scaffold）"><span class="toc-number">2.</span> <span class="toc-text">文章模板（Scaffold）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建文章"><span class="toc-number">3.</span> <span class="toc-text">创建文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布博客"><span class="toc-number">4.</span> <span class="toc-text">发布博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原创声明"><span class="toc-number">5.</span> <span class="toc-text">原创声明</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP概述"><span class="toc-number">1.</span> <span class="toc-text">PHP概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是PHP"><span class="toc-number">1.1.</span> <span class="toc-text">什么是PHP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP优势"><span class="toc-number">1.2.</span> <span class="toc-text">PHP优势</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP应用领域"><span class="toc-number">1.3.</span> <span class="toc-text">PHP应用领域</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP扩展库"><span class="toc-number">2.</span> <span class="toc-text">PHP扩展库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP开发"><span class="toc-number">3.</span> <span class="toc-text">PHP开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#开发工具"><span class="toc-number">3.1.</span> <span class="toc-text">开发工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开发手册"><span class="toc-number">3.2.</span> <span class="toc-text">开发手册</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#学习方法"><span class="toc-number">3.3.</span> <span class="toc-text">学习方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#网站建设基本流程"><span class="toc-number">4.</span> <span class="toc-text">网站建设基本流程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原创声明"><span class="toc-number">5.</span> <span class="toc-text">原创声明</span></a></li></ol>
                 </div>
             </div>
             

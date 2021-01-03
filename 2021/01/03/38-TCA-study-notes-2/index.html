@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TCA腾讯云开发工程师课程学习笔记（二）|Zam9036博客 - Zam9036博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
+    <meta name="description" content="ZamCenter官方技术博客,3.本地应用迁移到云端3.1本地应用上云基础3.1.1传统Web应用架构单体架构：
+
+3.1.2本地应用上云基本步骤
+本地服务器→云服务器
+本地数据库→云数据库
+本地存储→云存储
+
+
+3.2应用上云,"> 
+    <meta name="author" content="ZamCenter"> 
+    <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+</head>
+
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">Zam9036博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://zam9036.gitee.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">TCA腾讯云开发工程师课程学习笔记（二）|Zam9036博客</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled=" "></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <link rel="stylesheet" href="https://zam9036.gitee.io/font_b3z4vr7szgf/iconfont.css">
+
+<div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover6.jpg) ">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="/categories/学习笔记"><b>「
+                    </b>学习笔记<b> 」</b></a>
+                
+                一月 03, 2021
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2021/01/03/38-TCA-study-notes-2/" title="TCA腾讯云开发工程师课程学习笔记（二）|Zam9036博客" class="">TCA腾讯云开发工程师课程学习笔记（二）|Zam9036博客</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                    14k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                    13 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/" rel="tag">云计算</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E8%AF%BE%E7%A8%8B%EF%BC%9ATCA%E8%AE%A4%E8%AF%81%E8%AF%BE%E7%A8%8B/" rel="tag">课程：TCA认证课程</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <h1 id="3-本地应用迁移到云端"><a href="#3-本地应用迁移到云端" class="headerlink" title="3.本地应用迁移到云端"></a>3.本地应用迁移到云端</h1><h2 id="3-1本地应用上云基础"><a href="#3-1本地应用上云基础" class="headerlink" title="3.1本地应用上云基础"></a>3.1本地应用上云基础</h2><h3 id="3-1-1传统Web应用架构"><a href="#3-1-1传统Web应用架构" class="headerlink" title="3.1.1传统Web应用架构"></a>3.1.1传统Web应用架构</h3><p>单体架构：</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/1.png" alt="传统Web应用架构"></p>
+<h3 id="3-1-2本地应用上云基本步骤"><a href="#3-1-2本地应用上云基本步骤" class="headerlink" title="3.1.2本地应用上云基本步骤"></a>3.1.2本地应用上云基本步骤</h3><ul>
+<li>本地服务器→云服务器</li>
+<li>本地数据库→云数据库</li>
+<li>本地存储→云存储</li>
+</ul>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/2.png" alt="本地应用上云"></p>
+<h2 id="3-2应用上云场景介绍"><a href="#3-2应用上云场景介绍" class="headerlink" title="3.2应用上云场景介绍"></a>3.2应用上云场景介绍</h2><p>以简单的图书管理系统为例</p>
+<h3 id="3-2-1迁移方案"><a href="#3-2-1迁移方案" class="headerlink" title="3.2.1迁移方案"></a>3.2.1迁移方案</h3><p>云数据盘：云服务器一台，数据盘60G以上</p>
+<blockquote>
+<p>安装MySQL数据库，用于数据库存储</p>
+</blockquote>
+<p>云服务器：云服务器一台</p>
+<blockquote>
+<p>部署TOMCAT及相关应用，保存图片资源</p>
+</blockquote>
+<h3 id="3-2-2本地应用迁移云上架构"><a href="#3-2-2本地应用迁移云上架构" class="headerlink" title="3.2.2本地应用迁移云上架构"></a>3.2.2本地应用迁移云上架构</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/3.png" alt="本地应用迁移云上架构"></p>
+<h2 id="3-3云服务器简介"><a href="#3-3云服务器简介" class="headerlink" title="3.3云服务器简介"></a>3.3云服务器简介</h2><ul>
+<li>云服务器CVM：通用场景，对性能要求不高……（不独享物理资源）</li>
+<li>GPU云服务器：深度学习，科学计算，视频编码……（不独享物理资源）</li>
+<li>FPGA云服务器：硬件加速，可编程阵列，深度学习，实时图像压缩……（不独享物理资源）</li>
+<li>专用宿主机CDH：金融业务，高性能业务……（独享物理资源，搭载虚拟化系统）</li>
+<li>黑石物理服务器CPM：大数据，虚拟化，游戏……（独享物理资源，不搭载虚拟化系统）</li>
+</ul>
+<h3 id="3-3-1云服务器CVM"><a href="#3-3-1云服务器CVM" class="headerlink" title="3.3.1云服务器CVM"></a>3.3.1云服务器CVM</h3><p>云服务器CVM（Cloud Virtual Machine）是一种弹性可伸缩的计算服务</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/4.png" alt="CVM与传统服务器"></p>
+<h3 id="3-3-2云服务器CVM概念关系"><a href="#3-3-2云服务器CVM概念关系" class="headerlink" title="3.3.2云服务器CVM概念关系"></a>3.3.2云服务器CVM概念关系</h3><p>镜像：操作系统的镜像</p>
+<p>存储：硬盘存储空间</p>
+<p>实例：在存储空间内安装一个镜像即构建了一个实例</p>
+<p>快照：记录当时云服务器状态，设置保存点</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/5.png" alt="云服务器CVM概念关系"></p>
+<h3 id="3-3-3云服务器存储"><a href="#3-3-3云服务器存储" class="headerlink" title="3.3.3云服务器存储"></a>3.3.3云服务器存储</h3><p>存储介质：普通硬盘、SSD硬盘（固态）</p>
+<p>使用场景：系统盘、数据盘</p>
+<p>架构模式：云硬盘（推荐）、本地盘（服务器的物理盘）、对象存储</p>
+<h3 id="3-3-4块存储设备映射"><a href="#3-3-4块存储设备映射" class="headerlink" title="3.3.4块存储设备映射"></a>3.3.4块存储设备映射</h3><p>服务器<strong>挂载</strong>云硬盘</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/6.png" alt="块存储设备映射"></p>
+<h3 id="3-3-5API访问CVM"><a href="#3-3-5API访问CVM" class="headerlink" title="3.3.5API访问CVM"></a>3.3.5API访问CVM</h3><p>参考API文档</p>
+<h3 id="3-3-6SDK访问CVM"><a href="#3-3-6SDK访问CVM" class="headerlink" title="3.3.6SDK访问CVM"></a>3.3.6SDK访问CVM</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/7.png" alt="SDK访问CVM"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/8.png" alt="SDK查询CVM信息"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/9.png" alt="SDK新建CVM"></p>
+<h3 id="3-3-7CVM最佳实践"><a href="#3-3-7CVM最佳实践" class="headerlink" title="3.3.7CVM最佳实践"></a>3.3.7CVM最佳实践</h3><ul>
+<li>限制访问：通过安全组允许受信任的地址访问实例来限制访问，在安全组中配置最严格的规则。例如，限制端口访问、IP地址访问等。</li>
+<li>安全登录：尽量使用SSH密钥的方式登录用户Linux类型实例。使用密码登录的实例需要不定期修改密码</li>
+<li>硬件存储：对于可靠性极高的数据，请使用云硬盘（自动备份）保证数据的持久存储可靠性，尽量不要选择本地盘</li>
+</ul>
+<h2 id="3-4本地应用迁移上云流程"><a href="#3-4本地应用迁移上云流程" class="headerlink" title="3.4本地应用迁移上云流程"></a>3.4本地应用迁移上云流程</h2><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/10.png" alt="本地应用迁移上云流程"></p>
+<h2 id="3-5负载均衡"><a href="#3-5负载均衡" class="headerlink" title="3.5负载均衡"></a>3.5负载均衡</h2><p>用户规模增大，云服务器单机部署已经不能满足需求，如何提高应用负载能力？</p>
+<p>采用<strong>集群部署</strong>：多个云服务器实例部署同一个应用</p>
+<p>集群部署带来的问题：</p>
+<ul>
+<li>统一用户访问入口</li>
+<li>各个云服务器实例流量分配</li>
+<li>状态问题，如session</li>
+</ul>
+<h3 id="3-5-1负载均衡CLB"><a href="#3-5-1负载均衡CLB" class="headerlink" title="3.5.1负载均衡CLB"></a>3.5.1负载均衡CLB</h3><ul>
+<li>对多台云服务器进行流量分发服务</li>
+<li>负载均衡可以通过流量分发扩展应用系统对外的服务能力，通过消除单点故障提升应用系统的可用性</li>
+<li>负载均衡服务会检查云服务器池中云服务器实例的健康状态，自动隔离异常状态的实例</li>
+<li>负载均衡服务具备自助管理、自故障修复，防网络攻击等高级功能，适用于企业、社区、电子商务、游戏等多种用户场景</li>
+</ul>
+<p>用户访问负载均衡CLB的地址，CLB会自动进行流量分发，将用户访问转发至合适服务器</p>
+<p>多协议转发：</p>
+<ul>
+<li>四层负载均衡（包含TCP、UDP协议）</li>
+<li>七层负载均衡（包含HTTP、HTTPS协议）</li>
+</ul>
+<p>流量分配算法：</p>
+<ul>
+<li>加权轮询算法</li>
+<li>加权最小连接数算法</li>
+<li>源地址散列调度算法（IP HASH）</li>
+</ul>
+<p>跨可用区容灾：</p>
+<ul>
+<li>在同一个地域内采用多可用区部署</li>
+</ul>
+<h3 id="3-5-2负载均衡CLB分类"><a href="#3-5-2负载均衡CLB分类" class="headerlink" title="3.5.2负载均衡CLB分类"></a>3.5.2负载均衡CLB分类</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/11.png" alt="CLB分类"></p>
+<h3 id="3-5-3负载均衡CLB使用步骤"><a href="#3-5-3负载均衡CLB使用步骤" class="headerlink" title="3.5.3负载均衡CLB使用步骤"></a>3.5.3负载均衡CLB使用步骤</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/12.png" alt="负载均衡CLB使用步骤"></p>
+<h3 id="3-5-4负载均衡最佳实践"><a href="#3-5-4负载均衡最佳实践" class="headerlink" title="3.5.4负载均衡最佳实践"></a>3.5.4负载均衡最佳实践</h3><ul>
+<li>推荐使用<strong>负载均衡</strong>（原“应用型负载均衡”）</li>
+<li>推荐负载均衡<strong>开启Gzip配置</strong>，对网页进行压缩，有效降低网络传输数据量，提升客户端浏览器访问速度</li>
+</ul>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/13.png" alt="负载均衡算法最佳使用"></p>
+<h2 id="3-6弹性伸缩"><a href="#3-6弹性伸缩" class="headerlink" title="3.6弹性伸缩"></a>3.6弹性伸缩</h2><p>通过集群+负载均衡极大的提高了应用负载能力，但是业务访问有明显的高低谷，如何灵活应对？</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/14.png" alt="传统应对方法"></p>
+<h3 id="3-6-1弹性伸缩AS"><a href="#3-6-1弹性伸缩AS" class="headerlink" title="3.6.1弹性伸缩AS"></a>3.6.1弹性伸缩AS</h3><p>根据业务需求和策略<strong>自动</strong>调整CVM计算资源，确保在合适的流量下有合适数量的服务器工作，减少资源浪费和资源不足的情况出现。</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/15.png" alt="AS方法"></p>
+<h3 id="3-6-2弹性伸缩AS优势"><a href="#3-6-2弹性伸缩AS优势" class="headerlink" title="3.6.2弹性伸缩AS优势"></a>3.6.2弹性伸缩AS优势</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/16.png" alt="AS优势"></p>
+<h3 id="3-6-3弹性伸缩AS使用步骤"><a href="#3-6-3弹性伸缩AS使用步骤" class="headerlink" title="3.6.3弹性伸缩AS使用步骤"></a>3.6.3弹性伸缩AS使用步骤</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/17.png" alt="AS使用步骤"></p>
+<p>创建启动配置：弹性伸缩AS根据流量动态的创建和销毁实例，在创建实例的时候需要确定实例的配置</p>
+<p>创建伸缩组：将弹性伸缩AS和均衡负载相绑定，使该弹性伸缩AS操作特定负载均衡</p>
+<p>创建伸缩策略：在<strong>告警</strong>后触发弹性伸缩或<strong>定时</strong>触发弹性伸缩</p>
+<h3 id="3-6-4弹性伸缩AS最佳实践"><a href="#3-6-4弹性伸缩AS最佳实践" class="headerlink" title="3.6.4弹性伸缩AS最佳实践"></a>3.6.4弹性伸缩AS最佳实践</h3><ul>
+<li>提前部署扩缩容</li>
+<li>低成本应对业务浪涌</li>
+<li>自动替换不健康CVM</li>
+</ul>
+<h2 id="3-7存储扩容"><a href="#3-7存储扩容" class="headerlink" title="3.7存储扩容"></a>3.7存储扩容</h2><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/18.png" alt="传统存储扩容"></p>
+<h3 id="3-7-1腾讯云存储产品"><a href="#3-7-1腾讯云存储产品" class="headerlink" title="3.7.1腾讯云存储产品"></a>3.7.1腾讯云存储产品</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/19.png" alt="腾讯云存储产品"></p>
+<h3 id="3-7-2云硬盘CBS"><a href="#3-7-2云硬盘CBS" class="headerlink" title="3.7.2云硬盘CBS"></a>3.7.2云硬盘CBS</h3><p>云硬盘是腾讯云提供的用于CVM实例的持久性数据块级存储。云硬盘中的数据自动地在可用区内以多副本冗余方式存储，避免数据单点故障风险。</p>
+<p>CBS特性：</p>
+<ul>
+<li>多种磁盘选择</li>
+<li>弹性挂载卸载</li>
+<li>弹性扩容</li>
+<li>快照备份</li>
+</ul>
+<h3 id="3-7-3云硬盘分类"><a href="#3-7-3云硬盘分类" class="headerlink" title="3.7.3云硬盘分类"></a>3.7.3云硬盘分类</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/20.png" alt="腾讯云硬盘分类"></p>
+<h3 id="3-7-4云硬盘最佳实践"><a href="#3-7-4云硬盘最佳实践" class="headerlink" title="3.7.4云硬盘最佳实践"></a>3.7.4云硬盘最佳实践</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/21.png" alt="云硬盘最佳实践"></p>
+<h3 id="3-7-5文件存储CFS"><a href="#3-7-5文件存储CFS" class="headerlink" title="3.7.5文件存储CFS"></a>3.7.5文件存储CFS</h3><p>CFS提供<strong>可扩展</strong>的<strong>共享</strong>文件存储服务</p>
+<p>特点：</p>
+<ul>
+<li>集成管理</li>
+<li>自动扩展</li>
+<li>安全可靠</li>
+<li>成本低廉</li>
+</ul>
+<h3 id="3-7-6文件存储与云硬盘的区别"><a href="#3-7-6文件存储与云硬盘的区别" class="headerlink" title="3.7.6文件存储与云硬盘的区别"></a>3.7.6文件存储与云硬盘的区别</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/22.png" alt="文件存储与云硬盘"></p>
+<h3 id="3-7-7文件存储使用步骤"><a href="#3-7-7文件存储使用步骤" class="headerlink" title="3.7.7文件存储使用步骤"></a>3.7.7文件存储使用步骤</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/23.png" alt="文件存储使用步骤"></p>
+<h2 id="3-8本地应用上云后仍存在的问题"><a href="#3-8本地应用上云后仍存在的问题" class="headerlink" title="3.8本地应用上云后仍存在的问题"></a>3.8本地应用上云后仍存在的问题</h2><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/24.png" alt="本地应用上云后仍存在的问题"></p>
+<h1 id="4-云端应用开发"><a href="#4-云端应用开发" class="headerlink" title="4.云端应用开发"></a>4.云端应用开发</h1><h2 id="4-1数据库简介"><a href="#4-1数据库简介" class="headerlink" title="4.1数据库简介"></a>4.1数据库简介</h2><h3 id="4-1-1数据库分类"><a href="#4-1-1数据库分类" class="headerlink" title="4.1.1数据库分类"></a>4.1.1数据库分类</h3><p>数据库通常可以按<strong>数据组织方式</strong>和<strong>架构</strong>进行分类</p>
+<p>按数据组织方式进行分类：关系型数据库、非关系型数据库</p>
+<p>按数据库架构进行分类：集中式数据库、分布式数据库</p>
+<h3 id="4-1-2腾讯云数据库分类"><a href="#4-1-2腾讯云数据库分类" class="headerlink" title="4.1.2腾讯云数据库分类"></a>4.1.2腾讯云数据库分类</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/25.png" alt="腾讯云数据库分类"></p>
+<h3 id="4-1-3云数据库CDB"><a href="#4-1-3云数据库CDB" class="headerlink" title="4.1.3云数据库CDB"></a>4.1.3云数据库CDB</h3><p>云数据库CDB是<strong>关系型数据库云服务</strong>，CDB主要包含：云MySQL、云SQL Server、云TDSQL、云PostgreSQL，易于实现数据迁移、高可用等特性</p>
+<h2 id="4-2云数据库MySQL"><a href="#4-2云数据库MySQL" class="headerlink" title="4.2云数据库MySQL"></a>4.2云数据库MySQL</h2><p>CDB for MySQL对开源MySQL进行了<strong>内核级优化</strong>，包含主从同步多线程优化、数据库间同步性能瓶颈优化。</p>
+<h3 id="4-2-1云数据库MySQL优势"><a href="#4-2-1云数据库MySQL优势" class="headerlink" title="4.2.1云数据库MySQL优势"></a>4.2.1云数据库MySQL优势</h3><ul>
+<li>轻松管理海量数据库</li>
+<li>数据导入与备份回档</li>
+<li>专业监控与告警</li>
+<li>多种接入方式</li>
+</ul>
+<h3 id="4-2-2云数据库MySQL应用场景"><a href="#4-2-2云数据库MySQL应用场景" class="headerlink" title="4.2.2云数据库MySQL应用场景"></a>4.2.2云数据库MySQL应用场景</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/26.png" alt="电商场景"></p>
+<h3 id="4-2-3云数据库MySQL使用"><a href="#4-2-3云数据库MySQL使用" class="headerlink" title="4.2.3云数据库MySQL使用"></a>4.2.3云数据库MySQL使用</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/27.png" alt="云数据库MySQL使用步骤"></p>
+<h2 id="4-3数据迁移"><a href="#4-3数据迁移" class="headerlink" title="4.3数据迁移"></a>4.3数据迁移</h2><p>传统数据库迁移常见问题</p>
+<ul>
+<li>遗留数据</li>
+<li>服务停机</li>
+<li>数据量大、耗时长</li>
+<li>故障处理</li>
+</ul>
+<h3 id="4-3-1数据迁移到云数据库MySQL方案"><a href="#4-3-1数据迁移到云数据库MySQL方案" class="headerlink" title="4.3.1数据迁移到云数据库MySQL方案"></a>4.3.1数据迁移到云数据库MySQL方案</h3><p>SQL文件导入：数据量小（单文件不超过2G）</p>
+<p>在线迁移：DTS数据迁移工具迁移（实时不停服同步）</p>
+<p>离线迁移：备份文件还原</p>
+<h3 id="4-3-2SQL文件导入"><a href="#4-3-2SQL文件导入" class="headerlink" title="4.3.2SQL文件导入"></a>4.3.2SQL文件导入</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/28.png" alt="SQL文件导入操作步骤"></p>
+<h3 id="4-3-3DTS在线导入"><a href="#4-3-3DTS在线导入" class="headerlink" title="4.3.3DTS在线导入"></a>4.3.3DTS在线导入</h3><p>DTS传输服务-数据迁移</p>
+<h2 id="4-4读写分离"><a href="#4-4读写分离" class="headerlink" title="4.4读写分离"></a>4.4读写分离</h2><p>互联网常见业务中，读数据库的次数往往大于写数据库的次数，数据库的读负载远高于写负载，如何缓解数据库大量的读请求压力？</p>
+<h3 id="4-4-1读写分离"><a href="#4-4-1读写分离" class="headerlink" title="4.4.1读写分离"></a>4.4.1读写分离</h3><p>读写分离基本原理是让<strong>主数据库</strong>处理事务性<strong>增添、删除、修改</strong>操作，让<strong>从数据库</strong>处理<strong>查询</strong>操作</p>
+<p>数据库复制被用来把事务性操作导致的变更<strong>同步</strong>到集群中的从数据库</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/29.png" alt="SQL文件导入操作步骤"></p>
+<h3 id="4-4-2云数据库MySQL只读实例"><a href="#4-4-2云数据库MySQL只读实例" class="headerlink" title="4.4.2云数据库MySQL只读实例"></a>4.4.2云数据库MySQL只读实例</h3><p>云数据库MySQL支持用户创建一个或多个只读实例，以支持用户的<strong>读写分离</strong>和<strong>一主多从</strong>的应用场景，可显著提高用户数据库的读负载能力</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/30.png" alt="数据库只读实例"></p>
+<h3 id="4-4-3读写分离实现步骤"><a href="#4-4-3读写分离实现步骤" class="headerlink" title="4.4.3读写分离实现步骤"></a>4.4.3读写分离实现步骤</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/31.png" alt="读写分离实现步骤"></p>
+<h3 id="4-4-4应用读写分离后架构变化"><a href="#4-4-4应用读写分离后架构变化" class="headerlink" title="4.4.4应用读写分离后架构变化"></a>4.4.4应用读写分离后架构变化</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/32.png" alt="应用读写分离后架构变化"></p>
+<h2 id="4-5云数据库MongoDB简介"><a href="#4-5云数据库MongoDB简介" class="headerlink" title="4.5云数据库MongoDB简介"></a>4.5云数据库MongoDB简介</h2><p>关系型数据库瓶颈</p>
+<ul>
+<li>高并发读写需求</li>
+<li>海量数据高效读写</li>
+<li>高扩展性和可用性</li>
+<li>互联网时代，关系型数据库很多特性已经不再需要了（事务强一致性、读写强实时性、多表关联查询弱化）</li>
+</ul>
+<h3 id="4-5-1云数据库MongoDB"><a href="#4-5-1云数据库MongoDB" class="headerlink" title="4.5.1云数据库MongoDB"></a>4.5.1云数据库MongoDB</h3><p>基于开源NoSQL数据MongoDB打造的高性能、分布式数据存储服务，完全兼容MongoDB协议，适用于面向<strong>非关系型数据库</strong>的场景</p>
+<p>MongoDB和MySQL的区别</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/33.png" alt="MongoDB和MySQL的区别"></p>
+<h3 id="4-5-2MongoDB应用场景"><a href="#4-5-2MongoDB应用场景" class="headerlink" title="4.5.2MongoDB应用场景"></a>4.5.2MongoDB应用场景</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/34.png" alt="游戏开发"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/35.png" alt="移动行业"></p>
+<h2 id="4-6云数据库MongoDB使用"><a href="#4-6云数据库MongoDB使用" class="headerlink" title="4.6云数据库MongoDB使用"></a>4.6云数据库MongoDB使用</h2><h3 id="4-6-1云数据库MongoDB使用"><a href="#4-6-1云数据库MongoDB使用" class="headerlink" title="4.6.1云数据库MongoDB使用"></a>4.6.1云数据库MongoDB使用</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/36.png" alt="云数据库MongoDB操作步骤"></p>
+<h3 id="4-6-2云数据库MongoDB数据迁移"><a href="#4-6-2云数据库MongoDB数据迁移" class="headerlink" title="4.6.2云数据库MongoDB数据迁移"></a>4.6.2云数据库MongoDB数据迁移</h3><ul>
+<li>云服务器CVM自建实例迁移</li>
+<li>外网实例迁移</li>
+<li>数据传输服务DTS快速数据迁移</li>
+</ul>
+<h3 id="4-6-3引入云数据库MongoDB后架构变化"><a href="#4-6-3引入云数据库MongoDB后架构变化" class="headerlink" title="4.6.3引入云数据库MongoDB后架构变化"></a>4.6.3引入云数据库MongoDB后架构变化</h3><p><img src="https://zam9036.gitee.io/img/postimg/38-TCA-study-notes-2/37.png" alt="引入云数据库MongoDB后架构变化"></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/shudong-oyangnana.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="/img/avatar.png" height=300 width=300></img>
+                    <p>ZamCenter</p>
+                    <span>心之所向，素履以往</span>
+                    <dl>
+                        <dd><a href="mailto:ZamCenter@163.com" target="_blank"><span
+                            class=" iconfont icon-youxiang"></span></a></dd>
+                        <dd><a href="https://github.com/zam90" target="_blank"><span
+                            class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://blog.csdn.net/weixin_44381143" target="_blank"><span
+                            class=" iconfont icon-csdn"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">38 <p>文章</p></a></li>
+                    <li><a href="/categories">7 <p>分类</p></a></li>
+                    <li><a href="/tags">30 <p>标签</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>目录</h4>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#3-本地应用迁移到云端"><span class="toc-number">1.</span> <span class="toc-text">3.本地应用迁移到云端</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1本地应用上云基础"><span class="toc-number">1.1.</span> <span class="toc-text">3.1本地应用上云基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-1传统Web应用架构"><span class="toc-number">1.1.1.</span> <span class="toc-text">3.1.1传统Web应用架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-2本地应用上云基本步骤"><span class="toc-number">1.1.2.</span> <span class="toc-text">3.1.2本地应用上云基本步骤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2应用上云场景介绍"><span class="toc-number">1.2.</span> <span class="toc-text">3.2应用上云场景介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-1迁移方案"><span class="toc-number">1.2.1.</span> <span class="toc-text">3.2.1迁移方案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-2本地应用迁移云上架构"><span class="toc-number">1.2.2.</span> <span class="toc-text">3.2.2本地应用迁移云上架构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3云服务器简介"><span class="toc-number">1.3.</span> <span class="toc-text">3.3云服务器简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-1云服务器CVM"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.3.1云服务器CVM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-2云服务器CVM概念关系"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.3.2云服务器CVM概念关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-3云服务器存储"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.3.3云服务器存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-4块存储设备映射"><span class="toc-number">1.3.4.</span> <span class="toc-text">3.3.4块存储设备映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-5API访问CVM"><span class="toc-number">1.3.5.</span> <span class="toc-text">3.3.5API访问CVM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-6SDK访问CVM"><span class="toc-number">1.3.6.</span> <span class="toc-text">3.3.6SDK访问CVM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-7CVM最佳实践"><span class="toc-number">1.3.7.</span> <span class="toc-text">3.3.7CVM最佳实践</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4本地应用迁移上云流程"><span class="toc-number">1.4.</span> <span class="toc-text">3.4本地应用迁移上云流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5负载均衡"><span class="toc-number">1.5.</span> <span class="toc-text">3.5负载均衡</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-1负载均衡CLB"><span class="toc-number">1.5.1.</span> <span class="toc-text">3.5.1负载均衡CLB</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-2负载均衡CLB分类"><span class="toc-number">1.5.2.</span> <span class="toc-text">3.5.2负载均衡CLB分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-3负载均衡CLB使用步骤"><span class="toc-number">1.5.3.</span> <span class="toc-text">3.5.3负载均衡CLB使用步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-4负载均衡最佳实践"><span class="toc-number">1.5.4.</span> <span class="toc-text">3.5.4负载均衡最佳实践</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6弹性伸缩"><span class="toc-number">1.6.</span> <span class="toc-text">3.6弹性伸缩</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-1弹性伸缩AS"><span class="toc-number">1.6.1.</span> <span class="toc-text">3.6.1弹性伸缩AS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-2弹性伸缩AS优势"><span class="toc-number">1.6.2.</span> <span class="toc-text">3.6.2弹性伸缩AS优势</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-3弹性伸缩AS使用步骤"><span class="toc-number">1.6.3.</span> <span class="toc-text">3.6.3弹性伸缩AS使用步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-4弹性伸缩AS最佳实践"><span class="toc-number">1.6.4.</span> <span class="toc-text">3.6.4弹性伸缩AS最佳实践</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7存储扩容"><span class="toc-number">1.7.</span> <span class="toc-text">3.7存储扩容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-1腾讯云存储产品"><span class="toc-number">1.7.1.</span> <span class="toc-text">3.7.1腾讯云存储产品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-2云硬盘CBS"><span class="toc-number">1.7.2.</span> <span class="toc-text">3.7.2云硬盘CBS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-3云硬盘分类"><span class="toc-number">1.7.3.</span> <span class="toc-text">3.7.3云硬盘分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-4云硬盘最佳实践"><span class="toc-number">1.7.4.</span> <span class="toc-text">3.7.4云硬盘最佳实践</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-5文件存储CFS"><span class="toc-number">1.7.5.</span> <span class="toc-text">3.7.5文件存储CFS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-6文件存储与云硬盘的区别"><span class="toc-number">1.7.6.</span> <span class="toc-text">3.7.6文件存储与云硬盘的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-7文件存储使用步骤"><span class="toc-number">1.7.7.</span> <span class="toc-text">3.7.7文件存储使用步骤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8本地应用上云后仍存在的问题"><span class="toc-number">1.8.</span> <span class="toc-text">3.8本地应用上云后仍存在的问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-云端应用开发"><span class="toc-number">2.</span> <span class="toc-text">4.云端应用开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1数据库简介"><span class="toc-number">2.1.</span> <span class="toc-text">4.1数据库简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-1数据库分类"><span class="toc-number">2.1.1.</span> <span class="toc-text">4.1.1数据库分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-2腾讯云数据库分类"><span class="toc-number">2.1.2.</span> <span class="toc-text">4.1.2腾讯云数据库分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-3云数据库CDB"><span class="toc-number">2.1.3.</span> <span class="toc-text">4.1.3云数据库CDB</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2云数据库MySQL"><span class="toc-number">2.2.</span> <span class="toc-text">4.2云数据库MySQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1云数据库MySQL优势"><span class="toc-number">2.2.1.</span> <span class="toc-text">4.2.1云数据库MySQL优势</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-2云数据库MySQL应用场景"><span class="toc-number">2.2.2.</span> <span class="toc-text">4.2.2云数据库MySQL应用场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-3云数据库MySQL使用"><span class="toc-number">2.2.3.</span> <span class="toc-text">4.2.3云数据库MySQL使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3数据迁移"><span class="toc-number">2.3.</span> <span class="toc-text">4.3数据迁移</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-1数据迁移到云数据库MySQL方案"><span class="toc-number">2.3.1.</span> <span class="toc-text">4.3.1数据迁移到云数据库MySQL方案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-2SQL文件导入"><span class="toc-number">2.3.2.</span> <span class="toc-text">4.3.2SQL文件导入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-3DTS在线导入"><span class="toc-number">2.3.3.</span> <span class="toc-text">4.3.3DTS在线导入</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4读写分离"><span class="toc-number">2.4.</span> <span class="toc-text">4.4读写分离</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-1读写分离"><span class="toc-number">2.4.1.</span> <span class="toc-text">4.4.1读写分离</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-2云数据库MySQL只读实例"><span class="toc-number">2.4.2.</span> <span class="toc-text">4.4.2云数据库MySQL只读实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-3读写分离实现步骤"><span class="toc-number">2.4.3.</span> <span class="toc-text">4.4.3读写分离实现步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-4应用读写分离后架构变化"><span class="toc-number">2.4.4.</span> <span class="toc-text">4.4.4应用读写分离后架构变化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-5云数据库MongoDB简介"><span class="toc-number">2.5.</span> <span class="toc-text">4.5云数据库MongoDB简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-1云数据库MongoDB"><span class="toc-number">2.5.1.</span> <span class="toc-text">4.5.1云数据库MongoDB</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-2MongoDB应用场景"><span class="toc-number">2.5.2.</span> <span class="toc-text">4.5.2MongoDB应用场景</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-6云数据库MongoDB使用"><span class="toc-number">2.6.</span> <span class="toc-text">4.6云数据库MongoDB使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-1云数据库MongoDB使用"><span class="toc-number">2.6.1.</span> <span class="toc-text">4.6.1云数据库MongoDB使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-2云数据库MongoDB数据迁移"><span class="toc-number">2.6.2.</span> <span class="toc-text">4.6.2云数据库MongoDB数据迁移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-3引入云数据库MongoDB后架构变化"><span class="toc-number">2.6.3.</span> <span class="toc-text">4.6.3引入云数据库MongoDB后架构变化</span></a></li></ol></li></ol></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2021
+        <span class="gradient-text">
+            ZamCenter
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.4" target="_blank" rel="noopener">v1.4.4</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script> <script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script> <script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+ <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>   <script src="/js/busuanzi.min.js"></script>
+<script>
+  $(document).ready(function () {
+    if ($('span[id^="busuanzi_"]').length) {
+      initialBusuanzi();
+    }
+  });
+</script>
+ <link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+<script>
+  function initialTyped() {
+    var typedTextEl = $('.typed-text');
+    if (typedTextEl && typedTextEl.length > 0) {
+      var typed = new Typed('.typed-text', {
+        strings: ['心之所向，素履以往', 'Dash ahead to what one yearns regardless of his safety'],
+        typeSpeed: 90,
+        loop: true,
+        loopCount: Infinity,
+        backSpeed: 20,
+      });
+    }
+  }
+
+  if ($('.article-header') && $('.article-header').length) {
+    $(document).ready(function () {
+      initialTyped();
+    });
+  }
+</script>
+
+
+
+
+</html>

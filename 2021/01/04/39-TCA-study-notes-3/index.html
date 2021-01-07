@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TCA腾讯云开发工程师课程学习笔记（三）|Zam9036博客 - Zam9036博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
+    <meta name="description" content="ZamCenter官方技术博客,[TOC]
+云原生应用设计与开发云原生的演进过程
+
+云原生计算基金会CNCF
+什么是云原生云原生是一种文化，是云计算的一个必然导向，其意义在于让云成为云化战略成功的基石
+云原生的概念可以总结为“适合,"> 
+    <meta name="author" content="ZamCenter"> 
+    <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+</head>
+
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">Zam9036博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://zam9036.gitee.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">TCA腾讯云开发工程师课程学习笔记（三）|Zam9036博客</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled=" "></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <link rel="stylesheet" href="https://zam9036.gitee.io/font_b3z4vr7szgf/iconfont.css">
+
+<div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover.jpg) ">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="/categories/学习笔记"><b>「
+                    </b>学习笔记<b> 」</b></a>
+                
+                一月 04, 2021
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2021/01/04/39-TCA-study-notes-3/" title="TCA腾讯云开发工程师课程学习笔记（三）|Zam9036博客" class="">TCA腾讯云开发工程师课程学习笔记（三）|Zam9036博客</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                    9.2k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                    8 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/" rel="tag">云计算</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E8%AF%BE%E7%A8%8B%EF%BC%9ATCA%E8%AE%A4%E8%AF%81%E8%AF%BE%E7%A8%8B/" rel="tag">课程：TCA认证课程</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <p>[TOC]</p>
+<h1 id="云原生应用设计与开发"><a href="#云原生应用设计与开发" class="headerlink" title="云原生应用设计与开发"></a>云原生应用设计与开发</h1><h2 id="云原生的演进过程"><a href="#云原生的演进过程" class="headerlink" title="云原生的演进过程"></a>云原生的演进过程</h2><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/1.png" alt="应用的三个维度"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/2.png" alt="云原生的演进过程"></p>
+<h3 id="云原生计算基金会CNCF"><a href="#云原生计算基金会CNCF" class="headerlink" title="云原生计算基金会CNCF"></a>云原生计算基金会CNCF</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/3.png" alt="云原生计算基金会CNCF"></p>
+<h2 id="什么是云原生"><a href="#什么是云原生" class="headerlink" title="什么是云原生"></a>什么是云原生</h2><p>云原生是一种文化，是云计算的一个必然导向，其意义在于让云成为云化战略成功的基石</p>
+<p>云原生的概念可以总结为“适合云的应用”和“好用的云架构”</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/4.png" alt="云原生相关概念"></p>
+<h3 id="云时代业务与云原生应用"><a href="#云时代业务与云原生应用" class="headerlink" title="云时代业务与云原生应用"></a>云时代业务与云原生应用</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/5.png" alt="云时代业务与云原生应用"></p>
+<h2 id="云原生架构的关键技术"><a href="#云原生架构的关键技术" class="headerlink" title="云原生架构的关键技术"></a>云原生架构的关键技术</h2><h3 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h3><p>把一个庞大的项目<strong>拆分成几个小的独立的服务</strong>，再把独立的服务串起来的架构设计：<strong>内聚更强、更加敏捷</strong></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/6.png" alt="微服务与传统架构"></p>
+<h3 id="微服务常见架构-Spring-Cloud"><a href="#微服务常见架构-Spring-Cloud" class="headerlink" title="微服务常见架构-Spring Cloud"></a>微服务常见架构-Spring Cloud</h3><p>仅支持使用Java语言进行开发</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/7.png" alt="Spring Cloud"></p>
+<h3 id="微服务常见架构-ServiceMesh"><a href="#微服务常见架构-ServiceMesh" class="headerlink" title="微服务常见架构-ServiceMesh"></a>微服务常见架构-ServiceMesh</h3><p>支持异构语言（多语言混写），适合单体架构到微服务架构的过渡</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/8.png" alt="ServiceMesh"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/9.png" alt="ServiceMesh架构"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/10.png" alt="Sidecar模式"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/11.png" alt="ServiceMesh应用场景"></p>
+<h3 id="容器化"><a href="#容器化" class="headerlink" title="容器化"></a>容器化</h3><p>容器技术——资源调度、微服务更容易</p>
+<p>容器是一种轻量级虚拟化技术，能够在单一主机上提供多个隔离的操作系统环境，通过Namespace进行进程隔离，每个容器都有唯一的可写文件系统和资源配额</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/12.png" alt="Kubernetes"></p>
+<h3 id="DevOps"><a href="#DevOps" class="headerlink" title="DevOps"></a>DevOps</h3><p>传统瀑布模型开发：开发、测试、部署运维团队相互隔离</p>
+<p>敏捷开发：开发测试、部署运维团队相互隔离（合并开发和测试团队）</p>
+<p>DevOps：合并开发测试部署运维，整体一个团队</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/13.png" alt="DevOps1"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/14.png" alt="DevOps2"></p>
+<h3 id="持续交付"><a href="#持续交付" class="headerlink" title="持续交付"></a>持续交付</h3><p>持续交付——缩小开发者认知，灵活开发方向</p>
+<p>开发—测试—部署—交付—反馈—根据反馈继续开发—测试—部署—交付……</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/15.png" alt="持续交付"></p>
+<h2 id="云原生架构的技术特征"><a href="#云原生架构的技术特征" class="headerlink" title="云原生架构的技术特征"></a>云原生架构的技术特征</h2><h3 id="采用轻量级容器"><a href="#采用轻量级容器" class="headerlink" title="采用轻量级容器"></a>采用轻量级容器</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/16.png" alt="采用轻量级容器"></p>
+<h3 id="采用松散耦合的微服务"><a href="#采用松散耦合的微服务" class="headerlink" title="采用松散耦合的微服务"></a>采用松散耦合的微服务</h3><p>每个服务可以<strong>独立部署</strong>，通过<strong>API方式进行交互</strong>协作</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/17.png" alt="采用松散耦合的微服务"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/18.png" alt="微服务API方式进行交互"></p>
+<h3 id="采用最佳语言进行开发"><a href="#采用最佳语言进行开发" class="headerlink" title="采用最佳语言进行开发"></a>采用最佳语言进行开发</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/19.png" alt="采用最佳语言进行开发"></p>
+<h3 id="通过DevOps流程进行管理"><a href="#通过DevOps流程进行管理" class="headerlink" title="通过DevOps流程进行管理"></a>通过DevOps流程进行管理</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/20.png" alt="通过DevOps流程进行管理"></p>
+<h3 id="云原生应用的实现"><a href="#云原生应用的实现" class="headerlink" title="云原生应用的实现"></a>云原生应用的实现</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/21.png" alt="云原生应用的实现"></p>
+<h1 id="TSF与容器化"><a href="#TSF与容器化" class="headerlink" title="TSF与容器化"></a>TSF与容器化</h1><h2 id="TSF概念"><a href="#TSF概念" class="headerlink" title="TSF概念"></a>TSF概念</h2><h3 id="微服务带来的问题"><a href="#微服务带来的问题" class="headerlink" title="微服务带来的问题"></a>微服务带来的问题</h3><ul>
+<li>运维复杂</li>
+<li>代码改造复杂</li>
+<li>架构复杂度高</li>
+<li>定位问题困难</li>
+</ul>
+<p>微服务<strong>有利于开发</strong>，<strong>不利于运维</strong>，需要一个微服务平台来辅助运维</p>
+<h3 id="TSF腾讯微服务平台"><a href="#TSF腾讯微服务平台" class="headerlink" title="TSF腾讯微服务平台"></a>TSF腾讯微服务平台</h3><p>TSF腾讯微服务平台是一个围绕应用和微服务的PaaS平台</p>
+<ul>
+<li>提供服务全生命周期管理能力和数据化运营支持</li>
+<li>提供多维度应用、服务、机器的监控数据，助力服务性能优化</li>
+<li>拥抱SpringCloud、ServiceMesh微服务框架</li>
+<li>让企业轻松构建大型分布式系统</li>
+</ul>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/22.png" alt="TSF优势"></p>
+<h2 id="TSF功能及整体框架"><a href="#TSF功能及整体框架" class="headerlink" title="TSF功能及整体框架"></a>TSF功能及整体框架</h2><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/23.png" alt="TSF功能"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/24.png" alt="TSF整体框架"></p>
+<h3 id="利用TSF打造企业技术中台"><a href="#利用TSF打造企业技术中台" class="headerlink" title="利用TSF打造企业技术中台"></a>利用TSF打造企业技术中台</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/25.png" alt="利用TSF打造企业技术中台"></p>
+<h3 id="TSF资源介绍"><a href="#TSF资源介绍" class="headerlink" title="TSF资源介绍"></a>TSF资源介绍</h3><p>容器部署组之间可以相互访问、虚拟机部署组之间可以相互访问</p>
+<p>容器部署组和虚拟机部署组之间相互访问需要用到<strong>命名空间</strong></p>
+<p>命名空间就是将容器集群和虚拟机集群在逻辑上划分为一个整体，使其整体内部可以相互访问</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/26.png" alt="TSF资源介绍"></p>
+<h2 id="Docker基本使用"><a href="#Docker基本使用" class="headerlink" title="Docker基本使用"></a>Docker基本使用</h2><h3 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/29.png" alt="Docker安装"></p>
+<h3 id="Docker基本命令"><a href="#Docker基本命令" class="headerlink" title="Docker基本命令"></a>Docker基本命令</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/30.png" alt="Docker基本命令1"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/31.png" alt="Docker基本命令2"></p>
+<h2 id="Dockerfile基本使用"><a href="#Dockerfile基本使用" class="headerlink" title="Dockerfile基本使用"></a>Dockerfile基本使用</h2><h3 id="Dockerfile的使用流程"><a href="#Dockerfile的使用流程" class="headerlink" title="Dockerfile的使用流程"></a>Dockerfile的使用流程</h3><p>Dockerfile自定义镜像内容、软件包、版本</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/32.png" alt="Dockerfile的使用流程"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/33.png" alt="Dockerfile基本使用"></p>
+<blockquote>
+<p>From：以该镜像系统作为基础</p>
+<p>Run：运行该镜像系统内的指令</p>
+<p>COPY：将数据配置文件拷贝至镜像中</p>
+<p>CMD：当启动该容器时，CMD命令会将容器初始化（CMD命令仅会运行一次）</p>
+</blockquote>
+<h2 id="利用Dockerfile构建镜像"><a href="#利用Dockerfile构建镜像" class="headerlink" title="利用Dockerfile构建镜像"></a>利用Dockerfile构建镜像</h2><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/34.png" alt="步骤1"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/35.png" alt="步骤2"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/36.png" alt="步骤3&amp;4"></p>
+<h2 id="云容器TKE"><a href="#云容器TKE" class="headerlink" title="云容器TKE"></a>云容器TKE</h2><p>TSF的容器资源基于<strong>腾讯云容器服务TKE</strong></p>
+<p>TKE是高度可扩展的高性能<strong>容器管理服务</strong>，用户可以在托管的云服务器实例集群上轻松运行应用程序</p>
+<h3 id="TKE和Kubernetes"><a href="#TKE和Kubernetes" class="headerlink" title="TKE和Kubernetes"></a>TKE和Kubernetes</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/27.png" alt="TKE和Kubernetes"></p>
+<h3 id="TKE总体架构"><a href="#TKE总体架构" class="headerlink" title="TKE总体架构"></a>TKE总体架构</h3><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/28.png" alt="TKE总体架构"></p>
+<h3 id="TKE应用场景"><a href="#TKE应用场景" class="headerlink" title="TKE应用场景"></a>TKE应用场景</h3><ul>
+<li>微服务架构</li>
+<li>持续集成与交付</li>
+<li>弹性伸缩</li>
+</ul>
+<h2 id="利用云容器部署TSF"><a href="#利用云容器部署TSF" class="headerlink" title="利用云容器部署TSF"></a>利用云容器部署TSF</h2><p><img src="https://zam9036.gitee.io/img/postimg/39-TCA-study-notes-3/37.png" alt="利用云容器部署TSF步骤"></p>
+<h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
+<p>课程链接：<a href="https://cloud.tencent.com/edu/learning/course-2216-31477" target="_blank" rel="noopener">腾讯云开发工程师认证课程</a></p>
+<p>文章链接：<a href="https://zam9036.gitee.io/2021/01/04/39-TCA-study-notes-3">https://zam9036.gitee.io/2021/01/04/39-TCA-study-notes-3</a></p>
+<p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请保留文章链接并注明来自<a href="https://zam9036.gitee.io/">Zam9036博客</a>！</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/shudong-oyangnana.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="/img/avatar.png" height=300 width=300></img>
+                    <p>ZamCenter</p>
+                    <span>心之所向，素履以往</span>
+                    <dl>
+                        <dd><a href="mailto:ZamCenter@163.com" target="_blank"><span
+                            class=" iconfont icon-youxiang"></span></a></dd>
+                        <dd><a href="https://github.com/zam90" target="_blank"><span
+                            class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://blog.csdn.net/weixin_44381143" target="_blank"><span
+                            class=" iconfont icon-csdn"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">40 <p>文章</p></a></li>
+                    <li><a href="/categories">7 <p>分类</p></a></li>
+                    <li><a href="/tags">30 <p>标签</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>目录</h4>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#云原生应用设计与开发"><span class="toc-number">1.</span> <span class="toc-text">云原生应用设计与开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#云原生的演进过程"><span class="toc-number">1.1.</span> <span class="toc-text">云原生的演进过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#云原生计算基金会CNCF"><span class="toc-number">1.1.1.</span> <span class="toc-text">云原生计算基金会CNCF</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是云原生"><span class="toc-number">1.2.</span> <span class="toc-text">什么是云原生</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#云时代业务与云原生应用"><span class="toc-number">1.2.1.</span> <span class="toc-text">云时代业务与云原生应用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#云原生架构的关键技术"><span class="toc-number">1.3.</span> <span class="toc-text">云原生架构的关键技术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#微服务"><span class="toc-number">1.3.1.</span> <span class="toc-text">微服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#微服务常见架构-Spring-Cloud"><span class="toc-number">1.3.2.</span> <span class="toc-text">微服务常见架构-Spring Cloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#微服务常见架构-ServiceMesh"><span class="toc-number">1.3.3.</span> <span class="toc-text">微服务常见架构-ServiceMesh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#容器化"><span class="toc-number">1.3.4.</span> <span class="toc-text">容器化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DevOps"><span class="toc-number">1.3.5.</span> <span class="toc-text">DevOps</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#持续交付"><span class="toc-number">1.3.6.</span> <span class="toc-text">持续交付</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#云原生架构的技术特征"><span class="toc-number">1.4.</span> <span class="toc-text">云原生架构的技术特征</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#采用轻量级容器"><span class="toc-number">1.4.1.</span> <span class="toc-text">采用轻量级容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#采用松散耦合的微服务"><span class="toc-number">1.4.2.</span> <span class="toc-text">采用松散耦合的微服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#采用最佳语言进行开发"><span class="toc-number">1.4.3.</span> <span class="toc-text">采用最佳语言进行开发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通过DevOps流程进行管理"><span class="toc-number">1.4.4.</span> <span class="toc-text">通过DevOps流程进行管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#云原生应用的实现"><span class="toc-number">1.4.5.</span> <span class="toc-text">云原生应用的实现</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TSF与容器化"><span class="toc-number">2.</span> <span class="toc-text">TSF与容器化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#TSF概念"><span class="toc-number">2.1.</span> <span class="toc-text">TSF概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#微服务带来的问题"><span class="toc-number">2.1.1.</span> <span class="toc-text">微服务带来的问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TSF腾讯微服务平台"><span class="toc-number">2.1.2.</span> <span class="toc-text">TSF腾讯微服务平台</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TSF功能及整体框架"><span class="toc-number">2.2.</span> <span class="toc-text">TSF功能及整体框架</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#利用TSF打造企业技术中台"><span class="toc-number">2.2.1.</span> <span class="toc-text">利用TSF打造企业技术中台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TSF资源介绍"><span class="toc-number">2.2.2.</span> <span class="toc-text">TSF资源介绍</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker基本使用"><span class="toc-number">2.3.</span> <span class="toc-text">Docker基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker安装"><span class="toc-number">2.3.1.</span> <span class="toc-text">Docker安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker基本命令"><span class="toc-number">2.3.2.</span> <span class="toc-text">Docker基本命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dockerfile基本使用"><span class="toc-number">2.4.</span> <span class="toc-text">Dockerfile基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Dockerfile的使用流程"><span class="toc-number">2.4.1.</span> <span class="toc-text">Dockerfile的使用流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#利用Dockerfile构建镜像"><span class="toc-number">2.5.</span> <span class="toc-text">利用Dockerfile构建镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#云容器TKE"><span class="toc-number">2.6.</span> <span class="toc-text">云容器TKE</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TKE和Kubernetes"><span class="toc-number">2.6.1.</span> <span class="toc-text">TKE和Kubernetes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TKE总体架构"><span class="toc-number">2.6.2.</span> <span class="toc-text">TKE总体架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TKE应用场景"><span class="toc-number">2.6.3.</span> <span class="toc-text">TKE应用场景</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#利用云容器部署TSF"><span class="toc-number">2.7.</span> <span class="toc-text">利用云容器部署TSF</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原创声明"><span class="toc-number">3.</span> <span class="toc-text">原创声明</span></a></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2021
+        <span class="gradient-text">
+            ZamCenter
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.4" target="_blank" rel="noopener">v1.4.4</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script> <script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script> <script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+ <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>   <script src="/js/busuanzi.min.js"></script>
+<script>
+  $(document).ready(function () {
+    if ($('span[id^="busuanzi_"]').length) {
+      initialBusuanzi();
+    }
+  });
+</script>
+ <link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+<script>
+  function initialTyped() {
+    var typedTextEl = $('.typed-text');
+    if (typedTextEl && typedTextEl.length > 0) {
+      var typed = new Typed('.typed-text', {
+        strings: ['心之所向，素履以往', 'Dash ahead to what one yearns regardless of his safety'],
+        typeSpeed: 90,
+        loop: true,
+        loopCount: Infinity,
+        backSpeed: 20,
+      });
+    }
+  }
+
+  if ($('.article-header') && $('.article-header').length) {
+    $(document).ready(function () {
+      initialTyped();
+    });
+  }
+</script>
+
+
+
+
+</html>

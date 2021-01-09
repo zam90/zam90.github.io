@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TCA腾讯云开发工程师课程学习笔记（六）|Zam9036博客 - Zam9036博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Zam9036,ZamCenter,博客,Blog,技术,生活,介绍,关于,分类,时间轴,相册,音乐,GitHub,Hexo,Code,"> 
+    <meta name="description" content="ZamCenter官方技术博客,[TOC]
+小程序开发基础小程序概述小程序是一种全新的连接用户与服务的方式，它可以在微信内被快捷地获取和传播，同时具有出色的使用体验
+
+
+
+
+
+
+小程序开发基础页面结构构建WXML
+
+
+
+
+
+
+
+
+,"> 
+    <meta name="author" content="ZamCenter"> 
+    <link rel="alternative" href="atom.xml" title="Zam9036博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+</head>
+
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">Zam9036博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://zam9036.gitee.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">TCA腾讯云开发工程师课程学习笔记（六）|Zam9036博客</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled=" "></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <link rel="stylesheet" href="https://zam9036.gitee.io/font_b3z4vr7szgf/iconfont.css">
+
+<div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover3.jpg) ">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="/categories/学习笔记"><b>「
+                    </b>学习笔记<b> 」</b></a>
+                
+                一月 09, 2021
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2021/01/09/42-TCA-study-notes-6/" title="TCA腾讯云开发工程师课程学习笔记（六）|Zam9036博客" class="">TCA腾讯云开发工程师课程学习笔记（六）|Zam9036博客</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                    10k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                    9 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/" rel="tag">云计算</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E8%AF%BE%E7%A8%8B%EF%BC%9ATCA%E8%AE%A4%E8%AF%81%E8%AF%BE%E7%A8%8B/" rel="tag">课程：TCA认证课程</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <p>[TOC]</p>
+<h1 id="小程序开发基础"><a href="#小程序开发基础" class="headerlink" title="小程序开发基础"></a>小程序开发基础</h1><h2 id="小程序概述"><a href="#小程序概述" class="headerlink" title="小程序概述"></a>小程序概述</h2><p>小程序是一种全新的<strong>连接用户与服务</strong>的方式，它可以在微信内被快捷地获取和传播，同时具有出色的使用体验</p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/1.png" alt="小程序发展历程"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/2.png" alt="小程序技术定位"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/3.png" alt="小程序注册流程"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/4.png" alt="小程序开发流程"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/5.png" alt="项目文件类型说明"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/6.png" alt="小程序项目结构"></p>
+<h2 id="小程序开发基础-1"><a href="#小程序开发基础-1" class="headerlink" title="小程序开发基础"></a>小程序开发基础</h2><h3 id="页面结构构建WXML"><a href="#页面结构构建WXML" class="headerlink" title="页面结构构建WXML"></a>页面结构构建WXML</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/7.png" alt="什么是WXML"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/8.png" alt="WXML标签及属性"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/9.png" alt="数据绑定运行流程"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/10.png" alt="数据绑定运行机制"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/11.png" alt="简单绑定实例"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/12.png" alt="运算绑定实例"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/13.png" alt="判断和循环实例"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/14.png" alt="事件绑定"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/15.png" alt="事件绑定实例"></p>
+<h3 id="页面样式定义WXSS"><a href="#页面样式定义WXSS" class="headerlink" title="页面样式定义WXSS"></a>页面样式定义WXSS</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/16.png" alt="什么是WXSS"></p>
+<blockquote>
+<p>WXSS与CSS不同点：尺寸单位、样式导入、选择器</p>
+</blockquote>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/17.png" alt="WXSS样式说明"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/18.png" alt="WXSS选择器"></p>
+<h3 id="小程序基础组件"><a href="#小程序基础组件" class="headerlink" title="小程序基础组件"></a>小程序基础组件</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/19.png" alt="小程序基础组件概述"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/20.png" alt="小程序基础组件"></p>
+<h3 id="小程序API"><a href="#小程序API" class="headerlink" title="小程序API"></a>小程序API</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/21.png" alt="小程序API概述"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/22.png" alt="小程序API分类"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/23.png" alt="获取用户信息"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/24.png" alt="获取用户地理位置权限声明"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/25.png" alt="获取用户地理位置代码逻辑"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/26.png" alt="获取用户地理位置效果"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/27.png" alt="扫一扫"></p>
+<blockquote>
+<p>部分API需提前进行权限声明</p>
+</blockquote>
+<h1 id="小程序云开发"><a href="#小程序云开发" class="headerlink" title="小程序云开发"></a>小程序云开发</h1><h2 id="小程序云开发概述"><a href="#小程序云开发概述" class="headerlink" title="小程序云开发概述"></a>小程序云开发概述</h2><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/28.png" alt="小程序开发对于后端的限制"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/29.png" alt="小程序云开发"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/30.png" alt="小程序云开发流程"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/31.png" alt="小程序云开发架构"></p>
+<h2 id="小程序云开发-1"><a href="#小程序云开发-1" class="headerlink" title="小程序云开发"></a>小程序云开发</h2><h3 id="云数据库"><a href="#云数据库" class="headerlink" title="云数据库"></a>云数据库</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/32.png" alt="小程序云数据库"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/33.png" alt="小程序云数据库2"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/34.png" alt="小程序云数据库使用流程"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/35.png" alt="小程序云数据库权限控制"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/36.png" alt="小程序云数据库API使用"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/37.png" alt="小程序云数据库新增数据"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/38.png" alt="小程序云数据库查询数据"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/39.png" alt="小程序云数据库更新删除数据"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/40.png" alt="云开发控制台导入导出数据"></p>
+<h3 id="云存储"><a href="#云存储" class="headerlink" title="云存储"></a>云存储</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/41.png" alt="小程序云存储"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/42.png" alt="小程序云存储上传和下载"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/43.png" alt="小程序云存储删除和获取临时文件链接"></p>
+<blockquote>
+<p>临时文件链接有效时长为2小时</p>
+</blockquote>
+<h3 id="云函数"><a href="#云函数" class="headerlink" title="云函数"></a>云函数</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/44.png" alt="小程序云函数"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/45.png" alt="小程序云函数2"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/46.png" alt="小程序云函数3"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/47.png" alt="小程序云函数4"></p>
+<h3 id="云开发TCB"><a href="#云开发TCB" class="headerlink" title="云开发TCB"></a>云开发TCB</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/48.png" alt="小程序云开发TCB"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/49.png" alt="小程序云开发TCB功能"></p>
+<blockquote>
+<p>对小程序进行云开发不一定必须使用TCB，使用云数据库、云存储、云函数进行开发也可称为小程序云开发，TCB只是对上述功能进行了集成和统一管理</p>
+</blockquote>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/50.png" alt="小程序云开发TCB架构"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/51.png" alt="小程序云开发TCB应用场景"></p>
+<h3 id="云开发接入"><a href="#云开发接入" class="headerlink" title="云开发接入"></a>云开发接入</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/52.png" alt="小程序云开发接入"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/53.png" alt="小程序云开发接入2"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/54.png" alt="小程序云开发架构实例"></p>
+<h1 id="AI应用开发"><a href="#AI应用开发" class="headerlink" title="AI应用开发"></a>AI应用开发</h1><h2 id="人工智能概述"><a href="#人工智能概述" class="headerlink" title="人工智能概述"></a>人工智能概述</h2><h3 id="人工智能简介"><a href="#人工智能简介" class="headerlink" title="人工智能简介"></a>人工智能简介</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/55.png" alt="人工智能简介"></p>
+<p>常见的人工智能</p>
+<ul>
+<li>图片分类</li>
+<li>计算机视觉：物体识别、场景识别、地点识别……</li>
+<li>天气预测</li>
+</ul>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/56.png" alt="人工智能&amp;机器学习&amp;深度学习"></p>
+<h3 id="人工智能发展现状"><a href="#人工智能发展现状" class="headerlink" title="人工智能发展现状"></a>人工智能发展现状</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/57.png" alt="发展现状"></p>
+<blockquote>
+<p>现阶段，人工智能仍处于专业化的弱人工智能阶段，没有达到通用的、强人工智能的程度</p>
+</blockquote>
+<h3 id="人工智能的未来"><a href="#人工智能的未来" class="headerlink" title="人工智能的未来"></a>人工智能的未来</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/58.png" alt="关联性和因果性"></p>
+<h2 id="腾讯云AI平台"><a href="#腾讯云AI平台" class="headerlink" title="腾讯云AI平台"></a>腾讯云AI平台</h2><h3 id="人脸识别"><a href="#人脸识别" class="headerlink" title="人脸识别"></a>人脸识别</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/59.png" alt="腾讯人脸识别"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/60.png" alt="腾讯人脸识别特性"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/61.png" alt="腾讯人脸识别应用场景"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/62.png" alt="腾讯人脸识别API接口"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/63.png" alt="腾讯人脸识别接入"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/64.png" alt="腾讯人脸识别实例"></p>
+<h3 id="OCR"><a href="#OCR" class="headerlink" title="OCR"></a>OCR</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/65.png" alt="腾讯OCR"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/66.png" alt="腾讯OCR应用场景"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/67.png" alt="腾讯OCR API接口"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/68.png" alt="腾讯OCR接入"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/69.png" alt="腾讯OCR结果分析"></p>
+<h3 id="小程序接入腾讯AI"><a href="#小程序接入腾讯AI" class="headerlink" title="小程序接入腾讯AI"></a>小程序接入腾讯AI</h3><p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/70.png" alt="小程序接入腾讯AI"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/71.png" alt="小程序接入腾讯AI后架构"></p>
+<p><img src="https://zam9036.gitee.io/img/postimg/42-TCA-study-notes-6/72.png" alt="小程序接入腾讯AI流程"></p>
+<h1 id="课程结束"><a href="#课程结束" class="headerlink" title="课程结束"></a>课程结束</h1><h1 id="原创声明"><a href="#原创声明" class="headerlink" title="原创声明"></a>原创声明</h1><p>文章作者：Zam9036</p>
+<p>课程链接：<a href="https://cloud.tencent.com/edu/learning/course-2216-31477" target="_blank" rel="noopener">腾讯云开发工程师认证课程</a></p>
+<p>文章链接：<a href="https://zam9036.gitee.io/2021/01/09/42-TCA-study-notes-6">https://zam9036.gitee.io/2021/01/09/42-TCA-study-notes-6</a></p>
+<p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 许可协议</a>。转载请保留文章链接并注明来自<a href="https://zam9036.gitee.io/">Zam9036博客</a>！</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/shudong-oyangnana.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="/img/avatar.png" height=300 width=300></img>
+                    <p>ZamCenter</p>
+                    <span>心之所向，素履以往</span>
+                    <dl>
+                        <dd><a href="mailto:ZamCenter@163.com" target="_blank"><span
+                            class=" iconfont icon-youxiang"></span></a></dd>
+                        <dd><a href="https://github.com/zam90" target="_blank"><span
+                            class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://blog.csdn.net/weixin_44381143" target="_blank"><span
+                            class=" iconfont icon-csdn"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">42 <p>文章</p></a></li>
+                    <li><a href="/categories">7 <p>分类</p></a></li>
+                    <li><a href="/tags">30 <p>标签</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>目录</h4>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#小程序开发基础"><span class="toc-number">1.</span> <span class="toc-text">小程序开发基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#小程序概述"><span class="toc-number">1.1.</span> <span class="toc-text">小程序概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小程序开发基础-1"><span class="toc-number">1.2.</span> <span class="toc-text">小程序开发基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#页面结构构建WXML"><span class="toc-number">1.2.1.</span> <span class="toc-text">页面结构构建WXML</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面样式定义WXSS"><span class="toc-number">1.2.2.</span> <span class="toc-text">页面样式定义WXSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小程序基础组件"><span class="toc-number">1.2.3.</span> <span class="toc-text">小程序基础组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小程序API"><span class="toc-number">1.2.4.</span> <span class="toc-text">小程序API</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#小程序云开发"><span class="toc-number">2.</span> <span class="toc-text">小程序云开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#小程序云开发概述"><span class="toc-number">2.1.</span> <span class="toc-text">小程序云开发概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小程序云开发-1"><span class="toc-number">2.2.</span> <span class="toc-text">小程序云开发</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#云数据库"><span class="toc-number">2.2.1.</span> <span class="toc-text">云数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#云存储"><span class="toc-number">2.2.2.</span> <span class="toc-text">云存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#云函数"><span class="toc-number">2.2.3.</span> <span class="toc-text">云函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#云开发TCB"><span class="toc-number">2.2.4.</span> <span class="toc-text">云开发TCB</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#云开发接入"><span class="toc-number">2.2.5.</span> <span class="toc-text">云开发接入</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AI应用开发"><span class="toc-number">3.</span> <span class="toc-text">AI应用开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#人工智能概述"><span class="toc-number">3.1.</span> <span class="toc-text">人工智能概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#人工智能简介"><span class="toc-number">3.1.1.</span> <span class="toc-text">人工智能简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#人工智能发展现状"><span class="toc-number">3.1.2.</span> <span class="toc-text">人工智能发展现状</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#人工智能的未来"><span class="toc-number">3.1.3.</span> <span class="toc-text">人工智能的未来</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#腾讯云AI平台"><span class="toc-number">3.2.</span> <span class="toc-text">腾讯云AI平台</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#人脸识别"><span class="toc-number">3.2.1.</span> <span class="toc-text">人脸识别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OCR"><span class="toc-number">3.2.2.</span> <span class="toc-text">OCR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小程序接入腾讯AI"><span class="toc-number">3.2.3.</span> <span class="toc-text">小程序接入腾讯AI</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#课程结束"><span class="toc-number">4.</span> <span class="toc-text">课程结束</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原创声明"><span class="toc-number">5.</span> <span class="toc-text">原创声明</span></a></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2021
+        <span class="gradient-text">
+            ZamCenter
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.4" target="_blank" rel="noopener">v1.4.4</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script> <script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script> <script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+ <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>  <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>   <script src="/js/busuanzi.min.js"></script>
+<script>
+  $(document).ready(function () {
+    if ($('span[id^="busuanzi_"]').length) {
+      initialBusuanzi();
+    }
+  });
+</script>
+ <link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+<script>
+  function initialTyped() {
+    var typedTextEl = $('.typed-text');
+    if (typedTextEl && typedTextEl.length > 0) {
+      var typed = new Typed('.typed-text', {
+        strings: ['心之所向，素履以往', 'Dash ahead to what one yearns regardless of his safety'],
+        typeSpeed: 90,
+        loop: true,
+        loopCount: Infinity,
+        backSpeed: 20,
+      });
+    }
+  }
+
+  if ($('.article-header') && $('.article-header').length) {
+    $(document).ready(function () {
+      initialTyped();
+    });
+  }
+</script>
+
+
+
+
+</html>
